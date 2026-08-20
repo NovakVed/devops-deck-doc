@@ -1,0 +1,278 @@
+name: Build and deploy Writerside docs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Writerside/**'
+      - 'web/**'
+      - 'scripts/**'
+      - '.github/workflows/deploy-docs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build with Writerside
+    runs-on: ubuntu-latest
+    env:
+      # Build group name from cfg/build-groups.xml (English + zh/ja/ko).
+      INSTANCE: Writerside/languages
+      # Group builds need a builder newer than 243.21565, which rejects -g.
+      DOCKER_VERSION: '2026.06.8817'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Build docs (language group) using Writerside Docker builder
+        uses: JetBrains/writerside-github-action@v4
+        with:
+          instance: ${{ env.INSTANCE }}
+          is-group: 'true'
+          docker-version: ${{ env.DOCKER_VERSION }}
+
+      # if: always() - without it this is skipped exactly when the Writerside build
+      # fails, which is when the diagnostics are worth having.
+      - name: Save build artifacts for diagnostics
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: webHelp
+          path: artifacts/*
+          retention-days: 7
+
+      # Advisory: the checker is stricter than the builder - it expects <a> in
+      # section-starting-page groups where <card> renders fine, so it must not
+      # block the deploy. It reads artifacts/report.json, which this job already
+      # produced; running it here instead of in its own job avoids re-downloading
+      # the 50MB artifact and, more importantly, avoids needing a second runner -
+      # that second runner is what starved for hours during the 2026-08-06
+      # Actions incident while this job sat unscheduled.
+      - name: Test Writerside docs (advisory)
+        continue-on-error: true
+        uses: JetBrains/writerside-checker-action@v1
+        with:
+          instance: Writerside/azd
+
+      # Guards the failure mode from 8a0035b: image refs that don't resolve
+      # still build "successfully", they just ship a site with no screenshots.
+      - name: Fail if the build dropped screenshots
+        run: |
+          python3 - <<'EOF'
+          import json, sys
+          report = json.load(open('artifacts/report.json'))
+          errors = report['testsErrorsCount']
+          print(f"{report['testsTotal']} checks, {errors} failed")
+          for inst in report['instances']:
+              for problem, items in inst.get('testsErrors', {}).items():
+                  for item in items:
+                      print(f"  {inst['instanceId']} {problem}: {item['description']}")
+          sys.exit(1 if errors else 0)
+          EOF
+          pngs=0
+          for z in artifacts/*.zip; do
+            [ -e "$z" ] || continue
+            pngs=$((pngs + $(unzip -l "$z" | grep -cE '\.png$' || true)))
+          done
+          echo "$pngs screenshots embedded"
+          [ "$pngs" -ge 50 ] || { echo "::error::site is missing screenshots"; exit 1; }
+
+      - name: Unzip site for GitHub Pages
+        run: |
+          mkdir -p site
+          ls -la artifacts/ || true
+          for z in artifacts/*.zip; do
+            [ -e "$z" ] || continue
+            # Entries carry absolute paths; unzip strips them and exits 1 on
+            # the warning, which `bash -e` would treat as failure. Fail on 2+.
+            unzip -o -O UTF-8 -qq "$z" -d site || [ $? -eq 1 ]
+          done
+          # Group paths carry the /devops-lens-doc Pages prefix, so hoist if the
+          # builder mirrored it into the zip layout.
+          if [ -d site/devops-lens-doc ]; then
+            tmp=$(mktemp -d)
+            mv site/devops-lens-doc/* "$tmp"/
+            rm -rf site
+            mv "$tmp" site
+          fi
+          ls -1 site/welcome*.html site/*/welcome*.html 2>/dev/null || true
+
+      # Topics are suffixed (welcome-zh.md) only because Writerside needs
+      # unique topic names across instances sharing topics/. Each language is
+      # already namespaced by its folder, so drop the suffix from the URLs.
+      - name: Clean language URLs (/zh/welcome.html instead of /zh/welcome-zh.html)
+        run: |
+          for l in zh ja ko; do
+            [ -d "site/$l" ] || continue
+            renamed=0
+            while IFS= read -r -d '' f; do
+              mv "$f" "${f%-$l.html}.html"
+              renamed=$((renamed+1))
+            done < <(find "site/$l" -type f -name "*-$l.html" -print0)
+            echo "$l: renamed $renamed pages"
+          done
+          # Site-wide: the English switcher links point into zh/…-zh.html too.
+          find site -type f \( -name '*.html' -o -name '*.json' -o -name '*.xml' -o -name '*.js' -o -name '*.jhm' \) -print0 \
+            | xargs -0 sed -i -E 's/-(zh|ja|ko)\.html/.html/g'
+          echo "suffixed pages left (want none):"
+          find site -name '*-zh.html' -o -name '*-ja.html' -o -name '*-ko.html' | head
+
+      # Writerside's switcher only navigates to each instance ROOT, and the
+      # options aren't links - they're li items handled in JS. Since every
+      # language now has an identical page set, intercept the click and
+      # forward to the same page instead. Same-language picks fall through;
+      # without JS the switcher still lands on the root as before.
+      - name: Make the language switcher keep the current page
+        run: |
+          cat > site/lang-switch.js <<'EOF'
+          (function () {
+            var BASE = '/devops-lens-doc';
+            var ALIAS_TO_LANG = { 'English': '', '简体中文': 'zh', '日本語': 'ja', '한국어': 'ko' };
+            function pageLang(pathname) {
+              var m = pathname.replace(BASE, '').match(/^\/(zh|ja|ko)(\/|$)/);
+              return m ? m[1] : '';
+            }
+            document.addEventListener('click', function (e) {
+              var li = e.target && e.target.closest && e.target.closest('ul.edition-switch__popup li');
+              if (!li) return;
+              var alias = (li.textContent || '').trim();
+              if (!(alias in ALIAS_TO_LANG)) return;
+              var targetLang = ALIAS_TO_LANG[alias];
+              var currentLang = pageLang(location.pathname);
+              if (targetLang === currentLang) return;
+              var page = location.pathname.split('/').pop();
+              if (!page || page === 'index.html' || !/\.html$/.test(page)) return;
+              e.preventDefault();
+              e.stopPropagation();
+              location.href = (targetLang ? BASE + '/' + targetLang : BASE) + '/' + page;
+            }, true);
+          })();
+          EOF
+          # ?v=<sha> matters: Pages serves max-age=600 and a stale copy of this
+          # script is what shipped the root-landing behavior to warm browsers.
+          find site -name '*.html' -print0 \
+            | xargs -0 sed -i "s|</head>|<script src=\"/devops-lens-doc/lang-switch.js?v=${GITHUB_SHA}\" defer></script></head>|"
+          echo "pages injected: $(grep -rl 'lang-switch.js' site --include='*.html' | wc -l)"
+
+      # The stock header is logo + switcher on the left with a flex-grow
+      # divider pushing only the theme toggle right. Reorder so the switcher
+      # sits by the toggle, and add the product name beside the logo. Scoped
+      # to >=1024px: below that Writerside swaps to the hamburger header and
+      # drops .wh-header__switchers entirely.
+      - name: "Header: product name next to the logo, language switcher next to the theme toggle"
+        run: |
+          cat > site/header-custom.css <<'EOF'
+          @media (min-width: 1024px) {
+            .wh-header__link {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              text-decoration: none;
+            }
+            .wh-header__link img {
+              width: 72px;
+              height: 40px;
+              object-fit: contain;
+            }
+            .wh-header__link::after {
+              content: "DevOps Lens";
+              color: #fff;
+              font-size: 17px;
+              font-weight: 600;
+              white-space: nowrap;
+            }
+            [data-test="header-edition"] { order: 2; }
+            .wh-header__divider { order: 1; }
+            .wh-header__switchers { order: 3; }
+          }
+          EOF
+          find site -name '*.html' -print0 \
+            | xargs -0 sed -i "s|</head>|<link rel=\"stylesheet\" href=\"/devops-lens-doc/header-custom.css?v=${GITHUB_SHA}\"></head>|"
+          echo "pages injected: $(grep -rl 'header-custom.css' site --include='*.html' | wc -l)"
+
+      # Alternate the Welcome page's section bands, reusing the tokens
+      # Writerside's own "highlighted" band uses so both themes work without
+      # hardcoded hex. Scoped to the section-page template; article pages are
+      # untouched. All four language Welcome pages share this file.
+      - name: "Home page: alternating section bands (theme-aware)"
+        run: |
+          cat > site/home-sections.css <<'EOF'
+          body[data-template="section-page"] {
+            background-color: var(--wh-color-bg-main);
+          }
+          /* Also overrides the built-in gray of the "highlighted" section so
+             the alternation stays strict. */
+          [data-template="section-page"] .section-starting-page-content > .section-starting-page-content__section:nth-child(odd) {
+            background-color: transparent;
+          }
+          [data-template="section-page"] .section-starting-page-content > .section-starting-page-content__section:nth-child(even) {
+            background-color: var(--wh-color-substrate);
+          }
+          [data-template="section-page"] .section-starting-page-content > .section-starting-page-content__section:nth-child(even) .section-starting-page-content__card,
+          [data-template="section-page"] .section-starting-page-content > .section-starting-page-content__section:nth-child(even) .section-starting-page-content__card:hover {
+            background-color: var(--wh-color-bg-main);
+          }
+          EOF
+          find site -name '*.html' -print0 \
+            | xargs -0 sed -i "s|</head>|<link rel=\"stylesheet\" href=\"/devops-lens-doc/home-sections.css?v=${GITHUB_SHA}\"></head>|"
+          echo "pages injected: $(grep -rl 'home-sections.css' site --include='*.html' | wc -l)"
+
+      # The builder injects the search tags itself via <include-in-head> in
+      # cfg/buildprofiles.xml; the fallback covers it dropping that hook.
+      # Either way a page set without them fails the deploy rather than
+      # shipping a dead search button.
+      - name: "Search: install client assets"
+        run: |
+          cp web/custom-search.js web/custom-search.css site/
+          find site -name '*.html' -print0 \
+            | xargs -0 sed -i "s/v=__BUILD__/v=${GITHUB_SHA}/g"
+          injected=$(grep -rl 'custom-search.js' site --include='*.html' | wc -l)
+          total=$(find site -name '*.html' | wc -l)
+          echo "builder-injected search tags: $injected of $total pages"
+          if [ "$injected" -eq 0 ]; then
+            echo "::warning::<include-in-head> emitted no search tags - falling back to workflow injection"
+            find site -name '*.html' -print0 \
+              | xargs -0 sed -i "s|</head>|<link rel=\"stylesheet\" href=\"/devops-lens-doc/custom-search.css?v=${GITHUB_SHA}\"><script src=\"/devops-lens-doc/custom-search.js?v=${GITHUB_SHA}\" defer></script></head>|"
+            injected=$(grep -rl 'custom-search.js' site --include='*.html' | wc -l)
+            echo "fallback-injected search tags: $injected of $total pages"
+          fi
+          if [ "$injected" -eq 0 ]; then
+            echo "::error::no page references custom-search.js - search would be dead on the published site"
+            exit 1
+          fi
+
+      # Built from the final cleaned HTML so every indexed URL matches a page
+      # that exists. One index per language root.
+      - name: "Search: build per-language indexes"
+        run: |
+          python3 scripts/build-search-index.py site
+
+      # retention-days: the action defaults to 1, which strands the deploy if the
+      # publish leg can't run for a day (GitHub capacity incidents do exactly that
+      # - re-running deploy needs this artifact alive). 7 matches the webHelp upload.
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+          retention-days: 7
+
+  deploy:
+    name: Publish to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

@@ -1,0 +1,41 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+
+    <!-- All four instances (azd, azd-zh, azd-ja, azd-ko) share one topics/ dir.
+         The IDE resolves a cross-topic anchor link against a single instance
+         only, so `Privacy-and-Data-zh.md#crash-reports` from Troubleshooting-zh.md
+         is reported unresolved even though the anchor is right there.
+
+         Verified: declaring azd-zh as the ONLY instance in writerside.cfg makes
+         every zh link resolve and breaks the English/ja/ko ones instead - the
+         warning tracks which instance is first, not whether the link is valid.
+         The Writerside builder, which builds one instance at a time, passes
+         180/180 checks for azd and azd-zh with 0 errors, so CI still catches a
+         genuinely broken anchor. Left enabled for English, where it works. -->
+    <inspection_tool class="WrsUnresolvedAnchorReference" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Translated topics" level="ERROR" enabled="false" />
+    </inspection_tool>
+
+    <!-- Korean attaches particles directly to the preceding word, so a code span
+         followed by a particle tokenizes as one "word" (`dependsOn`을,
+         `localhost`의). That is correct Korean typography and there is no CJK
+         dictionary to check the rest against. Shared technical terms live in
+         .idea/dictionaries/project.xml instead. -->
+    <inspection_tool class="SpellCheckingInspection" enabled="true" level="TYPO" enabled_by_default="true">
+      <scope name="Translated topics" level="TYPO" enabled="false" />
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+
+    <!-- "Undefined parameter" on every `with:` key in deploy-docs.yml. Checked
+         each against the action's own action.yml: instance / is-group /
+         docker-version (writerside-github-action@v4), name / path /
+         retention-days (upload-artifact@v7), path (upload-pages-artifact@v5),
+         name / path (download-artifact@v8), instance (writerside-checker-action@v1)
+         are all declared inputs. The IDE simply has no metadata cached for these
+         action versions. -->
+    <inspection_tool class="UndefinedParamsPresent" enabled="false" level="WARNING" enabled_by_default="false" />
+  </profile>
+</component>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/html-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="DevOps Lens" id="Welcome-ja">
+
+    <section-starting-page>
+        <title>%product%</title>
+        <description>
+            JetBrains IDE から離れることなく、Azure DevOps のプルリクエストを閲覧、レビュー、完了できます。AI アシスト、チーム統計、IDE 内でのパイプライン実行も利用できます。
+        </description>
+
+        <spotlight>
+            <a href="Quick-Start-ja.md" type="start"
+               summary="サインインしてツールウィンドウを開き、約1分で最初のプルリクエストをレビューします。"/>
+            <a href="Installation-ja.md" type="install"
+               summary="IntelliJ ベースのあらゆる IDE で JetBrains Marketplace からインストールします。"/>
+        </spotlight>
+
+        <primary>
+            <title>主な機能</title>
+            <a href="Pull-Requests-ja.md" type="branch"
+               summary="プルリクエストの閲覧、絞り込み、検索を行い、ツールウィンドウから完了、取り消し、その他の操作を実行します。"/>
+            <a href="Code-Review-ja.md" type="check-list"
+               summary="インラインコメント、提案、投票、ファイル既読トラッキングを備えたネイティブの差分ビューア。"/>
+            <a href="Review-in-Editor-ja.md" type="documents"
+               summary="プルリクエストのブランチをチェックアウトすると、通常のエディター上にレビュースレッドが重ねて表示されます。"/>
+            <a href="Discussions-and-Comments-ja.md" type="community"
+               summary="Markdown、@メンション、編集提案、画像添付に対応したスレッド形式のコメント。"/>
+            <a href="Find-Pull-Requests-From-Code-ja.md" type="search"
+               summary="行を blame して、それを持ち込んだプルリクエストを見つけます。すべての行に PR を注釈表示することもできます。"/>
+            <a href="Notifications-and-Attention-ja.md" type="mail"
+               summary="レビューが必要なプルリクエストや @メンションされたプルリクエストを、バルーン、ツールウィンドウのバッジ、行のチップで通知します。"/>
+            <a href="Statistics-ja.md" type="data"
+               summary="KPI と十数種類のチャート。マージまでの時間、レビュー速度、投票の分布など。"/>
+            <a href="Pipelines-ja.md" type="integration"
+               summary="Pipelines ツールウィンドウから実行の監視、ステップログの確認、ゲートの承認を行います。プルリクエストのチェックは IDE 内で直接開きます。"/>
+        </primary>
+
+        <secondary>
+            <title>AI と構成</title>
+            <a href="AI-Features-ja.md" type="idea"
+               summary="プルリクエストの要約、AI レビュー、コード解説、コミットメッセージ、文章校正を、自分のプロバイダーで利用できます。"/>
+            <a href="Git-Integration-ja.md" type="integration"
+               summary="現在のブランチとプルリクエストのマッチング、ブランチウィジェットのアクション、HTTPS 認証情報の受け渡し。"/>
+            <a href="Privacy-and-Data-ja.md" type="lock"
+               summary="Azure DevOps と AI プロバイダーに送信される内容、およびすべてをローカルに保つ方法。"/>
+            <a href="Authentication-ja.md" type="key"
+               summary="Personal Access Token または Microsoft Entra ID OAuth。マルチアカウントに対応。"/>
+            <a href="Settings-ja.md" type="settings"
+               summary="アカウント、ポーリングと通知、アテンションマーカー、AI プロバイダー。"/>
+        </secondary>
+
+        <misc>
+            <cards>
+                <title>ヘルプ</title>
+                <a href="Keyboard-Shortcuts-ja.md" type="keyboard"
+                   summary="すべてのアクションと、そのアクション ID および既定のバインディング。"/>
+                <a href="Troubleshooting-ja.md" type="bug"
+                   summary="よくあるエラー、その対処法、バグの報告方法。"/>
+                <a href="FAQ-ja.md" type="support"
+                   summary="判断に役立つ質問形式。オンプレミス対応、AI のプライバシー、OAuth と PAT の比較。"/>
+                <a href="Support-ja.md" type="community"
+                   summary="バグの報告、機能のリクエスト、質問 - そして返ってくるものの目安。"/>
+            </cards>
+
+            <cards narrow="true">
+                <title>法的情報</title>
+                <a href="%docs_url%privacy-policy.html" type="lock"
+                   summary="アカウントなし、使用状況分析なし、隠れたアップロードなし。プラグインがあなたのデータに対して行うこと、行わないこと。"/>
+                <a href="%docs_url%terms-of-service.html" type="mixed"
+                   summary="プラグインおよび本サイトのライセンス、制限事項、保証、責任について。"/>
+            </cards>
+
+            <cards narrow="true">
+                <title>外部サイト</title>
+                <a href="%marketplace_url%" type="library"
+                   summary="プラグインのインストール、バージョン履歴の閲覧、ユーザーレビューの確認。">JetBrains Marketplace</a>
+                <a href="%tracker_url%" type="bug"
+                   summary="プラグインのバグ報告、機能リクエスト、質問はこちらへ。">Issue トラッカー</a>
+                <a href="%repo_url%" type="open-source"
+                   summary="ドキュメントのソース。誤字、内容の欠落、リンク切れは Issue で報告してください。">GitHub リポジトリ</a>
+            </cards>
+        </misc>
+
+    </section-starting-page>
+</topic>

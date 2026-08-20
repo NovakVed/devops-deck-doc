@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+<instance-profile id="azd-ko"
+                  name="DevOps Lens"
+                  start-page="Welcome-ko.topic">
+
+    <toc-element topic="Welcome-ko.topic"/>
+    <toc-element toc-title="시작하기">
+        <toc-element topic="Installation-ko.md"/>
+        <toc-element topic="Quick-Start-ko.md"/>
+        <toc-element topic="Authentication-ko.md"/>
+        <toc-element topic="Permissions-ko.md"/>
+    </toc-element>
+    <toc-element topic="Pull-Requests-ko.md">
+        <toc-element topic="Code-Review-ko.md"/>
+        <toc-element topic="Review-in-Editor-ko.md"/>
+        <toc-element topic="Discussions-and-Comments-ko.md"/>
+        <toc-element topic="Find-Pull-Requests-From-Code-ko.md"/>
+        <toc-element topic="Statistics-ko.md"/>
+    </toc-element>
+    <toc-element topic="Pipelines-ko.md"/>
+    <toc-element topic="AI-Features-ko.md">
+        <toc-element topic="MCP-Tools-ko.md"/>
+    </toc-element>
+    <toc-element toc-title="IDE 통합">
+        <toc-element topic="Git-Integration-ko.md"/>
+        <toc-element topic="Notifications-and-Attention-ko.md"/>
+    </toc-element>
+    <toc-element toc-title="참조">
+        <toc-element topic="Settings-ko.md"/>
+        <toc-element topic="Keyboard-Shortcuts-ko.md"/>
+        <toc-element topic="Markdown-ko.md"/>
+    </toc-element>
+    <toc-element toc-title="도움말">
+        <toc-element topic="Troubleshooting-ko.md"/>
+        <toc-element topic="FAQ-ko.md"/>
+        <toc-element topic="Support-ko.md"/>
+    </toc-element>
+    <toc-element toc-title="개인정보 및 법적 고지">
+        <toc-element topic="Privacy-and-Data-ko.md"/>
+    </toc-element>
+</instance-profile>

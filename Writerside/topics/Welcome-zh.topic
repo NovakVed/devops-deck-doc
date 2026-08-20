@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/html-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="DevOps Lens" id="Welcome-zh">
+
+    <section-starting-page>
+        <title>%product%</title>
+        <description>
+            浏览、审查并完成 Azure DevOps 拉取请求 —— 借助 AI 辅助、团队统计以及在 IDE 内运行的管道 —— 无需离开你的 JetBrains IDE。
+        </description>
+
+        <spotlight>
+            <a href="Quick-Start-zh.md" type="start"
+               summary="登录、打开工具窗口，大约一分钟内即可审查你的第一个 PR。"/>
+            <a href="Installation-zh.md" type="install"
+               summary="在任意基于 IntelliJ 的 IDE 中，从 JetBrains Marketplace 安装。"/>
+        </spotlight>
+
+        <primary>
+            <title>主要功能</title>
+            <a href="Pull-Requests-zh.md" type="branch"
+               summary="浏览、筛选和搜索 PR —— 然后直接在工具窗口中完成、还原或对其执行操作。"/>
+            <a href="Code-Review-zh.md" type="check-list"
+               summary="原生差异查看器，支持内联评论、建议、投票以及文件已查看状态跟踪。"/>
+            <a href="Review-in-Editor-zh.md" type="documents"
+               summary="当 PR 的分支已检出时，审查线程会叠加显示在你的常规编辑器上。"/>
+            <a href="Discussions-and-Comments-zh.md" type="community"
+               summary="支持 markdown、@提及、建议修改和图片附件的线程化评论。"/>
+            <a href="Find-Pull-Requests-From-Code-zh.md" type="search"
+               summary="对某一行执行 blame，找出引入它的拉取请求 —— 或为每一行标注其所属 PR。"/>
+            <a href="Notifications-and-Attention-zh.md" type="mail"
+               summary="为需要你审查或 @提及你的 PR 提供气泡通知、工具窗口徽章和行内标记。"/>
+            <a href="Statistics-zh.md" type="data"
+               summary="KPI 以及十多种图表 —— 合并时长、审查速度、投票分布等等。"/>
+            <a href="Pipelines-zh.md" type="integration"
+               summary="在 Pipelines 工具窗口中查看运行、阅读步骤日志并审批关卡 —— 拉取请求检查会直接在 IDE 中打开。"/>
+        </primary>
+
+        <secondary>
+            <title>AI 与配置</title>
+            <a href="AI-Features-zh.md" type="idea"
+               summary="PR 摘要、AI 审查、代码解释、提交消息和语法润色 —— 使用你自己的提供商。"/>
+            <a href="Git-Integration-zh.md" type="integration"
+               summary="当前分支 PR 匹配、分支小组件操作以及 HTTPS 凭据传递。"/>
+            <a href="Privacy-and-Data-zh.md" type="lock"
+               summary="发送到 Azure DevOps 和 AI 提供商的内容，以及如何将一切保留在本地。"/>
+            <a href="Authentication-zh.md" type="key"
+               summary="个人访问令牌或 Microsoft Entra ID OAuth，支持多账户。"/>
+            <a href="Settings-zh.md" type="settings"
+               summary="账户、轮询与通知、关注标记以及 AI 提供商。"/>
+        </secondary>
+
+        <misc>
+            <cards>
+                <title>帮助</title>
+                <a href="Keyboard-Shortcuts-zh.md" type="keyboard"
+                   summary="每个操作及其操作 ID 和默认绑定。"/>
+                <a href="Troubleshooting-zh.md" type="bug"
+                   summary="常见错误、修复方法以及如何提交 bug。"/>
+                <a href="FAQ-zh.md" type="support"
+                   summary="决策式问题：本地部署支持、AI 隐私、OAuth 与 PAT 对比。"/>
+                <a href="Support-zh.md" type="community"
+                   summary="提交缺陷、提出功能请求、提问 —— 以及大致的回应方式。"/>
+            </cards>
+
+            <cards narrow="true">
+                <title>法律条款</title>
+                <a href="%docs_url%privacy-policy.html" type="lock"
+                   summary="没有账户、没有使用分析、没有隐藏的上传 —— 插件会以及不会如何处理你的数据。"/>
+                <a href="%docs_url%terms-of-service.html" type="mixed"
+                   summary="插件与本站点的许可、限制、担保与责任。"/>
+            </cards>
+
+            <cards narrow="true">
+                <title>站外资源</title>
+                <a href="%marketplace_url%" type="library"
+                   summary="安装插件、浏览版本历史并阅读用户评价。">JetBrains Marketplace</a>
+                <a href="%tracker_url%" type="bug"
+                   summary="提交插件的缺陷、功能请求，或者提问。">问题追踪仓库</a>
+                <a href="%repo_url%" type="open-source"
+                   summary="文档源 —— 为拼写错误、缺失内容或失效链接提交 issue。">GitHub repository</a>
+            </cards>
+        </misc>
+
+    </section-starting-page>
+</topic>

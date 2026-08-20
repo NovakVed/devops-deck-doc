@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <variables>
+        <primary-color>blue</primary-color>
+        <header-logo>logo.svg</header-logo>
+        <!-- Without this the generated logoUrl is a bare /logo.svg, which 404s
+             (the file lives at /devops-lens-doc/images/logo.svg). -->
+        <images-prefix-override>images/</images-prefix-override>
+        <noindex-content>false</noindex-content>
+        <!-- VIS011: screenshots are dark-theme captures that serve both page
+             themes, so there is no *_dark.png to find.
+             SCT001: `key` resolves platform action ids; ours are plugin
+             actions and popup-local accelerators, which aren't in it. -->
+        <ignore-problems>VIS011,SCT001</ignore-problems>
+        <!-- Origin only. The group paths in build-groups.xml already carry the
+             /devops-lens-doc prefix, and absolute URLs are composed as
+             web-root + group path + page - putting the prefix here too gave
+             /devops-lens-doc/devops-lens-doc/. -->
+        <web-root>https://novakved.github.io</web-root>
+        <!-- Loads the self-hosted search client (web/custom-search.*). The
+             built-in search box needs an Algolia backend we don't use. -->
+        <include-in-head>search-head.html</include-in-head>
+    </variables>
+    <footer>
+        <social type="linkedin" href="https://www.linkedin.com/in/vedran-novak/">Vedran Novak on LinkedIn</social>
+        <social type="blog" href="https://vednovak.com/">vednovak.com</social>
+        <social type="email" href="mailto:vednovak@gmail.com">Email Vedran Novak</social>
+        <social type="github" href="https://github.com/NovakVed/devops-lens-doc">Vedran Novak on GitHub</social>
+        <copyright>Vedran Novak</copyright>
+    </footer>
+</buildprofiles>

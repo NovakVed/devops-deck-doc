@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE build-groups SYSTEM "https://resources.jetbrains.com/writerside/1.0/build-groups.dtd">
+<build-groups xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-groups.xsd"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!-- Paths land verbatim in each instance's config.json `editions` urls,
+         which the switcher follows as domain-absolute links, so they need the
+         /devops-lens-doc project-pages prefix - without it English resolves to
+         novakved.github.io/ and the rest to novakved.github.io/zh (404). -->
+    <build-group name="languages">
+        <instance instance-id="azd"    alias="English"  path="/devops-lens-doc"/>
+        <instance instance-id="azd-zh" alias="简体中文" path="/devops-lens-doc/zh"/>
+        <instance instance-id="azd-ja" alias="日本語"   path="/devops-lens-doc/ja"/>
+        <instance instance-id="azd-ko" alias="한국어"    path="/devops-lens-doc/ko"/>
+    </build-group>
+</build-groups>

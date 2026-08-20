@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/html-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="DevOps Lens" id="Welcome-ko">
+
+    <section-starting-page>
+        <title>%product%</title>
+        <description>
+            JetBrains IDE를 벗어나지 않고 Azure DevOps 풀 리퀘스트를 탐색, 리뷰, 완료하세요 - AI 지원, 팀 통계, IDE 내 파이프라인 실행과 함께.
+        </description>
+
+        <spotlight>
+            <a href="Quick-Start-ko.md" type="start"
+               summary="로그인하고, 도구 창을 열고, 약 1분 만에 첫 PR을 리뷰하세요."/>
+            <a href="Installation-ko.md" type="install"
+               summary="IntelliJ 기반 IDE에서 JetBrains Marketplace를 통해 설치하세요."/>
+        </spotlight>
+
+        <primary>
+            <title>주요 기능</title>
+            <a href="Pull-Requests-ko.md" type="branch"
+               summary="PR을 탐색, 필터링, 검색한 다음 도구 창에서 완료하거나 되돌리거나 작업을 수행하세요."/>
+            <a href="Code-Review-ko.md" type="check-list"
+               summary="인라인 댓글, 제안, 투표, 파일 확인 추적 기능을 갖춘 네이티브 diff(변경 내용) 뷰어."/>
+            <a href="Review-in-Editor-ko.md" type="documents"
+               summary="PR의 브랜치가 체크아웃되어 있을 때 일반 편집기 위에 오버레이되는 리뷰 스레드."/>
+            <a href="Discussions-and-Comments-ko.md" type="community"
+               summary="마크다운, @멘션, 편집 제안, 이미지 첨부를 지원하는 스레드형 댓글."/>
+            <a href="Find-Pull-Requests-From-Code-ko.md" type="search"
+               summary="한 줄을 blame해 그 줄을 가져온 풀 리퀘스트를 찾거나, 모든 줄에 해당 PR을 주석으로 표시하세요."/>
+            <a href="Notifications-and-Attention-ko.md" type="mail"
+               summary="리뷰가 필요하거나 사용자를 @멘션하는 PR을 위한 풍선 알림, 도구 창 배지, 행 칩."/>
+            <a href="Statistics-ko.md" type="data"
+               summary="KPI와 열두 가지 차트 - 병합 소요 시간, 리뷰 속도, 투표 분포 등."/>
+            <a href="Pipelines-ko.md" type="integration"
+               summary="Pipelines 도구 창에서 실행을 확인하고, 단계 로그를 읽고, 게이트를 승인하세요 - 풀 리퀘스트 체크는 IDE에서 바로 열립니다."/>
+        </primary>
+
+        <secondary>
+            <title>AI 및 구성</title>
+            <a href="AI-Features-ko.md" type="idea"
+               summary="PR 요약, AI 리뷰, 코드 설명, 커밋 메시지, 문법 다듬기 - 사용자 자신의 공급자와 함께."/>
+            <a href="Git-Integration-ko.md" type="integration"
+               summary="현재 브랜치 PR 매칭, 브랜치 위젯 작업, HTTPS 자격 증명 전달."/>
+            <a href="Privacy-and-Data-ko.md" type="lock"
+               summary="Azure DevOps와 AI 공급자에 전송되는 내용, 그리고 모든 것을 로컬에 유지하는 방법."/>
+            <a href="Authentication-ko.md" type="key"
+               summary="개인용 액세스 토큰 또는 Microsoft Entra ID OAuth, 다중 계정 지원과 함께."/>
+            <a href="Settings-ko.md" type="settings"
+               summary="계정, 폴링 및 알림, 주의 표시, AI 공급자."/>
+        </secondary>
+
+        <misc>
+            <cards>
+                <title>도움말</title>
+                <a href="Keyboard-Shortcuts-ko.md" type="keyboard"
+                   summary="모든 작업과 해당 action ID 및 기본 바인딩."/>
+                <a href="Troubleshooting-ko.md" type="bug"
+                   summary="일반적인 오류, 해결 방법, 버그 신고 방법."/>
+                <a href="FAQ-ko.md" type="support"
+                   summary="의사 결정형 질문: 온프레미스 지원, AI 개인정보 보호, OAuth 대 PAT."/>
+                <a href="Support-ko.md" type="community"
+                   summary="버그 신고, 기능 요청, 질문 - 그리고 어떤 답을 언제 받게 되는지."/>
+            </cards>
+
+            <cards narrow="true">
+                <title>법적 고지</title>
+                <a href="%docs_url%privacy-policy.html" type="lock"
+                   summary="계정도, 사용 분석도, 몰래 이루어지는 업로드도 없습니다 - 플러그인이 사용자의 데이터로 무엇을 하고 무엇을 하지 않는지."/>
+                <a href="%docs_url%terms-of-service.html" type="mixed"
+                   summary="플러그인과 이 사이트에 대한 라이선스, 제한, 보증 및 책임."/>
+            </cards>
+
+            <cards narrow="true">
+                <title>외부 사이트</title>
+                <a href="%marketplace_url%" type="library"
+                   summary="플러그인을 설치하고, 버전 기록을 탐색하고, 사용자 리뷰를 읽으세요.">JetBrains Marketplace</a>
+                <a href="%tracker_url%" type="bug"
+                   summary="플러그인의 버그 신고, 기능 요청, 질문은 여기로.">이슈 트래커</a>
+                <a href="%repo_url%" type="open-source"
+                   summary="문서 소스 - 오타, 누락된 내용, 깨진 링크에 대한 이슈를 제출하세요.">GitHub 리포지토리</a>
+            </cards>
+        </misc>
+
+    </section-starting-page>
+</topic>

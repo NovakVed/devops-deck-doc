@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+<instance-profile id="azd-zh"
+                  name="DevOps Lens"
+                  start-page="Welcome-zh.topic">
+
+    <toc-element topic="Welcome-zh.topic"/>
+    <toc-element toc-title="入门">
+        <toc-element topic="Installation-zh.md"/>
+        <toc-element topic="Quick-Start-zh.md"/>
+        <toc-element topic="Authentication-zh.md"/>
+        <toc-element topic="Permissions-zh.md"/>
+    </toc-element>
+    <toc-element topic="Pull-Requests-zh.md">
+        <toc-element topic="Code-Review-zh.md"/>
+        <toc-element topic="Review-in-Editor-zh.md"/>
+        <toc-element topic="Discussions-and-Comments-zh.md"/>
+        <toc-element topic="Find-Pull-Requests-From-Code-zh.md"/>
+        <toc-element topic="Statistics-zh.md"/>
+    </toc-element>
+    <toc-element topic="Pipelines-zh.md"/>
+    <toc-element topic="AI-Features-zh.md">
+        <toc-element topic="MCP-Tools-zh.md"/>
+    </toc-element>
+    <toc-element toc-title="IDE 集成">
+        <toc-element topic="Git-Integration-zh.md"/>
+        <toc-element topic="Notifications-and-Attention-zh.md"/>
+    </toc-element>
+    <toc-element toc-title="参考">
+        <toc-element topic="Settings-zh.md"/>
+        <toc-element topic="Keyboard-Shortcuts-zh.md"/>
+        <toc-element topic="Markdown-zh.md"/>
+    </toc-element>
+    <toc-element toc-title="帮助">
+        <toc-element topic="Troubleshooting-zh.md"/>
+        <toc-element topic="FAQ-zh.md"/>
+        <toc-element topic="Support-zh.md"/>
+    </toc-element>
+    <toc-element toc-title="隐私与法律">
+        <toc-element topic="Privacy-and-Data-zh.md"/>
+    </toc-element>
+</instance-profile>

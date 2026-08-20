@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/html-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="DevOps Lens" id="Welcome">
+
+    <section-starting-page>
+        <title>%product%</title>
+        <description>
+            Work with Azure DevOps pull requests, pipelines, repositories, work items, and stories directly in your IDE.
+        </description>
+
+        <spotlight>
+            <a href="Quick-Start.md" type="start"
+               summary="Sign in, open the tool window, and review your first PR in about a minute."/>
+            <a href="Installation.md" type="install"
+               summary="Install from the JetBrains Marketplace in any IntelliJ-based IDE."/>
+        </spotlight>
+
+        <primary>
+            <title>Key Features</title>
+            <a href="Pull-Requests.md" type="branch"
+               summary="Browse, filter, and search PRs - then complete, revert, or act on them from the tool window."/>
+            <a href="Code-Review.md" type="check-list"
+               summary="Native diff viewer with inline comments, suggestions, voting, and file-viewed tracking."/>
+            <a href="Review-in-Editor.md" type="documents"
+               summary="Review threads overlaid on your normal editor when the PR's branch is checked out."/>
+            <a href="Discussions-and-Comments.md" type="community"
+               summary="Threaded comments with markdown, @mentions, suggested edits, and image attachments."/>
+            <a href="Find-Pull-Requests-From-Code.md" type="search"
+               summary="Blame a line to the pull request that introduced it - or annotate every line with its PR."/>
+            <a href="Notifications-and-Attention.md" type="mail"
+               summary="Balloons, a tool-window badge, and row chips for PRs that need your review or @mention you."/>
+            <a href="Statistics.md" type="data"
+               summary="KPIs and a dozen charts - time-to-merge, review velocity, vote distribution, and more."/>
+            <a href="Pipelines.md" type="integration"
+               summary="Watch runs, read step logs, and approve gates from the Pipelines tool window - pull-request checks open right in the IDE."/>
+        </primary>
+
+        <secondary>
+            <title>AI &amp; Configuration</title>
+            <a href="AI-Features.md" type="idea"
+               summary="PR summaries, AI review, explain-code, commit messages, and grammar polish - with your own provider."/>
+            <a href="Git-Integration.md" type="integration"
+               summary="Current-branch PR matching, branch-widget actions, and HTTPS credential handoff."/>
+            <a href="Privacy-and-Data.md" type="lock"
+               summary="What's sent to Azure DevOps and AI providers, and how to keep everything local."/>
+            <a href="Authentication.md" type="key"
+               summary="Personal Access Token or Microsoft Entra ID OAuth, with multi-account support."/>
+            <a href="Settings.md" type="settings"
+               summary="Accounts, polling and notifications, attention markers, and AI providers."/>
+        </secondary>
+
+        <misc>
+            <cards>
+                <title>Help</title>
+                <a href="Keyboard-Shortcuts.md" type="keyboard"
+                   summary="Every action with its action ID and default binding."/>
+                <a href="Troubleshooting.md" type="bug"
+                   summary="Common errors, fixes, and how to file a bug."/>
+                <a href="FAQ.md" type="support"
+                   summary="Decision-style questions: on-prem support, AI privacy, OAuth vs PAT."/>
+                <a href="Support.md" type="community"
+                   summary="Report a bug, request a feature, ask a question - and what to expect back."/>
+            </cards>
+
+            <cards narrow="true">
+                <title>Legal</title>
+                <a href="Privacy-Policy.md" type="lock"
+                   summary="No accounts, no usage analytics, no hidden uploads - what the plugin does and doesn't do with your data."/>
+                <a href="Terms-of-Service.md" type="mixed"
+                   summary="Licence, restrictions, warranties, and liability for the plugin and this site."/>
+            </cards>
+
+            <cards narrow="true">
+                <title>Off-site</title>
+                <a href="%marketplace_url%" type="library"
+                   summary="Install the plugin, browse version history, and read user reviews.">JetBrains Marketplace</a>
+                <a href="%tracker_url%" type="bug"
+                   summary="Report a bug, request a feature, or ask a question about the plugin.">Issue tracker</a>
+                <a href="%repo_url%" type="open-source"
+                   summary="Documentation source - file issues for typos, missing content, or broken links.">GitHub repository</a>
+            </cards>
+        </misc>
+
+    </section-starting-page>
+</topic>

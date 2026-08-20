@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cfb75845-49ec-496c-85be-7b837a6a18e8" name="Changes" comment="docs: enlarge DevOps Lens header logo">
+      <change afterPath="$PROJECT_DIR$/scripts/capture-screenshot.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/mouse.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/winid.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/ai/ai-settings.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/ai/ai-settings.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/ai/ai-summary-card.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/ai/ai-summary-card.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/ai/ai-summary-settings-popup-ja.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/ai/ai-summary-settings-popup-ja.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/ai/ai-summary-settings-popup.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/ai/ai-summary-settings-popup.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/ai/configure-providers.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/ai/configure-providers.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/code-review/files-viewed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/code-review/files-viewed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/code-review/inline-diff-comment.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/code-review/inline-diff-comment.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/code-review/review-code.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/code-review/review-code.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/code-review/review-since-update-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/code-review/review-since-update-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/code-review/review-since-update-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/code-review/review-since-update-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/code-review/review-since-update-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/code-review/review-since-update-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/code-review/vote-dropdown.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/code-review/vote-dropdown.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/comments/comment-editor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/comments/comment-editor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/comments/grouped-review.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/comments/grouped-review.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/comments/reply-to-thread.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/comments/reply-to-thread.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/getting-started/add-account-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/getting-started/add-account-menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/getting-started/multiple-accounts.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/getting-started/multiple-accounts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/getting-started/sign-in-with-microsoft.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/getting-started/sign-in-with-microsoft.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/getting-started/sign-in-with-token.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/getting-started/sign-in-with-token.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/notifications/attention-row-chips-ja.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/notifications/attention-row-chips-ja.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/notifications/attention-row-chips-ko.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/notifications/attention-row-chips-ko.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/notifications/attention-row-chips.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/notifications/attention-row-chips.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/notifications/notification-balloon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/notifications/notification-balloon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-approval.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-approval.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-logs.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-logs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-run-overview.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-run-overview.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-stage-graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-stage-graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-tests.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-tests.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pipelines/pipelines-tool-window.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pipelines/pipelines-tool-window.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pipelines/run-pipeline-dialog.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pipelines/run-pipeline-dialog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/browse-pull-requests-ja.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/browse-pull-requests-ja.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/browse-pull-requests.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/browse-pull-requests.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/complete-pr-dialog.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/complete-pr-dialog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/create-pr-button-ja.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/create-pr-button-ja.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/create-pr-button-ko.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/create-pr-button-ko.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/create-pr-button.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/create-pr-button.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/go-to-pull-request.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/go-to-pull-request.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-detail-view.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-detail-view.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-more-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-more-menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-opened.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-opened.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-row-anatomy.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-row-anatomy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-tool-window-ja.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-tool-window-ja.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-tool-window-shortcuts.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-tool-window-shortcuts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-tool-window.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-tool-window.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/quick-filters.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/quick-filters.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/settings/accounts-panel.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/settings/accounts-panel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/settings/version-control-ja.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/settings/version-control-ja.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/settings/version-control.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/settings/version-control.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/images/statistics/statistics.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/statistics/statistics.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotChats">
+    <option name="panelChat">
+      <chat>
+        <option name="activeSessionId" value="3b60e9e9-b5b1-4301-9012-7cb20cf7aa77" />
+        <option name="sessions">
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="3b60e9e9-b5b1-4301-9012-7cb20cf7aa77" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="claude-sonnet-4.6" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+        </option>
+        <option name="type" value="PANEL" />
+      </chat>
+    </option>
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/vedrannovak/Developer/azure-plugin-test/devops-lens-doc" value="3EIpIY4cuNcgsV7gs3FvCb4lzLX" />
+    </persistenceIdMap>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="207" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
+    {
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOSrpELc7p3Cg2&quot;,
+        &quot;number&quot;: 4
+      },
+      &quot;lastSeen&quot;: 1785761544254
+    }
+  ]
+}</component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1782678916" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="docs/accuracy-audit-and-screenshots" />
+                    <option name="lastUsedInstant" value="1782678915" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/NovakVed/devops-lens-doc.git",
+    "accountId": "8a607cee-5d2b-4d6b-83d6-53308ddb9c07"
+  }
+}]]></component>
+  <component name="InstanceColorv3">
+    <option name="map">
+      <map>
+        <entry key="$PROJECT_DIR$/Writerside/azd-ja.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="3" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="147" />
+                  <option name="darkBlue" value="147" />
+                  <option name="darkGreen" value="69" />
+                  <option name="darkRed" value="143" />
+                  <option name="green" value="69" />
+                  <option name="red" value="143" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="227" />
+                  <option name="darkBlue" value="227" />
+                  <option name="darkGreen" value="114" />
+                  <option name="darkRed" value="181" />
+                  <option name="green" value="114" />
+                  <option name="red" value="181" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Writerside/azd-ko.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="4" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="112" />
+                  <option name="darkBlue" value="112" />
+                  <option name="darkGreen" value="83" />
+                  <option name="darkRed" value="215" />
+                  <option name="green" value="83" />
+                  <option name="red" value="215" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="163" />
+                  <option name="darkBlue" value="163" />
+                  <option name="darkGreen" value="111" />
+                  <option name="darkRed" value="233" />
+                  <option name="green" value="111" />
+                  <option name="red" value="233" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Writerside/azd-zh.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="2" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="225" />
+                  <option name="darkBlue" value="225" />
+                  <option name="darkGreen" value="149" />
+                  <option name="darkRed" value="56" />
+                  <option name="green" value="149" />
+                  <option name="red" value="56" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="234" />
+                  <option name="darkBlue" value="234" />
+                  <option name="darkGreen" value="197" />
+                  <option name="darkRed" value="81" />
+                  <option name="green" value="197" />
+                  <option name="red" value="81" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Writerside/azd.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="1" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="60" />
+                  <option name="darkBlue" value="60" />
+                  <option name="darkGreen" value="68" />
+                  <option name="darkRed" value="206" />
+                  <option name="green" value="68" />
+                  <option name="red" value="206" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="65" />
+                  <option name="darkBlue" value="65" />
+                  <option name="darkGreen" value="126" />
+                  <option name="darkRed" value="231" />
+                  <option name="green" value="126" />
+                  <option name="red" value="231" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0769483184422703" />
+      <entry key="MS500" value="1.7221299458418007" />
+      <entry key="S2" value="3.6714537261821314" />
+      <entry key="S5" value="8.680096550656554" />
+      <entry key="S10" value="15.291590564580666" />
+      <entry key="S30" value="27.82381084723878" />
+      <entry key="S60" value="34.85015660149372" />
+      <entry key="M2" value="40.764030170264455" />
+      <entry key="M5" value="49.249474750327714" />
+      <entry key="M10" value="56.25339628424947" />
+      <entry key="M15" value="59.795919912736935" />
+      <entry key="M30" value="64.27607199561442" />
+      <entry key="H1" value="66.95964948104108" />
+      <entry key="H2" value="68.4319736635467" />
+      <entry key="H4" value="69.20358994110133" />
+      <entry key="D1" value="69.86550500459236" />
+      <entry key="W1" value="69.9807428201242" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="1.475818388284596E-118" />
+      <entry key="S2" value="3.485444962342727E-30" />
+      <entry key="S5" value="1.6477954211713694E-12" />
+      <entry key="S10" value="1.2836648398906042E-6" />
+      <entry key="S30" value="0.010868022994398345" />
+      <entry key="S60" value="0.10424981052451997" />
+      <entry key="M2" value="0.3228773924023171" />
+      <entry key="M5" value="0.6362313352147058" />
+      <entry key="M10" value="0.7976411067734068" />
+      <entry key="M15" value="0.8600790152813249" />
+      <entry key="M30" value="0.9274044507556152" />
+      <entry key="H1" value="0.9630184062392659" />
+      <entry key="H2" value="0.9813350122355086" />
+      <entry key="H4" value="0.9906235471840498" />
+      <entry key="D1" value="0.9984311172381942" />
+      <entry key="W1" value="0.9997757230471096" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9215892558719598" />
+      <entry key="MS500" value="1.680021658747593" />
+      <entry key="S2" value="3.6333488785849806" />
+      <entry key="S5" value="8.624499812677099" />
+      <entry key="S10" value="15.233112183860014" />
+      <entry key="S30" value="27.787151593172236" />
+      <entry key="S60" value="34.9155696993785" />
+      <entry key="M2" value="41.058112213242" />
+      <entry key="M5" value="49.86950862374797" />
+      <entry key="M10" value="57.04152944955414" />
+      <entry key="M15" value="60.64923921577102" />
+      <entry key="M30" value="65.19984477896826" />
+      <entry key="H1" value="67.92077934550305" />
+      <entry key="H2" value="69.41234478963975" />
+      <entry key="H4" value="70.19372644577538" />
+      <entry key="D1" value="70.86385422242307" />
+      <entry key="W1" value="70.98050682525238" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3EIpIY4cuNcgsV7gs3FvCb4lzLX" />
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_id" />
+            <option name="modelValue" value="claude-haiku-4.5" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKSPACE" />
+      </template>
+    </option>
+  </component>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/vedrannovak/Developer/azure-plugin-test/devops-lens-doc/Writerside/images&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;writerside.last.selected.productdevops-lens-doc&quot;: &quot;azd&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/AI-Features.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Authentication.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Code-Review.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Discussions-and-Comments.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/FAQ.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Find-Pull-Requests-From-Code.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Git-Integration.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Installation.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Keyboard-Shortcuts.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Notifications-and-Attention.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Permissions.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Pipelines.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Privacy-Policy.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Privacy-and-Data.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Pull-Requests.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Quick-Start.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Review-in-Editor.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Settings.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Statistics.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Support.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Terms-of-Service.md&quot;,
+      &quot;/Users/vedrannovak/Developer/azure-plugin-test/azure-docs/Writerside/topics/Troubleshooting.md&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Writerside/images" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cfb75845-49ec-496c-85be-7b837a6a18e8" name="Changes" comment="" />
+      <created>1779875858233</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779875858233</updated>
+      <workItem from="1779875859336" duration="884000" />
+      <workItem from="1779914795816" duration="2234000" />
+      <workItem from="1779917049272" duration="1767000" />
+      <workItem from="1779995407530" duration="35000" />
+      <workItem from="1782667795796" duration="625000" />
+      <workItem from="1782679151161" duration="848000" />
+      <workItem from="1783273336440" duration="955000" />
+      <workItem from="1783313070589" duration="875000" />
+      <workItem from="1784361201960" duration="27000" />
+      <workItem from="1784363002626" duration="8000" />
+      <workItem from="1785661421752" duration="26000" />
+      <workItem from="1785661511946" duration="21000" />
+      <workItem from="1785661608767" duration="28000" />
+      <workItem from="1785661731355" duration="18000" />
+      <workItem from="1785661813764" duration="25000" />
+      <workItem from="1785661908046" duration="23000" />
+      <workItem from="1785661996343" duration="22000" />
+      <workItem from="1785662150741" duration="24000" />
+      <workItem from="1785662242297" duration="23000" />
+      <workItem from="1785662329153" duration="26000" />
+      <workItem from="1785662422972" duration="25000" />
+      <workItem from="1785664015344" duration="20000" />
+      <workItem from="1785664099387" duration="23000" />
+      <workItem from="1785664190004" duration="26000" />
+      <workItem from="1785664282812" duration="25000" />
+      <workItem from="1785664679573" duration="25000" />
+      <workItem from="1785664769067" duration="18000" />
+      <workItem from="1785664849712" duration="22000" />
+      <workItem from="1785664937435" duration="27000" />
+      <workItem from="1785669385381" duration="28000" />
+      <workItem from="1785669476689" duration="32000" />
+      <workItem from="1785669577564" duration="24000" />
+      <workItem from="1785669665363" duration="25000" />
+      <workItem from="1785693711822" duration="21000" />
+      <workItem from="1785693957216" duration="24000" />
+      <workItem from="1785694033369" duration="17000" />
+      <workItem from="1785702108804" duration="1000" />
+      <workItem from="1785705859008" duration="1000" />
+      <workItem from="1785709890881" duration="1000" />
+      <workItem from="1785709956753" duration="21000" />
+      <workItem from="1785712454470" duration="22000" />
+      <workItem from="1785712561051" duration="40000" />
+      <workItem from="1785716532655" duration="25000" />
+      <workItem from="1785745937045" duration="26000" />
+    </task>
+    <task id="LOCAL-00001" summary="chore: cleanup and update logo">
+      <option name="closed" value="true" />
+      <created>1779917094392</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1779917094392</updated>
+    </task>
+    <task id="LOCAL-00002" summary="chore: cleanup and update logo">
+      <option name="closed" value="true" />
+      <created>1782667824271</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782667824271</updated>
+    </task>
+    <task id="LOCAL-00003" summary="chore: fix tests">
+      <option name="closed" value="true" />
+      <created>1784361225342</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1784361225342</updated>
+    </task>
+    <task id="LOCAL-00004" summary="chore: fix tests">
+      <option name="closed" value="true" />
+      <created>1784363006515</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1784363006515</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: improve doc">
+      <option name="closed" value="true" />
+      <created>1785777070242</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1785777070242</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: improve doc">
+      <option name="closed" value="true" />
+      <created>1785777123260</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1785777123260</updated>
+    </task>
+    <task id="LOCAL-00007" summary="docs: enlarge DevOps Lens header logo">
+      <option name="closed" value="true" />
+      <created>1787239807730</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1787239807730</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="chore: cleanup and update logo" />
+    <MESSAGE value="chore: cleanup" />
+    <MESSAGE value="chore: fix tests" />
+    <MESSAGE value="feat: improve doc" />
+    <MESSAGE value="doc: update" />
+    <MESSAGE value="docs: enlarge DevOps Lens header logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: enlarge DevOps Lens header logo" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

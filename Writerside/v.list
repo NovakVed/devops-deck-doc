@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vars SYSTEM "https://resources.jetbrains.com/writerside/1.0/vars.dtd">
+<vars>
+    <var name="product" value="DevOps Lens"/>
+    <var name="product_short" value="DevOps Lens"/>
+    <var name="plugin_id" value="com.vednovak.devops"/>
+    <!-- The source of THIS documentation site. Bug reports about the plugin do not
+         belong here - use tracker_url below. -->
+    <var name="repo_url" value="https://github.com/NovakVed/devops-lens-doc"/>
+    <var name="docs_url" value="https://novakved.github.io/devops-lens-doc/"/>
+    <var name="marketplace_url" value="https://plugins.jetbrains.com/plugin/com.vednovak.devops"/>
+    <!-- The public issue tracker for the plugin itself. Holds no source: issue
+         templates and Discussions only. -->
+    <var name="tracker_url" value="https://github.com/NovakVed/devops-lens-issues"/>
+    <var name="issues_url" value="https://github.com/NovakVed/devops-lens-issues/issues"/>
+    <var name="new_bug_url" value="https://github.com/NovakVed/devops-lens-issues/issues/new?template=bug_report.yml"/>
+    <var name="new_feature_url" value="https://github.com/NovakVed/devops-lens-issues/issues/new?template=feature_request.yml"/>
+    <var name="discussions_url" value="https://github.com/NovakVed/devops-lens-issues/discussions"/>
+    <var name="support_email" value="vednovak@gmail.com"/>
+    <var name="min_ide_build" value="262"/>
+    <var name="min_ide_version" value="2026.2"/>
+</vars>

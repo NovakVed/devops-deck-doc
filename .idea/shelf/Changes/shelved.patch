@@ -1,0 +1,171 @@
+Index: Writerside/images/logo.svg
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><svg id=\"f4337506-5d95-4e80-b7ca-68498c6e008e\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 18 18\"><defs><linearGradient id=\"ba420277-700e-42cc-9de9-5388a5c16e54\" x1=\"9\" y1=\"16.97\" x2=\"9\" y2=\"1.03\" gradientUnits=\"userSpaceOnUse\"><stop offset=\"0\" stop-color=\"#0078d4\"/><stop offset=\"0.16\" stop-color=\"#1380da\"/><stop offset=\"0.53\" stop-color=\"#3c91e5\"/><stop offset=\"0.82\" stop-color=\"#559cec\"/><stop offset=\"1\" stop-color=\"#5ea0ef\"/></linearGradient></defs><title>Icon-devops-261</title><path id=\"a91f0ca4-8fb7-4019-9c09-0a52e2c05754\" d=\"M17,4v9.74l-4,3.28-6.2-2.26V17L3.29,12.41l10.23.8V4.44Zm-3.41.49L7.85,1V3.29L2.58,4.84,1,6.87v4.61l2.26,1V6.57Z\" fill=\"url(#ba420277-700e-42cc-9de9-5388a5c16e54)\"/></svg>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Writerside/images/logo.svg b/Writerside/images/logo.svg
+--- a/Writerside/images/logo.svg	(revision b590071e9ca91f8659b18062b90f374ccfd2e7fd)
++++ b/Writerside/images/logo.svg	(date 1779875905042)
+@@ -1,1 +1,60 @@
+-<svg id="f4337506-5d95-4e80-b7ca-68498c6e008e" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><defs><linearGradient id="ba420277-700e-42cc-9de9-5388a5c16e54" x1="9" y1="16.97" x2="9" y2="1.03" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0078d4"/><stop offset="0.16" stop-color="#1380da"/><stop offset="0.53" stop-color="#3c91e5"/><stop offset="0.82" stop-color="#559cec"/><stop offset="1" stop-color="#5ea0ef"/></linearGradient></defs><title>Icon-devops-261</title><path id="a91f0ca4-8fb7-4019-9c09-0a52e2c05754" d="M17,4v9.74l-4,3.28-6.2-2.26V17L3.29,12.41l10.23.8V4.44Zm-3.41.49L7.85,1V3.29L2.58,4.84,1,6.87v4.61l2.26,1V6.57Z" fill="url(#ba420277-700e-42cc-9de9-5388a5c16e54)"/></svg>
++<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
++<g clip-path="url(#clip0_4736_2347)">
++<path d="M4.53333 2.86662C4.30833 3.09162 4 3.40412 4 3.74996V12.2041C4 12.55 3.87228 12.8791 3.64969 13.1166C3.4271 13.3541 3.13152 13.475 2.825 13.45L1.15833 13.3291C0.85 13.3083 0.570833 13.175 0.366667 12.9666C0.141667 12.7416 0 12.4291 0 12.0833V7.91662C0 7.57079 0.141667 7.25829 0.366667 7.03329L0.445833 6.95829L4.53333 2.86662Z" fill="url(#paint0_linear_4736_2347)"/>
++<path d="M4.53333 2.86662C4.30833 3.09162 4 3.40412 4 3.74996V12.2041C4 12.55 3.87228 12.8791 3.64969 13.1166C3.4271 13.3541 3.13152 13.475 2.825 13.45L1.15833 13.3291C0.85 13.3083 0.570833 13.175 0.366667 12.9666C0.141667 12.7416 0 12.4291 0 12.0833V7.91662C0 7.57079 0.141667 7.25829 0.366667 7.03329L0.445833 6.95829L4.53333 2.86662Z" fill="url(#paint1_linear_4736_2347)"/>
++<path d="M19.55 14.2958L14.55 18.4625C14.3333 18.6416 14.0542 18.75 13.75 18.75C13.6875 18.75 13.625 18.7458 13.5625 18.7375L9.16667 18.0791V19.1666C9.16667 19.625 8.79167 20 8.33334 20C8.05 20 7.80417 19.8583 7.65001 19.6458L6.23751 17.6375L6.02501 17.3416L4.59584 15.3125L4.32084 14.9208C4.22084 14.7833 4.16667 14.6166 4.16667 14.4416C4.16667 14.2083 4.26251 13.9875 4.43334 13.8291C4.58334 13.6833 4.78751 13.6041 5.00001 13.6041C5.01667 13.6041 5.03751 13.6083 5.05834 13.6083L9.16667 13.9L15 14.3166L18.6583 14.5791C18.6875 14.5833 18.7208 14.5833 18.75 14.5833C19.0542 14.5833 19.3333 14.475 19.55 14.2958Z" fill="url(#paint2_linear_4736_2347)"/>
++<path d="M19.55 14.2958L14.55 18.4625C14.3333 18.6416 14.0542 18.75 13.75 18.75C13.6875 18.75 13.625 18.7458 13.5625 18.7375L9.16667 18.0791V19.1666C9.16667 19.625 8.79167 20 8.33334 20C8.05 20 7.80417 19.8583 7.65001 19.6458L6.23751 17.6375L6.02501 17.3416L4.59584 15.3125L4.32084 14.9208C4.22084 14.7833 4.16667 14.6166 4.16667 14.4416C4.16667 14.2083 4.26251 13.9875 4.43334 13.8291C4.58334 13.6833 4.78751 13.6041 5.00001 13.6041C5.01667 13.6041 5.03751 13.6083 5.05834 13.6083L9.16667 13.9L15 14.3166L18.6583 14.5791C18.6875 14.5833 18.7208 14.5833 18.75 14.5833C19.0542 14.5833 19.3333 14.475 19.55 14.2958Z" fill="url(#paint3_linear_4736_2347)"/>
++<path d="M20 6.66667V13.3333C20 13.7208 19.825 14.0667 19.55 14.2958L14.55 18.4625C14.825 18.2333 15 17.8875 15 17.5V6.84584C15 6.19167 15.5083 5.64584 16.1625 5.6L18.6583 5.42084C18.6875 5.41667 18.7208 5.41667 18.75 5.41667C19.0541 5.41667 19.3333 5.525 19.55 5.70417C19.825 5.93334 20 6.27917 20 6.66667Z" fill="url(#paint4_linear_4736_2347)"/>
++<path d="M20 6.66667V13.3333C20 13.7208 19.825 14.0667 19.55 14.2958L14.55 18.4625C14.825 18.2333 15 17.8875 15 17.5V6.84584C15 6.19167 15.5083 5.64584 16.1625 5.6L18.6583 5.42084C18.6875 5.41667 18.7208 5.41667 18.75 5.41667C19.0541 5.41667 19.3333 5.525 19.55 5.70417C19.825 5.93334 20 6.27917 20 6.66667Z" fill="url(#paint5_linear_4736_2347)" fill-opacity="0.7"/>
++<path d="M20 6.66667V13.3333C20 13.7208 19.825 14.0667 19.55 14.2958L14.55 18.4625C14.825 18.2333 15 17.8875 15 17.5V6.84584C15 6.19167 15.5083 5.64584 16.1625 5.6L18.6583 5.42084C18.6875 5.41667 18.7208 5.41667 18.75 5.41667C19.0541 5.41667 19.3333 5.525 19.55 5.70417C19.825 5.93334 20 6.27917 20 6.66667Z" fill="url(#paint6_linear_4736_2347)"/>
++<path d="M14.9999 4.90417C14.9999 5.34167 14.6624 5.70417 14.2249 5.7375C14.2041 5.7375 14.1833 5.74167 14.1624 5.74167L9.16659 6.1L3.99993 6.45417L1.15825 6.67083C0.887422 6.6875 0.641588 6.79167 0.445755 6.95833L4.53326 2.86667C4.71659 2.68333 4.95825 2.55417 5.22909 2.5125L9.16659 1.92083V0.833333C9.16659 0.375 9.54159 0 9.99992 0C10.2249 0 10.4333 0.0916667 10.5833 0.2375L11.8874 1.5125L12.5458 2.15833L14.1208 3.69167L14.7499 4.30833C14.9083 4.4625 14.9999 4.675 14.9999 4.90417Z" fill="url(#paint7_linear_4736_2347)"/>
++<path d="M14.9999 4.90417C14.9999 5.34167 14.6624 5.70417 14.2249 5.7375C14.2041 5.7375 14.1833 5.74167 14.1624 5.74167L9.16659 6.1L3.99993 6.45417L1.15825 6.67083C0.887422 6.6875 0.641588 6.79167 0.445755 6.95833L4.53326 2.86667C4.71659 2.68333 4.95825 2.55417 5.22909 2.5125L9.16659 1.92083V0.833333C9.16659 0.375 9.54159 0 9.99992 0C10.2249 0 10.4333 0.0916667 10.5833 0.2375L11.8874 1.5125L12.5458 2.15833L14.1208 3.69167L14.7499 4.30833C14.9083 4.4625 14.9999 4.675 14.9999 4.90417Z" fill="url(#paint8_linear_4736_2347)" fill-opacity="0.5"/>
++</g>
++<defs>
++<linearGradient id="paint0_linear_4736_2347" x1="3.25833" y1="6.14579" x2="3.25833" y2="16.1458" gradientUnits="userSpaceOnUse">
++<stop stop-color="#163697"/>
++<stop offset="0.275497" stop-color="#2052CB"/>
++<stop offset="0.518079" stop-color="#2764E7"/>
++<stop offset="0.878842" stop-color="#367AF2"/>
++</linearGradient>
++<linearGradient id="paint1_linear_4736_2347" x1="3.02083" y1="6.35412" x2="3.02083" y2="8.64579" gradientUnits="userSpaceOnUse">
++<stop stop-color="#102784"/>
++<stop offset="1" stop-color="#2052CB" stop-opacity="0"/>
++</linearGradient>
++<linearGradient id="paint2_linear_4736_2347" x1="14.5833" y1="19.1666" x2="3.54167" y2="13.8541" gradientUnits="userSpaceOnUse">
++<stop stop-color="#163697"/>
++<stop offset="0.300646" stop-color="#2052CB"/>
++<stop offset="0.625799" stop-color="#2764E7"/>
++<stop offset="0.925797" stop-color="#367AF2"/>
++</linearGradient>
++<linearGradient id="paint3_linear_4736_2347" x1="15.3125" y1="17.0833" x2="13.3355" y2="17.018" gradientUnits="userSpaceOnUse">
++<stop stop-color="#102784"/>
++<stop offset="1" stop-color="#2052CB" stop-opacity="0"/>
++</linearGradient>
++<linearGradient id="paint4_linear_4736_2347" x1="17.3525" y1="17.9387" x2="17.3525" y2="3.69609" gradientUnits="userSpaceOnUse">
++<stop offset="0.0430341" stop-color="#2052CB"/>
++<stop offset="0.488814" stop-color="#367AF2"/>
++<stop offset="0.943108" stop-color="#16BBDA"/>
++</linearGradient>
++<linearGradient id="paint5_linear_4736_2347" x1="16.9496" y1="9.52078" x2="16.5643" y2="5.03432" gradientUnits="userSpaceOnUse">
++<stop offset="0.133569" stop-color="#16BBDA" stop-opacity="0"/>
++<stop offset="0.932229" stop-color="#6BE7A0" stop-opacity="0.862868"/>
++</linearGradient>
++<linearGradient id="paint6_linear_4736_2347" x1="15.8333" y1="13.125" x2="18.5994" y2="16.4563" gradientUnits="userSpaceOnUse">
++<stop stop-color="#2C68E0" stop-opacity="0"/>
++<stop offset="0.897597" stop-color="#66C0FF" stop-opacity="0.5"/>
++</linearGradient>
++<linearGradient id="paint7_linear_4736_2347" x1="2.99779" y1="8.14768" x2="12.8943" y2="-0.423256" gradientUnits="userSpaceOnUse">
++<stop offset="0.00474036" stop-color="#367AF2"/>
++<stop offset="0.507046" stop-color="#0FAFFF"/>
++<stop offset="1" stop-color="#26CFE8"/>
++</linearGradient>
++<linearGradient id="paint8_linear_4736_2347" x1="8.47244" y1="7.72443" x2="14.4974" y2="2.88667" gradientUnits="userSpaceOnUse">
++<stop offset="0.442538" stop-color="#26CFE8" stop-opacity="0"/>
++<stop offset="0.896707" stop-color="#6BE7A0" stop-opacity="0.862868"/>
++</linearGradient>
++<clipPath id="clip0_4736_2347">
++<rect width="20" height="20" fill="white"/>
++</clipPath>
++</defs>
++</svg>
+Index: Writerside/cfg/buildprofiles.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<buildprofiles xsi:noNamespaceSchemaLocation=\"https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd\"\n               xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <variables>\n        <primary-color>blue</primary-color>\n        <header-logo>logo.svg</header-logo>\n        <!-- Without this, Writerside generates \"logoUrl\": \"/logo.svg\" in\n             config.json (file lives at /devops-lens-doc/images/logo.svg on\n             GitHub Pages, so the bare /logo.svg 404s). JetBrains uses the\n             same override in their intellij-sdk-docs buildprofiles. -->\n        <images-prefix-override>images/</images-prefix-override>\n        <enable-browser-search>true</enable-browser-search>\n        <enable-fullscreen-mode>true</enable-fullscreen-mode>\n        <enable-page-feedback>true</enable-page-feedback>\n        <noindex-content>false</noindex-content>\n    </variables>\n    <build-profile instance=\"azd\">\n        <variables>\n            <github-edit-page-base-url>https://github.com/NovakVed/devops-lens-doc/edit/main/Writerside/topics/</github-edit-page-base-url>\n            <web-root>https://novakved.github.io/devops-lens-doc/</web-root>\n        </variables>\n    </build-profile>\n    <footer>\n        <social type=\"linkedin\" href=\"https://www.linkedin.com/in/vedran-novak/\">Vedran Novak on LinkedIn</social>\n        <social type=\"blog\" href=\"https://vednovak.com/\">vednovak.com</social>\n        <social type=\"email\" href=\"mailto:vednovak@gmail.com\">Email Vedran Novak</social>\n        <social type=\"github\" href=\"https://github.com/NovakVed\">Vedran Novak on GitHub</social>\n        <copyright>Vedran Novak</copyright>\n    </footer>\n</buildprofiles>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Writerside/cfg/buildprofiles.xml b/Writerside/cfg/buildprofiles.xml
+--- a/Writerside/cfg/buildprofiles.xml	(revision b590071e9ca91f8659b18062b90f374ccfd2e7fd)
++++ b/Writerside/cfg/buildprofiles.xml	(date 1779915235974)
+@@ -9,14 +9,10 @@
+              GitHub Pages, so the bare /logo.svg 404s). JetBrains uses the
+              same override in their intellij-sdk-docs buildprofiles. -->
+         <images-prefix-override>images/</images-prefix-override>
+-        <enable-browser-search>true</enable-browser-search>
+-        <enable-fullscreen-mode>true</enable-fullscreen-mode>
+-        <enable-page-feedback>true</enable-page-feedback>
+         <noindex-content>false</noindex-content>
+     </variables>
+     <build-profile instance="azd">
+         <variables>
+-            <github-edit-page-base-url>https://github.com/NovakVed/devops-lens-doc/edit/main/Writerside/topics/</github-edit-page-base-url>
+             <web-root>https://novakved.github.io/devops-lens-doc/</web-root>
+         </variables>
+     </build-profile>
+Index: Writerside/topics/Welcome.topic
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE topic SYSTEM \"https://resources.jetbrains.com/writerside/1.0/html-entities.dtd\">\n<topic xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n       xsi:noNamespaceSchemaLocation=\"https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd\"\n       title=\"DevOps Lens\" id=\"Welcome\">\n\n    <section-starting-page>\n        <title>%product%</title>\n        <description>\n            Review code, run AI-assisted reviews, and manage Azure DevOps pull requests without ever leaving your JetBrains IDE.\n        </description>\n\n        <spotlight>\n            <a href=\"Quick-Start.md\" type=\"start\"\n               summary=\"Sign in, open the tool window, and review your first PR in under a minute.\">Quick Start</a>\n            <a href=\"Installation.md\" type=\"install\"\n               summary=\"Install from the JetBrains Marketplace in any IntelliJ-based IDE.\">Installation</a>\n        </spotlight>\n\n        <primary>\n            <title>Key Features</title>\n            <a href=\"Pull-Requests.md\" type=\"branch\"\n               summary=\"Browse, filter, search, and create PRs from the tool window.\">Pull Requests</a>\n            <a href=\"Code-Review.md\" type=\"check-list\"\n               summary=\"Native diff viewer with inline comments, voting, and file-viewed tracking.\">Code Review</a>\n            <a href=\"Review-in-Editor.md\" type=\"documents\"\n               summary=\"Review threads overlaid on your normal editor when the PR's branch is checked out.\">Review in Editor</a>\n            <a href=\"Discussions-and-Comments.md\" type=\"community\"\n               summary=\"Threaded comments with markdown, @mentions, suggested edits, and image attachments.\">Discussions &amp; Comments</a>\n            <a href=\"Git-Integration.md\" type=\"integration\"\n               summary=\"Current-branch PR matching, status bar widget, and HTTPS credential handoff.\">Git Integration</a>\n            <a href=\"Statistics.md\" type=\"data\"\n               summary=\"Time-to-merge, vote distribution, and per-author counts in a dedicated editor tab.\">Statistics</a>\n        </primary>\n\n        <secondary>\n            <title>AI &amp; Configuration</title>\n            <a href=\"AI-Features.md\" type=\"idea\"\n               summary=\"PR summaries, AI-assisted code review, explain-code, and commit-message drafts.\">AI Features</a>\n            <a href=\"Privacy-and-Data.md\" type=\"lock\"\n               summary=\"What's sent to Azure DevOps and AI providers, and how to keep everything local.\">Privacy &amp; Data</a>\n            <a href=\"Authentication.md\" type=\"key\"\n               summary=\"Personal Access Token or Microsoft Entra ID OAuth, multi-account support.\">Authentication</a>\n            <a href=\"Settings.md\" type=\"settings\"\n               summary=\"Accounts, AI providers, notifications, and keymap.\">Settings</a>\n            <a href=\"Keyboard-Shortcuts.md\" type=\"keyboard\"\n               summary=\"Every action with its action ID and default binding.\">Keyboard Shortcuts</a>\n        </secondary>\n\n        <misc>\n            <cards>\n                <title>Help</title>\n                <a href=\"Troubleshooting.md\" type=\"bug\"\n                   summary=\"Common errors, fixes, and how to file a bug.\">Troubleshooting</a>\n                <a href=\"FAQ.md\" type=\"support\"\n                   summary=\"Decision-style questions: on-prem support, AI privacy, OAuth vs PAT.\">FAQ</a>\n            </cards>\n\n            <cards narrow=\"true\">\n                <title>Off-site</title>\n                <a href=\"%marketplace_url%\" type=\"library\"\n                   summary=\"Install the plugin, browse version history, and read user reviews.\">JetBrains Marketplace</a>\n                <a href=\"%repo_url%\" type=\"open-source\"\n                   summary=\"Documentation source — file issues for typos, missing content, or broken links.\">GitHub repository</a>\n            </cards>\n        </misc>\n\n    </section-starting-page>\n</topic>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Writerside/topics/Welcome.topic b/Writerside/topics/Welcome.topic
+--- a/Writerside/topics/Welcome.topic	(revision b590071e9ca91f8659b18062b90f374ccfd2e7fd)
++++ b/Writerside/topics/Welcome.topic	(date 1779915686129)
+@@ -12,48 +12,48 @@
+ 
+         <spotlight>
+             <a href="Quick-Start.md" type="start"
+-               summary="Sign in, open the tool window, and review your first PR in under a minute.">Quick Start</a>
++               summary="Sign in, open the tool window, and review your first PR in under a minute."/>
+             <a href="Installation.md" type="install"
+-               summary="Install from the JetBrains Marketplace in any IntelliJ-based IDE.">Installation</a>
++               summary="Install from the JetBrains Marketplace in any IntelliJ-based IDE."/>
+         </spotlight>
+ 
+         <primary>
+             <title>Key Features</title>
+             <a href="Pull-Requests.md" type="branch"
+-               summary="Browse, filter, search, and create PRs from the tool window.">Pull Requests</a>
++               summary="Browse, filter, search, and create PRs from the tool window."/>
+             <a href="Code-Review.md" type="check-list"
+-               summary="Native diff viewer with inline comments, voting, and file-viewed tracking.">Code Review</a>
++               summary="Native diff viewer with inline comments, voting, and file-viewed tracking."/>
+             <a href="Review-in-Editor.md" type="documents"
+-               summary="Review threads overlaid on your normal editor when the PR's branch is checked out.">Review in Editor</a>
++               summary="Review threads overlaid on your normal editor when the PR's branch is checked out."/>
+             <a href="Discussions-and-Comments.md" type="community"
+-               summary="Threaded comments with markdown, @mentions, suggested edits, and image attachments.">Discussions &amp; Comments</a>
++               summary="Threaded comments with markdown, @mentions, suggested edits, and image attachments."/>
+             <a href="Git-Integration.md" type="integration"
+-               summary="Current-branch PR matching, status bar widget, and HTTPS credential handoff.">Git Integration</a>
++               summary="Current-branch PR matching, status bar widget, and HTTPS credential handoff."/>
+             <a href="Statistics.md" type="data"
+-               summary="Time-to-merge, vote distribution, and per-author counts in a dedicated editor tab.">Statistics</a>
++               summary="Time-to-merge, vote distribution, and per-author counts in a dedicated editor tab."/>
+         </primary>
+ 
+         <secondary>
+             <title>AI &amp; Configuration</title>
+             <a href="AI-Features.md" type="idea"
+-               summary="PR summaries, AI-assisted code review, explain-code, and commit-message drafts.">AI Features</a>
++               summary="PR summaries, AI-assisted code review, explain-code, and commit-message drafts."/>
+             <a href="Privacy-and-Data.md" type="lock"
+-               summary="What's sent to Azure DevOps and AI providers, and how to keep everything local.">Privacy &amp; Data</a>
++               summary="What's sent to Azure DevOps and AI providers, and how to keep everything local."/>
+             <a href="Authentication.md" type="key"
+-               summary="Personal Access Token or Microsoft Entra ID OAuth, multi-account support.">Authentication</a>
++               summary="Personal Access Token or Microsoft Entra ID OAuth, multi-account support."/>
+             <a href="Settings.md" type="settings"
+-               summary="Accounts, AI providers, notifications, and keymap.">Settings</a>
++               summary="Accounts, AI providers, notifications, and keymap."/>
+             <a href="Keyboard-Shortcuts.md" type="keyboard"
+-               summary="Every action with its action ID and default binding.">Keyboard Shortcuts</a>
++               summary="Every action with its action ID and default binding."/>
+         </secondary>
+ 
+         <misc>
+             <cards>
+                 <title>Help</title>
+                 <a href="Troubleshooting.md" type="bug"
+-                   summary="Common errors, fixes, and how to file a bug.">Troubleshooting</a>
++                   summary="Common errors, fixes, and how to file a bug."/>
+                 <a href="FAQ.md" type="support"
+-                   summary="Decision-style questions: on-prem support, AI privacy, OAuth vs PAT.">FAQ</a>
++                   summary="Decision-style questions: on-prem support, AI privacy, OAuth vs PAT."/>
+             </cards>
+ 
+             <cards narrow="true">

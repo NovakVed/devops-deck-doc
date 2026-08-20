@@ -1,0 +1,4 @@
+<component name="DependencyValidationManager">
+  <scope name="Translated topics"
+         pattern="file:Writerside/topics/*-zh.md||file:Writerside/topics/*-ja.md||file:Writerside/topics/*-ko.md||file:Writerside/topics/*-zh.topic||file:Writerside/topics/*-ja.topic||file:Writerside/topics/*-ko.topic" />
+</component>
