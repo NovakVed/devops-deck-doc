@@ -20,7 +20,7 @@
 
 どちらもアカウントパネルの **`+`** ボタンからすべてのサインインに到達でき、小さなポップアップが開きます。
 
-![アカウント追加ポップアップ: Log In with Token と Log In via Microsoft](add-account-menu.png){ width="420" border-effect="line" }
+![アカウント追加ポップアップ: Log In with Token と Log In via Microsoft](add-account-menu-ja.png){ width="420" border-effect="line" }
 
 > オンプレミスの Azure DevOps Server では、Microsoft サインインを完了できません。代わりに何が表示されるか、そして Server
 > フィールドがどの URL を受け付けるかについては、[Azure DevOps Server (オンプレミス)](#on-prem) を参照してください。
@@ -76,7 +76,7 @@
 > **Code** スコープを欠くトークンは、不足しているスコープを名指しするメッセージとともにその場で拒否されます。
 > {style="note"}
 
-![Server と Token フィールドを備えた Log In to Azure DevOps ダイアログ](sign-in-with-token.png){ width="560" border-effect="line" }
+![Server と Token フィールドを備えた Log In to Azure DevOps ダイアログ](sign-in-with-token-ja.png){ width="560" border-effect="line" }
 
 ### トークンのローテーションまたは失効
 
@@ -98,7 +98,7 @@ SSO を好むクラウド組織向けに、Microsoft Entra ID 経由でサイン
     <step>ブラウザで認証します (MFA を含む)。ページはローカルループバック経由で IDE にリダイレクトされ、<b>"Sign-in complete. You can close this tab."</b> と表示されます。</step>
 </procedure>
 
-![Sign in with Microsoft の権限選択画面](sign-in-with-microsoft.png){ width="560" border-effect="line" }
+![Sign in with Microsoft の権限選択画面](sign-in-with-microsoft-ja.png){ width="560" border-effect="line" }
 
 リフレッシュトークンは自動的に更新される (有効期限の 60 秒前に余裕を持って) ため、セッションをまたいでサインイン状態が維持されます。
 
@@ -147,7 +147,7 @@ Server フィールドはどちらの形式も受け付けます。どちらも�
 複数の Azure DevOps 組織に同時にサインインできます。<ui-path>Settings | Tools | DevOps Lens</ui-path>
 の各行には、アバター、表示名、組織 URL、認証タイプが表示され、行ごとに **鉛筆** (編集) と **✕** (削除) があります。
 
-![Settings の Azure DevOps アカウントパネル](multiple-accounts.png){ width="700" border-effect="line" }
+![Settings の Azure DevOps アカウントパネル](multiple-accounts-ja.png){ width="700" border-effect="line" }
 
 各プロジェクトは独自の **default account** (プロジェクトのワークスペースに保存) を記憶します。これはそのプロジェクトの
 API 呼び出しと Git HTTPS の受け渡しに使われるアカウントです。

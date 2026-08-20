@@ -41,6 +41,11 @@
 URL for Line**，并在行号装订线的右键菜单中添加 **Annotate with Pull
 Requests**。参见[](Find-Pull-Requests-From-Code-zh.md)。
 
+> 它只覆盖这三项按**行**的操作。Git 视图中的提交项——**Open Commit in Azure DevOps**、**Copy Azure DevOps Commit
+> Link** 和 **Find Related Pull Requests**——没有任何开关：只要该提交属于某个 Azure DevOps 仓库，它们就会出现。参阅 [Git
+> 视图中的提交操作](Git-Integration-zh.md#commit-actions)。
+> {style="note"}
+
 ## Tools → DevOps Lens → Pull Requests {id="page-pull-requests"}
 
 ### Review

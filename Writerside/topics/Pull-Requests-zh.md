@@ -29,7 +29,7 @@
 
 未启用任何筛选器时，列表显示各种状态下的 **所有拉取请求**——活动、草稿、已合并和已放弃并列显示。这是你进入时所处的视图，也是 *Clear filters* 将你带回的视图。
 
-![未筛选的列表：活动、草稿、已合并和已放弃的拉取请求同处一个队列](browse-pull-requests.png){ width="720" border-effect="line" thumbnail="true" }
+![未筛选的列表：活动、草稿、已合并和已放弃的拉取请求同处一个队列](browse-pull-requests-zh.png){ width="720" border-effect="line" thumbnail="true" }
 
 要只看属于你的，请在 **State** 纸片中选择 **Mine**——由你 **创建**、 **分配给你**或 **分配给你所在某个团队**的活动拉取请求，与
 Azure DevOps 网页版 **Mine** 标签的集合相同。
@@ -41,7 +41,7 @@ Azure DevOps 网页版 **Mine** 标签的集合相同。
 
 点击纸片行左侧的 **筛选器图标**即可使用一键预设。图标上的徽标会显示当前有多少个筛选器处于活动状态。
 
-![在有三个筛选器处于活动状态时，从筛选器图标下方展开的快速筛选器菜单](quick-filters.png){ width="520" border-effect="line" }
+![在有三个筛选器处于活动状态时，从筛选器图标下方展开的快速筛选器菜单](quick-filters-zh.png){ width="520" border-effect="line" }
 
 | 预设                    | 显示内容                                                       |
 |-------------------------|----------------------------------------------------------------|
@@ -123,7 +123,7 @@ Azure DevOps 网页版 **Mine** 标签的集合相同。
 
 每一行都一目了然地呈现状态：
 
-![一行拉取请求的构成剖析](pr-row-anatomy.png){ width="640" border-effect="line" }
+![一行拉取请求的构成剖析](pr-row-anatomy-zh.png){ width="640" border-effect="line" }
 
 - **标题和 `!` 编号**，并在相关时附带 **状态标签**： *Draft*、 *Merged*、 *Abandoned* 或 *Has merge conflicts*。
 - **审阅者投票图标**——已批准、已批准并附建议、等待中或已拒绝。

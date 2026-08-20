@@ -39,7 +39,7 @@ Repository…**
 が追加されています。実行は、定義のコンテキストメニューまたはその実行ページから開始します - [パイプラインを実行する](#run-a-pipeline)
 を参照してください。
 
-![実行ナビゲーションバーと定義リストが表示された Pipelines ツールウィンドウ](pipelines-tool-window.png){ width="720" border-effect="line" thumbnail="true" }
+![実行ナビゲーションバーと定義リストが表示された Pipelines ツールウィンドウ](pipelines-tool-window-ja.png){ width="720" border-effect="line" thumbnail="true" }
 
 ### 実行をナビゲートする
 
@@ -95,7 +95,7 @@ YAML ファイルがないため、その旨のバルーンが表示され、代
 **Summary**（またはジョブ）をクリックすると、実行ラベル（例: `#20260101.1`）をタイトルとするメインエディタータブとして
 **実行概要**が開きます。同じ実行を再度開くと、既存のタブがフォーカスされます。
 
-![パイプライン実行の概要: ヘッダー、タブ、インタラクティブなステージグラフ](pipeline-run-overview.png){ width="720" border-effect="line" thumbnail="true" }
+![パイプライン実行の概要: ヘッダー、タブ、インタラクティブなステージグラフ](pipeline-run-overview-ja.png){ width="720" border-effect="line" thumbnail="true" }
 
 ヘッダーには実行ステータスアイコン、パイプライン名と実行番号、そして淡色のメタ行（
 `status • branch • requestedFor • duration`）が表示されます。右揃えのアクションは **Cancel**（実行中）、 **Re-run**
@@ -107,7 +107,7 @@ YAML ファイルがないため、その旨のバルーンが表示され、代
 **Summary** タブは **Stages** の見出しと、ズーム・パン可能なステージカードの DAG で開きます。サーバーが `dependsOn`
 を省略している場合、グラフはジョブカードまたは順次チェーンにフォールバックし、切断されたフローは別々の垂直バンドに配置されます。
 
-![ステージグラフ: 依存関係でつながれたステージと、それぞれのステータスおよびジョブ数](pipeline-stage-graph.png){ width="700" border-effect="line" }
+![ステージグラフ: 依存関係でつながれたステージと、それぞれのステータスおよびジョブ数](pipeline-stage-graph-ja.png){ width="700" border-effect="line" }
 
 - ズームツールバー（右上）には **Zoom out**、 **Zoom in**、 **Fit to view**、そして **Keyboard shortcuts**（`?`
   のチートシートを開く）があります。
@@ -141,7 +141,7 @@ URL を開きます）。オフライン中に読み込めないセクション�
 
 ### Tests タブ
 
-![Tests タブ: 結果のドーナツ、統計ブロック、フィルタリング可能な結果テーブル](pipeline-tests.png){ width="720" border-effect="line" thumbnail="true" }
+![Tests タブ: 結果のドーナツ、統計ブロック、フィルタリング可能な結果テーブル](pipeline-tests-ja.png){ width="720" border-effect="line" thumbnail="true" }
 
 **ドーナツ**（緑は **Passed**、赤は **Failed**、灰色は **Others**）が統計ブロックの横に表示されます。統計ブロックは **Total
 tests**、 **Pass percentage**、 **Run duration**、 **Tests not reported** です。その下の **Test results** カードにはフィルターバーがあります。
@@ -165,7 +165,7 @@ tests**、 **Pass percentage**、 **Run duration**、 **Tests not reported** で
 ステップのログ内では、タスクが出力する `##[group]` … `##[endgroup]` マーカーがそれ自体で
 **入れ子の折りたたみ可能なグループ**になります。グループヘッダーにはクリック可能なシェブロンが付き、グループが開いていても折りたたまれていても行番号は安定したままです。
 
-![色分けされた出力を持つジョブの折りたたみ可能なステップログ](pipeline-logs.png){ width="720" border-effect="line" thumbnail="true" }
+![色分けされた出力を持つジョブの折りたたみ可能なステップログ](pipeline-logs-ja.png){ width="720" border-effect="line" thumbnail="true" }
 
 ログの上の細いヘッダーバーには、 **← Summary** の戻りリンク（ツールチップ「Back to the run overview (L)
 」）があり、続いてジョブのステータスアイコン、名前、メタが表示されます。
@@ -205,7 +205,7 @@ Settings へ案内します。
 ステージが、あなたに割り当てられた手動承認でゲートされている場合、実行ヘッダーの下に承認バンドが表示されます -
 **保留中のゲートごとに 1 つのコールアウトカード**です。
 
-![コメントフィールドと Approve / Reject ボタンを持つ承認ゲートカード](pipeline-approval.png){ width="720" border-effect="line" thumbnail="true" }
+![コメントフィールドと Approve / Reject ボタンを持つ承認ゲートカード](pipeline-approval-ja.png){ width="720" border-effect="line" thumbnail="true" }
 
 各カードには **Approval needed — &lt;Stage&gt;**、`N of M approved · in sequence · waiting since <time>`
 のメタ行、チェックの指示、そして状態（ **Approved**、 **Rejected**、 **Reassigned**、 **Pending**
@@ -222,7 +222,7 @@ Settings へ案内します。
 Pipeline** ダイアログが開きます。 **YAML パイプライン**では、Azure Web の Run パネルを反映した **2 ページのウィザード**
 になります。 **クラシック（デザイナー）パイプライン**は 1 ページに収まり、プライマリボタンは最初から **Run** です。
 
-![Run Pipeline ダイアログ: パイプラインとブランチのピッカー、パラメーター、変数](run-pipeline-dialog.png){ width="560" border-effect="line" }
+![Run Pipeline ダイアログ: パイプラインとブランチのピッカー、パラメーター、変数](run-pipeline-dialog-ja.png){ width="560" border-effect="line" }
 
 **ページ 1 - Parameters:**
 

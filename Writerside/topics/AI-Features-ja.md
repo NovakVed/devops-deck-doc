@@ -90,7 +90,7 @@ Saveボタンはありません - コントロールを編集してポップア�
 
 <ui-path>Settings | Tools | DevOps Lens | AI Settings</ui-path> を開き、**Enable AI assistance**（マスタースイッチ）をオンにします。次に **AI Providers** テーブルでプロバイダーを追加します。
 
-![AI Settingsページ: プロバイダーと機能ごとのルーティング](configure-providers.png){ width="720" border-effect="line" thumbnail="true" }
+![AI Settingsページ: プロバイダーと機能ごとのルーティング](configure-providers-ja.png){ width="720" border-effect="line" thumbnail="true" }
 
 各行は1つのプロバイダーインスタンスで、 **Provider**、 **Model**、 **Enabled** の各列があります。最初の有効な行が既定になります。
 **Add AI Provider** ダイアログでは5つのファミリーを選べます:

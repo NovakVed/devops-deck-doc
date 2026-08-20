@@ -37,7 +37,7 @@ IDE를 벗어나지 않고 Azure Pipelines를 탐색하고 실행하고 검토�
 톱니바퀴 메뉴에 **Switch Account / Repository…**가 추가됩니다. 실행은 정의의 컨텍스트 메뉴나 해당 파이프라인의 실행 페이지에서
 시작합니다 - [파이프라인 실행](#run-a-pipeline)을 참조하세요.
 
-![실행 탐색 막대와 정의 목록이 있는 Pipelines 도구 창](pipelines-tool-window.png){ width="720" border-effect="line" thumbnail="true" }
+![실행 탐색 막대와 정의 목록이 있는 Pipelines 도구 창](pipelines-tool-window-ko.png){ width="720" border-effect="line" thumbnail="true" }
 
 ### 실행 탐색
 
@@ -85,7 +85,7 @@ Pipeline…** 링크가 오른쪽 위에 놓이며, 아래의 실행 행은 **Ru
 
 **Summary**(또는 작업)를 클릭하면 실행 레이블 (예: `#20260101.1`)을 제목으로 하는 메인 편집기 탭으로 **실행 개요**가 열립니다. 같은 실행을 다시 열면 기존 탭에 포커스됩니다.
 
-![파이프라인 실행 개요: 헤더, 탭, 대화형 스테이지 그래프](pipeline-run-overview.png){ width="720" border-effect="line" thumbnail="true" }
+![파이프라인 실행 개요: 헤더, 탭, 대화형 스테이지 그래프](pipeline-run-overview-ko.png){ width="720" border-effect="line" thumbnail="true" }
 
 헤더에는 실행 상태 아이콘, 파이프라인 이름과 실행 번호, 흐릿한 메타 줄 (`status • branch • requestedFor • duration`)이 표시됩니다. 오른쪽 정렬 작업은 **Cancel**(실행
 중일 때), **Re-run**(종료 시 동일한 소스 브랜치에서 다시 큐에 넣음), 그리고 **Open in Browser** 링크입니다. 스테이지가 사용자를 기다리고 있으면 헤더 바로 아래에 **승인 게이트**
@@ -96,7 +96,7 @@ Pipeline…** 링크가 오른쪽 위에 놓이며, 아래의 실행 행은 **Ru
 **Summary** 탭은 **Stages** 제목과 확대/이동 가능한 스테이지 카드의 DAG로 열립니다. 서버가 `dependsOn`을 생략하면 그래프는 작업 카드 또는 순차 체인으로 대체되며, 연결되지 않은
 흐름은 별도의 세로 밴드로 배치됩니다.
 
-![스테이지 그래프: 의존 관계로 연결된 스테이지와 각각의 상태 및 작업 수](pipeline-stage-graph.png){ width="700" border-effect="line" }
+![스테이지 그래프: 의존 관계로 연결된 스테이지와 각각의 상태 및 작업 수](pipeline-stage-graph-ko.png){ width="700" border-effect="line" }
 
 - 확대/축소 도구 모음 (오른쪽 위)에는 **Zoom out**, **Zoom in**, **Fit to view**, **Keyboard shortcuts**(`?` 치트 시트를 엽니다)가 있습니다.
 - 아무 곳이나 **드래그**하면 이동하고, **휠**로 커서를 중심으로 확대/축소합니다 (맞춤은 1.0×를 넘어 확대하지 않습니다).
@@ -126,7 +126,7 @@ Pipeline…** 링크가 오른쪽 위에 놓이며, 아래의 실행 행은 **Ru
 
 ### Tests 탭
 
-![Tests 탭: 결과 도넛, 통계 블록, 필터 가능한 결과 테이블](pipeline-tests.png){ width="720" border-effect="line" thumbnail="true" }
+![Tests 탭: 결과 도넛, 통계 블록, 필터 가능한 결과 테이블](pipeline-tests-ko.png){ width="720" border-effect="line" thumbnail="true" }
 
 **도넛**(초록 **Passed**, 빨강 **Failed**, 회색 **Others**)이 통계 블록 옆에 놓입니다 - **Total tests**, **Pass percentage**, **Run
 duration**, **Tests not reported**. 그 아래 **Test results** 카드에는 필터 막대가 있습니다:
@@ -148,7 +148,7 @@ duration**, **Tests not reported**. 그 아래 **Test results** 카드에는 필
 단계 로그 안에서는 태스크가 내보내는 `##[group]` … `##[endgroup]` 마커가 자체적인 **중첩된 접을 수 있는 그룹**이 됩니다 - 그룹 헤더에 클릭 가능한 꺾쇠가 붙으며, 그룹이 열려 있든 접혀
 있든 줄 번호는 안정적으로 유지됩니다.
 
-![색상으로 구분된 출력이 있는 작업의 접을 수 있는 단계 로그](pipeline-logs.png){ width="720" border-effect="line" thumbnail="true" }
+![색상으로 구분된 출력이 있는 작업의 접을 수 있는 단계 로그](pipeline-logs-ko.png){ width="720" border-effect="line" thumbnail="true" }
 
 로그 위의 얇은 헤더 막대에는 **← Summary** 뒤로 가기 링크 (툴팁 "Back to the run overview (L)")가 있고, 그다음 작업의 상태 아이콘, 이름, 메타가 있습니다.
 
@@ -181,7 +181,7 @@ duration**, **Tests not reported**. 그 아래 **Test results** 카드에는 필
 
 스테이지가 사용자에게 할당된 수동 승인으로 게이트되면 실행 헤더 아래에 승인 밴드가 나타납니다 - **보류 중인 게이트당 하나의 콜아웃 카드**입니다.
 
-![댓글 필드와 Approve / Reject 버튼이 있는 승인 게이트 카드](pipeline-approval.png){ width="720" border-effect="line" thumbnail="true" }
+![댓글 필드와 Approve / Reject 버튼이 있는 승인 게이트 카드](pipeline-approval-ko.png){ width="720" border-effect="line" thumbnail="true" }
 
 각 카드는 **Approval needed — &lt;Stage&gt;**, `N of M approved · in sequence · waiting since <time>` 메타 줄, 검사 지침, 그리고 승인자별
 상태 (**Approved**, **Rejected**, **Reassigned**, **Pending**) 행을 표시합니다. 작업 행에는 선택적 댓글 필드 (**Add an optional comment…**)와
@@ -195,7 +195,7 @@ duration**, **Tests not reported**. 그 아래 **Test results** 카드에는 필
 정의의 오른쪽 클릭 메뉴 (또는 파이프라인 실행 페이지의 오른쪽 위 링크)에서 **Run Pipeline…**를 선택하여 **Run Pipeline** 대화 상자를 엽니다. **YAML 파이프라인**의 경우
 Azure 웹의 Run 패널을 반영한 **2페이지 마법사**이고, **클래식 (디자이너) 파이프라인**은 처음부터 기본 버튼이 **Run**인 단일 페이지에 담깁니다.
 
-![Run Pipeline 대화 상자: 파이프라인 및 브랜치 선택기, 매개변수, 변수](run-pipeline-dialog.png){ width="560" border-effect="line" }
+![Run Pipeline 대화 상자: 파이프라인 및 브랜치 선택기, 매개변수, 변수](run-pipeline-dialog-ko.png){ width="560" border-effect="line" }
 
 **1페이지 - Parameters:**
 

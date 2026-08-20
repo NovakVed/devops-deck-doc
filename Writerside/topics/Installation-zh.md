@@ -53,6 +53,8 @@ for Updates**。
 - **Pull Requests** 条纹图标出现在左侧工具窗口栏中。
 - <ui-path>Settings | Tools | DevOps Lens</ui-path> 已存在。
 
+![Settings | Tools 下的 DevOps Lens 页面](version-control-zh.png){ width="720" border-effect="line" thumbnail="true" }
+
 > **看不到工具窗口？** 当项目 **没有 Azure DevOps 远程仓库**时，它会被隐藏。运行 `git remote -v` 并确认某个 URL 包含
 > `dev.azure.com` 或 `visualstudio.com`。参见[故障排除](Troubleshooting-zh.md)。
 > {style="note"}

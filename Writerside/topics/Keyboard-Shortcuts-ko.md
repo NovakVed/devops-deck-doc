@@ -124,6 +124,8 @@ to Code**(마우스 오른쪽 버튼 클릭 → **Copy / Paste Special**)는 리
 
 ## PR 목록, 타임라인, 상세 보기 내부 {id="in-the-pr-list-timeline-and-detail-view"}
 
+![키보드 단축키가 표시된 Pull Requests 도구 창](pr-tool-window-shortcuts-ko.png){ width="720" border-effect="line" thumbnail="true" }
+
 | 액션                                     | 단축키                                                                          | Action ID                                     |
 |------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------|
 | **Refresh List**                         | <shortcut>⌘R</shortcut> / <shortcut>Ctrl+R</shortcut> / <shortcut>F5</shortcut> | `AzureDevOps.PullRequest.List.Reload`         |
@@ -192,6 +194,9 @@ to Code**(마우스 오른쪽 버튼 클릭 → **Copy / Paste Special**)는 리
 | **Review Mode**                   | *기본값 없음*                                                | `AzureDevOps.Pull.Request.Review.In.Editor.Toggle` |
 | **Go to Pull Requests…**          | <shortcut>⌘⇧P</shortcut> / <shortcut>Ctrl+Shift+P</shortcut> | `AzureDevOps.PullRequest.GoTo`                     |
 | **Go to Pipeline…**               | <shortcut>⌥⇧P</shortcut> / <shortcut>Alt+Shift+P</shortcut>  | `AzureDevOps.Pipelines.GoTo`                       |
+| **Open Commit in Azure DevOps**   | *기본값 없음*                                                | `AzureDevOps.Commit.OpenInBrowser`                 |
+| **Copy Azure DevOps Commit Link** | *기본값 없음*                                                | `AzureDevOps.Commit.CopyLink`                      |
+| **Find Related Pull Requests**    | *기본값 없음*                                                | `AzureDevOps.Commit.FindPullRequests`              |
 
 > 기본적으로 두 **Go to** 액션은 플러그인 자체의 퀵픽 대화 상자를 엽니다 - **Pull Requests** 탭과 **Pipelines** 탭이 있는
 > 하나의 창으로, 누른 단축키에 해당하는 탭에서 시작합니다. [Navigation 설정 페이지](Settings-ko.md#page-navigation)에서

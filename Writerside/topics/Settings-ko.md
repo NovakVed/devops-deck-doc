@@ -16,7 +16,7 @@
 
 루트 페이지입니다. 상단에는 **accounts** 패널 (추가 **+**, 편집 ✏, 제거 ✕, 프로젝트별 기본값)이 있습니다 - [](Authentication-ko.md)을 참조하세요.
 
-![DevOps Lens 설정 페이지의 계정 패널](accounts-panel.png){ width="700" border-effect="line" }
+![DevOps Lens 설정 페이지의 계정 패널](accounts-panel-ko.png){ width="700" border-effect="line" }
 
 - **Azure CLI executable** - *Azure CLI로 로그인*이 사용하는 `az` 경로입니다. **기본값은 비어 있음**(자동 감지). 비워 두면
   `PATH` 또는 기본 설치 위치에서 찾습니다. 옆의 **Detect** 버튼은 그 검색을 즉시 실행해 결과를 필드에 써 넣으므로, 적용하기
@@ -42,6 +42,11 @@ IDE 안에서 Azure DevOps의 무언가를 *찾는* 방법을 다룹니다. 기�
 두 번째는 편집기의 **Open In** 메뉴에 **Find Pull Request**를, **Copy / Paste Special**에 **Copy Pull Request URL for
 Line**을, 줄 번호 거터의 오른쪽 클릭 메뉴에 **Annotate with Pull Requests**를
 추가합니다. [](Find-Pull-Requests-From-Code-ko.md)를 참조하세요.
+
+> 이 설정이 다루는 것은 그 세 가지 **줄** 액션뿐입니다. Git 뷰의 커밋 항목 - **Open Commit in Azure DevOps**, **Copy Azure DevOps Commit
+> Link**, **Find Related Pull Requests** - 에는 스위치가 없으며, 커밋이 Azure DevOps 리포지토리에 속하기만 하면 표시됩니다. [Git
+> 뷰의 커밋 액션](Git-Integration-ko.md#commit-actions)을 참조하세요.
+> {style="note"}
 
 ## Tools → DevOps Lens → Pull Requests {id="page-pull-requests"}
 
@@ -123,7 +128,7 @@ Pipelines는 항상 켜져 있습니다. 리포지토리가 Azure DevOps 원격 
 
 선택적 AI 도우미를 구성하는 하위 페이지입니다 - [](AI-Features-ko.md)을 참조하세요.
 
-![AI Settings 페이지](ai-settings.png){ width="720" border-effect="line" thumbnail="true" }
+![AI Settings 페이지](ai-settings-ko.png){ width="720" border-effect="line" thumbnail="true" }
 
 - **General AI Settings → Enable AI assistance** - 마스터 스위치입니다. **기본값 on**이지만, 공급자를 추가하고 활성화하기 전까지는 아무 동작도 하지 않습니다: 사용
   가능한 공급자가 없으면 플러그인은 외부로 나가는 AI 호출을 전혀 하지 않으며, AI 요소는 대신 이 페이지로 안내합니다. 스위치를 끄면 모든 AI 요소가 숨겨집니다.

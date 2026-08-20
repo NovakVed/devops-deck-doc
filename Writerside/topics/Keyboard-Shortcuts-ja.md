@@ -130,6 +130,8 @@ Push、など）。 **Windows / Linux** ではプラグインが代わりに最�
 
 ## プルリクエストの一覧、タイムライン、詳細ビュー内
 
+![キーボードショートカットを示す Pull Requests ツールウィンドウ](pr-tool-window-shortcuts-ja.png){ width="720" border-effect="line" thumbnail="true" }
+
 | アクション                               | ショートカット                                                                  | Action ID                                     |
 |------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------|
 | **Refresh List**                         | <shortcut>⌘R</shortcut> / <shortcut>Ctrl+R</shortcut> / <shortcut>F5</shortcut> | `AzureDevOps.PullRequest.List.Reload`         |
@@ -200,6 +202,9 @@ Push、など）。 **Windows / Linux** ではプラグインが代わりに最�
 | **Review Mode**                   | *既定なし*                                                   | `AzureDevOps.Pull.Request.Review.In.Editor.Toggle` |
 | **Go to Pull Requests…**          | <shortcut>⌘⇧P</shortcut> / <shortcut>Ctrl+Shift+P</shortcut> | `AzureDevOps.PullRequest.GoTo`                     |
 | **Go to Pipeline…**               | <shortcut>⌥⇧P</shortcut> / <shortcut>Alt+Shift+P</shortcut>  | `AzureDevOps.Pipelines.GoTo`                       |
+| **Open Commit in Azure DevOps**   | *既定なし*                                                   | `AzureDevOps.Commit.OpenInBrowser`                 |
+| **Copy Azure DevOps Commit Link** | *既定なし*                                                   | `AzureDevOps.Commit.CopyLink`                      |
+| **Find Related Pull Requests**    | *既定なし*                                                   | `AzureDevOps.Commit.FindPullRequests`              |
 
 > 既定では、どちらの **Go to** アクションもプラグイン独自のクイックピックダイアログを開きます。 **Pull Requests** タブと
 > **Pipelines** タブを備えた 1 つのウィンドウで、押したショートカットに対応するタブが最初に表示されます。[Navigation

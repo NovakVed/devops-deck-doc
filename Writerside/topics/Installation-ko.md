@@ -53,6 +53,8 @@ Azure DevOps Git 원격이 있는 프로젝트를 연 다음 확인합니다.
 - 왼쪽 도구 창 표시줄에 **Pull Requests** 스트라이프 아이콘이 나타납니다.
 - <ui-path>Settings | Tools | DevOps Lens</ui-path>가 존재합니다.
 
+![Settings | Tools 아래의 DevOps Lens 페이지](version-control-ko.png){ width="720" border-effect="line" thumbnail="true" }
+
 > **도구 창이 보이지 않나요?** 프로젝트에 **Azure DevOps 원격이 없으면** 숨겨집니다. `git remote -v`를 실행하여 URL에 `dev.azure.com` 또는
 > `visualstudio.com`이 포함되어 있는지 확인하세요. [](Troubleshooting-ko.md)을 참고하세요.
 > {style="note"}

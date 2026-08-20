@@ -45,11 +45,13 @@
 - **Log In via Microsoft…**（Microsoft 経由でログイン） Microsoft Entra ID を介したブラウザーベースの OAuth サインインです（クラウドの
   `dev.azure.com` のみ）。最初にダイアログで **Full access** と **Standard access** のどちらを付与するかを尋ねられます。
 
-![Full access（推奨）と Standard access を示す、Sign in with Microsoft の権限選択画面](sign-in-with-microsoft.png){ width="560" border-effect="line" }
+![Full access（推奨）と Standard access を示す、Sign in with Microsoft の権限選択画面](sign-in-with-microsoft-ja.png){ width="560" border-effect="line" }
 
 トークンを選択する場合、プラグインには次のスコープが必要です: **Code (Read &amp; write + Status), User Profile (Read),
 Identity (Read), Work Items (Read), Project and Team (Read), Security (Manage)**。ログイン ダイアログにこれらが一覧表示され、その
 **Generate…** ボタンを押すと、組織のトークン ページがブラウザーで開きます。
+
+![Server と Token のフィールドを備えた Log In to Azure DevOps ダイアログ](sign-in-with-token-ja.png){ width="560" border-effect="line" }
 
 > サインインの完全なフロー、スコープ、Full と Standard のティア選択については、[](Authentication-ja.md)を参照してください。
 > {style="note"}
@@ -88,14 +90,14 @@ Identity (Read), Work Items (Read), Project and Team (Read), Security (Manage)**
 詳細ビューは **単一のペイン**で、サブタブはありません。上から下へ: `!` 番号付きのタイトルと **View Timeline**
 リンク、ソース → ターゲットのブランチ、各レビュアーの投票を含むステータスチェック、変更されたファイルのツリー、そしてアクションバー。
 
-![プルリクエストのレビュー: ツールウィンドウ、タイムライン、レビュアーサイドバー](review-code.png){ width="720" border-effect="line" thumbnail="true" }
+![プルリクエストのレビュー: ツールウィンドウ、タイムライン、レビュアーサイドバー](review-code-ja.png){ width="720" border-effect="line" thumbnail="true" }
 
 - **差分を読む** 変更ツリー内の任意のファイルをクリックすると差分が開きます。行のガター（余白）をクリックするとコメントできます。
 - **ディスカッションを読む** **View Timeline** をクリックすると、コメントの全タイムラインが専用のタブで開きます。
 - **投票する** アクションバーの **Approve** ボタンは分割ボタンです。そのドロップダウンには **Approve with suggestions**、
   **Wait for author**、 **Request changes**、 **Reset feedback** が含まれます。
 
-![差分の Review ツールバーにある Submit ボタンの投票オプション](vote-dropdown.png){ width="700" border-effect="line" }
+![差分の Review ツールバーにある Submit ボタンの投票オプション](vote-dropdown-ja.png){ width="700" border-effect="line" }
 
 > **エディターを離れずにレビューする:** PR
 > のブランチをチェックアウトすると、プラグインが通常のエディター上にそのコメントを直接オーバーレイ表示します。[エディター内レビュー](Review-in-Editor-ja.md)

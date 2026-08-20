@@ -25,7 +25,7 @@ IDE を離れることなく、プルリクエストで本格的な会話がで�
 **Write | Preview** のタブストリップがあり、書式設定ツールバーが同じ上部ストリップに並び（右端に **Polish grammar &amp;
 spelling with AI**）、下段には **Markdown is supported** と **Add files** が送信ボタンの左側に並びます。
 
-![Write | Preview タブと上部の書式設定ツールバーストリップ、送信ボタンの隣の下段にある Add files リンクを備えたコメントコンポーザー](comment-editor.png){ width="640" border-effect="line" }
+![Write | Preview タブと上部の書式設定ツールバーストリップ、送信ボタンの隣の下段にある Add files リンクを備えたコメントコンポーザー](comment-editor-ja.png){ width="640" border-effect="line" }
 
 | グループ       | ボタン                                                                      |
 |----------------|-----------------------------------------------------------------------------|
@@ -125,7 +125,7 @@ suggestion** をクリックする (コメント対象の行があらかじめ�
   L</shortcut> Copy link、<shortcut>M</shortcut> Copy Markdown、<shortcut>Q</shortcut> Quote reply、<shortcut>E</shortcut>
   Edit、<shortcut>D</shortcut> Delete。
 
-![返信コンポーザーを開いたインラインスレッド](reply-to-thread.png){ width="720" border-effect="line" thumbnail="true" }
+![返信コンポーザーを開いたインラインスレッド](reply-to-thread-ja.png){ width="720" border-effect="line" thumbnail="true" }
 
 ### スレッドのステータス
 
@@ -201,7 +201,7 @@ ready の切り替え、そして完了または取り消しです。
 誰かが一度にいくつものコメントを残した場合、タイムラインはそれらを **1 つのレビューイベント**にまとめます。5
 件のエントリがページに散らばる代わりに、その人の投票を示すヘッダー、任意のサマリー、折りたためるファイルごとの行が表示されます。
 
-![タイムライン上のグループ化されたレビュー: 1 つのヘッダーとファイルごとの折りたたみ行](grouped-review.png){ width="720" border-effect="line" thumbnail="true" }
+![タイムライン上のグループ化されたレビュー: 1 つのヘッダーとファイルごとの折りたたみ行](grouped-review-ja.png){ width="720" border-effect="line" thumbnail="true" }
 
 プラグインから送信されたレビューは正確にグループ化されます。他の場所 (たとえば Azure DevOps の Web UI)
 で残されたまとまりは、同じ作成者のコメントが数分以内に連続して投稿された場合にグループ化され、近い時刻の投票がヘッダーに畳み込まれます。

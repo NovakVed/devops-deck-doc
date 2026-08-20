@@ -19,6 +19,8 @@
 예. 전용 **Pipelines** 도구 창에서 파이프라인과 실행을 탐색하고, 대화형 스테이지 그래프를 보고, 색상으로 구분된 단계 로그를 읽고, 수동 승인 게이트를 승인하거나 거부할 수 있습니다. 이 모든 작업을
 IDE 안에서 수행할 수 있습니다. 풀 리퀘스트 CI 검사가 Azure 빌드를 가리키는 경우, **Details…**를 클릭하면 해당 실행이 브라우저 대신 IDE에서 열립니다.
 
+![실행 탐색 막대와 정의 목록이 있는 Pipelines 도구 창](pipelines-tool-window-ko.png){ width="720" border-effect="line" thumbnail="true" }
+
 Pipelines는 항상 켜져 있습니다. 먼저 켜야 할 것도, 끄는 스위치도 없습니다. 리포지토리가 Azure DevOps 원격 저장소에 연결되는 순간 도구 창이 나타납니다. 방해받고 싶지 않다면 <ui-path>Settings | Tools | DevOps Lens | Pipelines</ui-path>에서 **Refresh pipeline runs in the background**의 체크를 해제하세요. 폴링과
 풍선 알림, 스트라이프 배지가 멈추고 창은 필요할 때를 위해 남아 있습니다. [](Pipelines-ko.md)을 참조하세요.
 

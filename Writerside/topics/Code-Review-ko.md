@@ -13,7 +13,7 @@ IntelliJ의 기본 diff (변경 내용) 뷰어로 풀 리퀘스트를 리뷰합�
 PR을 열면 닫을 수 있는 에디터 탭이 생성됩니다. 하위 탭이 없는 **단일 창**입니다. 위에서 아래로: 제목과 `!`-번호에 딸린 **View Timeline** 링크, 소스 → 대상 브랜치, 상태 체크 (CI,
 충돌, 필수 리뷰어와 그들의 투표), **변경된 파일 트리**, 그리고 액션 바 순서입니다.
 
-![변경된 파일 트리, 상태 체크, 액션 바가 있는 단일 창 상세 보기의 풀 리퀘스트](pr-detail-view.png){ width="720" border-effect="line" thumbnail="true" }
+![변경된 파일 트리, 상태 체크, 액션 바가 있는 단일 창 상세 보기의 풀 리퀘스트](pr-detail-view-ko.png){ width="720" border-effect="line" thumbnail="true" }
 
 - **변경된 파일**은 트리에 있습니다. 파일을 클릭하면 diff가 열립니다.
 - **Discussion**은 **View Timeline** 링크를 통해 자체 탭에서 열립니다. [](Discussions-and-Comments-ko.md)을 참조하세요.
@@ -29,6 +29,8 @@ PR을 열면 닫을 수 있는 에디터 탭이 생성됩니다. 하위 탭이 �
 |-----------------------|----------------------------------------------------|---------------------------------------------------------|
 | 다음 / 이전 변경 범위 | <shortcut>F7</shortcut> / <shortcut>⇧F7</shortcut> | <shortcut>F7</shortcut> / <shortcut>Shift+F7</shortcut> |
 | 다음 / 이전 댓글      | *Review: 도구 모음*                                | *Review: 도구 모음*                                     |
+
+![diff 뷰어에서 열린 변경된 파일과 그 위의 Review: 도구 모음](review-code-ko.png){ width="720" border-effect="line" thumbnail="true" }
 
 ### 이미지, PDF 및 기타 바이너리 {collapsible="true"}
 
@@ -57,7 +59,7 @@ diff의 여백 (gutter) 오른쪽 클릭 메뉴에서 - **Toggle Diff Aligning M
     <step>분할 제출 버튼으로 게시하세요. 기본 액션은 <b>Start Review</b>로, 댓글을 보류 중인 리뷰의 일부로 대기열에 넣습니다. 드롭다운에는 <b>Add Single Comment</b>(즉시 게시)와 <b>Suggest change</b>(선택 영역을 작성자가 적용할 수 있는 제안된 변경으로 감싸기)가 있습니다.</step>
 </procedure>
 
-![diff 뷰어에 나란히 놓인 새 인라인 댓글과 기존 스레드](inline-diff-comment.png){ width="720" border-effect="line" thumbnail="true" }
+![diff 뷰어에 나란히 놓인 새 인라인 댓글과 기존 스레드](inline-diff-comment-ko.png){ width="720" border-effect="line" thumbnail="true" }
 
 > **보류 중인 리뷰.** 대기열에 넣은 댓글은 투표와 함께 제출할 때까지 초안 상태로 유지됩니다 (**Submit (N)** 버튼에 개수가 표시됨). **Review:** 도구 모음이나 오버플로 메뉴의
 > **Submit Pending Comments**에서 제출하세요.
@@ -84,7 +86,7 @@ feedback**가 있습니다.
 
 투표하려고 diff를 떠날 필요는 없습니다. diff의 **Review:** 도구 모음에 있는 **Submit** 버튼에도 같은 목록이 있으므로, 마지막으로 읽던 파일에서 그대로 리뷰를 마칠 수 있습니다.
 
-![diff의 Review 도구 모음에 있는 Submit 버튼의 투표 메뉴](vote-dropdown.png){ width="700" border-effect="line" }
+![diff의 Review 도구 모음에 있는 Submit 버튼의 투표 메뉴](vote-dropdown-ko.png){ width="700" border-effect="line" }
 
 병합 전략을 포함한 PR 완료 또는 취소는 [풀 리퀘스트](Pull-Requests-ko.md#complete-a-pull-request)에서 다룹니다.
 
@@ -97,7 +99,7 @@ feedback**가 있습니다.
 - 폴더에도 체크박스가 있습니다 (마우스를 올리면 표시됩니다). 한 번 클릭하면 하위의 모든 파일이 viewed로 표시되고, 모두 체크된 폴더를 클릭하면 일괄 해제됩니다. 사각형 (중간 상태) 표시는 하위 파일 중
   일부만 확인했다는 뜻입니다.
 
-![변경 트리에서 viewed로 체크된 두 개의 파일](files-viewed.png){ width="720" border-effect="line" thumbnail="true" }
+![변경 트리에서 viewed로 체크된 두 개의 파일](files-viewed-ko.png){ width="720" border-effect="line" thumbnail="true" }
 
 > 파일을 열 때 자동으로 viewed로 표시되게 하고 싶으신가요? [](Settings-ko.md)에서 **Mark files as viewed when I open their diff**를 켜세요
 > (기본값은 꺼짐).
@@ -118,15 +120,15 @@ feedback**가 있습니다.
 
 투표 버튼 옆의 **⋮**(More) 메뉴를 엽니다. 이 액션은 PR에 업데이트가 두 개 이상 있을 때 나타납니다.
 
-![풀 리퀘스트 액션 바에서 투표 버튼 옆에 있는 More 메뉴 버튼](review-since-update-1.png){ width="380" border-effect="line" }
+![풀 리퀘스트 액션 바에서 투표 버튼 옆에 있는 More 메뉴 버튼](review-since-update-1-ko.png){ width="380" border-effect="line" }
 
 **Review Changes Since…**를 선택합니다.
 
-![Review Changes Since…가 선택된 상태로 열린 More 메뉴](review-since-update-2.png){ width="520" border-effect="line" }
+![Review Changes Since…가 선택된 상태로 열린 More 메뉴](review-since-update-2-ko.png){ width="520" border-effect="line" }
 
 비교할 업데이트를 고릅니다. 현재 범위에는 ✓ 표시가 붙고, 최근 업데이트 위에 고정된 **All changes (N)**로 전체 풀 리퀘스트로 돌아갈 수 있습니다.
 
-![검색 필드, 맨 위의 All changes, 그 아래의 최근 업데이트가 있는 업데이트 선택기](review-since-update-3.png){ width="440" border-effect="line" }
+![검색 필드, 맨 위의 All changes, 그 아래의 최근 업데이트가 있는 업데이트 선택기](review-since-update-3-ko.png){ width="440" border-effect="line" }
 
 업데이트가 범위인 동안에는 트리 위에 *"Reviewing only what changed since update N"* 배너가 표시됩니다. **Show all changes**를 클릭하면 전체 PR로 돌아갑니다.
 

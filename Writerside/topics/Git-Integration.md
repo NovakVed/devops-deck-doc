@@ -84,6 +84,51 @@ request introduced it - as a one-off lookup, or as a permanent column beside you
 
 That's a feature in its own right: see [](Find-Pull-Requests-From-Code.md).
 
+## Commit actions in Git views {id="commit-actions"}
+
+The same questions come up about a **commit** you are already looking at, so the plugin files three items wherever the
+IDE puts one in front of you: the **Git** tool window's **Log** tab, **File History** (both the tab and the **Show
+History for Selection** dialog), and the right-click menu on the **annotation gutter** - the blame column beside your
+line numbers.
+
+| Action                            | What it does                                                                              |
+|-----------------------------------|-------------------------------------------------------------------------------------------|
+| **Open Commit in Azure DevOps**   | Opens that commit's page on the Azure DevOps web site, in your browser.                    |
+| **Copy Azure DevOps Commit Link** | Puts the same URL on the clipboard, silently - like the IDE's own *Copy Revision Number*.  |
+| **Find Related Pull Requests**    | Looks up the pull requests that carry the commit and opens the answer **in the IDE**.      |
+
+> **Nothing to configure.** Unlike the line lookup above, these three have no setting of their own. They simply stay
+> hidden unless the commit's checkout resolves to an Azure DevOps repository in a signed-in account's organization, so
+> a project hosted elsewhere never grows dead menu entries. None of them ships with a default shortcut - bind your own
+> in [Keymap](Keyboard-Shortcuts.md#rebind).
+> {style="note"}
+
+Two details decide *which* commit they act on:
+
+- **In the Log, exactly one selected row.** Select several commits and the items disappear: "this commit's link" has no
+  answer for a multi-row selection, and quietly taking the first would act on a commit you never pointed at.
+- **In the annotation gutter, the line you right-clicked** - not the line the caret sits on, which is rarely the same
+  one. That matches the *Copy revision number* and *Annotate revision* items already in that menu.
+
+### Find Related Pull Requests {id="commit-find-prs"}
+
+The commit-scoped twin of [Find Pull Request](Find-Pull-Requests-From-Code.md): the same lookup, asked from a commit
+instead of a line. These views have no editor to write a hint into, so the outcome arrives as a notification.
+
+| Result                    | What you get                                                                                                                                          |
+|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **One pull request**      | It opens in the IDE straight away - detail view plus timeline.                                                                                        |
+| **Several pull requests** | A *Pull requests containing &lt;short SHA&gt;* chooser opens beside the row you right-clicked; pick one to open it.                                    |
+| **No pull request**       | A *Commit &lt;short SHA&gt;* balloon says **No pull request contains this commit** and offers **Open Commit** - that commit's own page in the browser. |
+
+> **It finds pull requests that haven't merged yet.** Azure DevOps can only answer "which pull request contains this
+> commit" backwards from a merge, so a commit still sitting on an open PR's source branch - the usual case for
+> something you right-click in the Log - comes back empty. When it does, the plugin asks a second question locally:
+> which **remote branches** contain the commit, and which pull requests were opened *from* those branches. Every status
+> is considered, because a **squash-merged** pull request leaves its original commits only on the source branch. At
+> most five branches are queried, which covers the case this exists for.
+> {style="tip"}
+
 ## HTTPS authentication
 
 When Git needs HTTPS credentials for an Azure DevOps remote, the plugin supplies the stored token automatically:

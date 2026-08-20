@@ -30,6 +30,8 @@ review** 和 **Previous / Next Comment**。
 | 下一个 / 上一个改动区域 | <shortcut>F7</shortcut> / <shortcut>⇧F7</shortcut> | <shortcut>F7</shortcut> / <shortcut>Shift+F7</shortcut> |
 | 下一个 / 上一个评论     | *Review: 工具栏*                                   | *Review: 工具栏*                                        |
 
+![在差异查看器中打开的改动文件，上方是 Review: 工具栏](review-code.png){ width="720" border-effect="line" thumbnail="true" }
+
 ### 图片、PDF 和其他二进制文件
 
 PR 触及的二进制文件会在同一个差异选项卡中打开，但渲染方式取决于文件类型：

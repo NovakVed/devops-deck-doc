@@ -7,7 +7,7 @@
 
 PR 履歴を KPI とチャートに変換する専用のエディタータブです。カスタムの Azure DevOps クエリも、IDE を離れる必要もありません。
 
-![プルリクエスト統計ダッシュボード](statistics.png){ width="720" border-effect="line" thumbnail="true" }
+![プルリクエスト統計ダッシュボード](statistics-ja.png){ width="720" border-effect="line" thumbnail="true" }
 
 > **ライブポーリングではなく、キャッシュされたデータから計算されます。** 統計情報は、ツールウィンドウがすでに取得済みのデータを使用します。パネルを開くのは瞬時で、追加の
 > API 呼び出しは発生しません。バックグラウンド同期で新しいデータが取り込まれると、数値が更新されます。

@@ -33,6 +33,8 @@ cd your-repo
 Items (Read), Project and Team (Read), Security (Manage)**。登录对话框会列出这些作用域，其 **Generate…**
 按钮会在浏览器中打开你所在组织的令牌页面。
 
+![带有 Server 和 Token 字段的 Log In to Azure DevOps 对话框](sign-in-with-token.png){ width="560" border-effect="line" }
+
 > 有关完整的登录流程、作用域以及 Full 与 Standard 层级的选择，请参阅[](Authentication-zh.md)。
 > {style="note"}
 
@@ -40,7 +42,7 @@ Items (Read), Project and Team (Read), Security (Manage)**。登录对话框会�
 
 登录后，工具窗口会列出该仓库的拉取请求。
 
-![Pull Requests 工具窗口，带有搜索字段、筛选器标签以及已填充的列表](pr-tool-window.png){ width="720" border-effect="line" thumbnail="true" }
+![Pull Requests 工具窗口，带有搜索字段、筛选器标签以及已填充的列表](pr-tool-window-zh.png){ width="720" border-effect="line" thumbnail="true" }
 
 要缩小列表范围：
 

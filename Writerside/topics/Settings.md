@@ -50,6 +50,11 @@ The second adds **Find Pull Request** to the editor's **Open In** menu, **Copy P
 Paste Special**, and **Annotate with Pull Requests** to the line-number gutter's right-click menu.
 See [](Find-Pull-Requests-From-Code.md).
 
+> It covers those three **line** actions only. The commit items in the Git views - **Open Commit in Azure DevOps**,
+> **Copy Azure DevOps Commit Link** and **Find Related Pull Requests** - have no switch: they appear whenever the commit
+> belongs to an Azure DevOps repository. See [Commit actions in Git views](Git-Integration.md#commit-actions).
+> {style="note"}
+
 ## Tools → DevOps Lens → Pull Requests {id="page-pull-requests"}
 
 ### Review

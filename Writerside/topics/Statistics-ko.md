@@ -7,7 +7,7 @@
 
 PR 기록을 KPI와 차트로 바꿔 주는 전용 편집기 탭입니다. 사용자 지정 Azure DevOps 쿼리도, IDE를 떠날 필요도 없습니다.
 
-![풀 리퀘스트 통계 대시보드](statistics.png){ width="720" border-effect="line" thumbnail="true" }
+![풀 리퀘스트 통계 대시보드](statistics-ko.png){ width="720" border-effect="line" thumbnail="true" }
 
 > **실시간 폴링이 아니라 캐시된 데이터로 계산됩니다.** 통계는 도구 창이 이미 가져온 데이터를 그대로 사용합니다. 패널을 여는 것은 즉시 이루어지며 추가 API 호출을 하지 않습니다. 백그라운드 동기화가 새
 > 데이터를 가져오면 숫자가 갱신됩니다.

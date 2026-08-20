@@ -14,7 +14,7 @@ IntelliJ ネイティブの差分ビューアーでプルリクエストをレ�
 `!` 番号（ **View Timeline** リンク付き）、source → target のブランチ、ステータスチェック（CI、コンフリクト、必須レビュアーとその投票）、
 **changed-files ツリー**、そしてアクションバーが並びます。
 
-![変更ファイルのツリー、ステータスチェック、アクションバーを備えた、単一ペインの詳細ビューで開いたプルリクエスト](pr-detail-view.png){ width="720" border-effect="line" thumbnail="true" }
+![変更ファイルのツリー、ステータスチェック、アクションバーを備えた、単一ペインの詳細ビューで開いたプルリクエスト](pr-detail-view-ja.png){ width="720" border-effect="line" thumbnail="true" }
 
 - **変更されたファイル**はツリーに表示されます。クリックすると差分が開きます。
 - **ディスカッション**は **View Timeline**
@@ -34,6 +34,8 @@ IntelliJ ネイティブの差分ビューアーでプルリクエストをレ�
 |-------------------|----------------------------------------------------|---------------------------------------------------------|
 | 次 / 前の変更範囲 | <shortcut>F7</shortcut> / <shortcut>⇧F7</shortcut> | <shortcut>F7</shortcut> / <shortcut>Shift+F7</shortcut> |
 | 次 / 前のコメント | *Review: ツールバー*                               | *Review: ツールバー*                                    |
+
+![差分ビューアーで開いた変更済みファイル。その上に Review: ツールバー](review-code-ja.png){ width="720" border-effect="line" thumbnail="true" }
 
 ### 画像、PDF、その他のバイナリ {collapsible="true"}
 
@@ -65,7 +67,7 @@ IntelliJ ネイティブの差分ビューアーでプルリクエストをレ�
     <step>分割された送信ボタンから投稿します。主アクションは <b>Start Review</b> で、コメントを保留中のレビューの一部としてキューに追加します。そのドロップダウンには <b>Add Single Comment</b>（すぐに投稿）と <b>Suggest change</b>（選択範囲を作成者が適用できる変更提案としてラップ）があります。</step>
 </procedure>
 
-![差分ビューアーに並ぶ、新規のインラインコメントと既存のスレッド](inline-diff-comment.png){ width="720" border-effect="line" thumbnail="true" }
+![差分ビューアーに並ぶ、新規のインラインコメントと既存のスレッド](inline-diff-comment-ja.png){ width="720" border-effect="line" thumbnail="true" }
 
 > **保留中のレビュー。** キューに追加したコメントは、投票と一緒に送信するまでドラフトのまま残ります（ **Submit (N)**
 > ボタンにカウントされます）。 **Review:** ツールバー、またはオーバーフローメニューの **Submit Pending Comments** から送信します。
@@ -96,7 +98,7 @@ author**、 **Request changes**、 **Reset feedback** があります。
 投票のために差分を離れる必要はありません。差分の **Review:** ツールバーにある **Submit**
 ボタンにも同じ一覧があるので、最後に読んだファイルのままレビューを終えられます。
 
-![差分の Review ツールバーにある Submit ボタンの投票メニュー](vote-dropdown.png){ width="700" border-effect="line" }
+![差分の Review ツールバーにある Submit ボタンの投票メニュー](vote-dropdown-ja.png){ width="700" border-effect="line" }
 
 マージ戦略を含む、プルリクエストの完了または破棄については、[プルリクエスト](Pull-Requests-ja.md#complete-a-pull-request)
 で説明しています。
@@ -110,7 +112,7 @@ author**、 **Request changes**、 **Reset feedback** があります。
 - フォルダーにもチェックボックスがあります（ホバーで表示）。1
   クリックで配下のすべてのファイルが確認済みになり、すべてチェック済みのフォルダーをクリックすると一括で解除できます。四角い（中間状態の）マークは、配下の一部のファイルだけが確認済みであることを示します。
 
-![変更ツリーで確認済みにチェックされた 2 つのファイル](files-viewed.png){ width="720" border-effect="line" thumbnail="true" }
+![変更ツリーで確認済みにチェックされた 2 つのファイル](files-viewed-ja.png){ width="720" border-effect="line" thumbnail="true" }
 
 > ファイルを開いたときに自動で確認済みにしたい場合は、[](Settings-ja.md)で **Mark files as viewed when I open their
 diff** をオンにしてください（デフォルトはオフです）。
@@ -133,15 +135,15 @@ diff** をオンにしてください（デフォルトはオフです）。
 
 投票ボタンの隣にある **⋮**（More）メニューを開きます。このアクションは、プルリクエストに少なくとも 2 つの更新があると表示されます。
 
-![プルリクエストのアクションバーで、投票ボタンの隣にある More メニューボタン](review-since-update-1.png){ width="380" border-effect="line" }
+![プルリクエストのアクションバーで、投票ボタンの隣にある More メニューボタン](review-since-update-1-ja.png){ width="380" border-effect="line" }
 
 **Review Changes Since…** を選びます。
 
-![Review Changes Since… が選択された状態で開いた More メニュー](review-since-update-2.png){ width="520" border-effect="line" }
+![Review Changes Since… が選択された状態で開いた More メニュー](review-since-update-2-ja.png){ width="520" border-effect="line" }
 
 比較したい更新を選びます。現在のスコープには ✓ が付き、最近の更新の上に固定された **All changes (N)** でプルリクエスト全体に戻れます。
 
-![検索フィールド、上部の All changes、その下に最近の更新が並ぶ更新ピッカー](review-since-update-3.png){ width="440" border-effect="line" }
+![検索フィールド、上部の All changes、その下に最近の更新が並ぶ更新ピッカー](review-since-update-3-ja.png){ width="440" border-effect="line" }
 
 更新がスコープになっている間は、 *「Reviewing only what changed since update N」* というバナーがツリーの上に表示されます。
 **Show all changes** をクリックすると、プルリクエスト全体に戻ります。

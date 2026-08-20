@@ -108,6 +108,14 @@ merge、squash 和 rebase。
 > 按设计，这些操作在 **差异查看器**中不可用——差异展示的是一个虚拟文件，没有可供 blame 的本地 Git 历史。请在普通编辑器中使用它们。
 > {style="note"}
 
+## 同一个问题，从提交出发 {id="from-commit"}
+
+以上都是从**一行代码**开始的。当你面对的是一个**提交**时——Git **Log** 中的一行、**File History** 中的一个条目，或者 blame 列的右键菜单——同样的查找也只有一个菜单项之遥：**Open
+Commit in Azure DevOps** 与 **Copy Azure DevOps Commit Link** 旁边的 **Find Related Pull Requests**。
+
+与本页的按行操作有三点不同：结果以通知而非编辑器提示的形式出现；没有任何设置对它进行控制；并且它还能找到**尚未合并**的拉取请求，而按行查找做不到。参阅 [Git
+视图中的提交操作](Git-Integration-zh.md#commit-actions)。
+
 ## 后续步骤 {id="whats-next"}
 
 > **接下来：**[](Code-Review-zh.md)介绍如何阅读你找到的 PR，[](Git-Integration-zh.md)则说明分支如何映射到拉取请求。

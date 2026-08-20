@@ -23,9 +23,11 @@ IDE에서 해당 폴더를 엽니다. 플러그인은 시작 시 Git 원격을 �
 - **Log In with Token…** - Azure DevOps 사용자 설정에서 개인용 액세스 토큰(Personal Access Token)을 붙여넣습니다. 가장 빠른 방법이며, 온프레미스 Azure DevOps Server의 유일한 옵션입니다.
 - **Log In via Microsoft…** - Microsoft Entra ID를 통한 브라우저 기반 OAuth 로그인(클라우드 `dev.azure.com` 전용). 먼저 대화 상자에서 **Full access** 또는 **Standard access** 부여 여부를 묻습니다.
 
-![Full access(권장)와 Standard access를 보여주는 Sign in with Microsoft 권한 선택 화면](sign-in-with-microsoft.png){ width="560" border-effect="line" }
+![Full access(권장)와 Standard access를 보여주는 Sign in with Microsoft 권한 선택 화면](sign-in-with-microsoft-ko.png){ width="560" border-effect="line" }
 
 토큰을 선택하는 경우 플러그인에는 다음 범위가 필요합니다: **Code (Read &amp; write + Status), User Profile (Read), Identity (Read), Work Items (Read), Project and Team (Read), Security (Manage)**. 로그인 대화 상자에 이 범위들이 나열되어 있으며, **Generate…** 버튼을 누르면 브라우저에서 조직의 토큰 페이지가 열립니다.
+
+![Server와 Token 필드가 있는 Log In to Azure DevOps 대화 상자](sign-in-with-token-ko.png){ width="560" border-effect="line" }
 
 > 전체 로그인 흐름, 범위, 그리고 Full 대 Standard 등급 선택에 대해서는 [Authentication](Authentication-ko.md)을 참조하세요.
 > {style="note"}
@@ -34,7 +36,7 @@ IDE에서 해당 폴더를 엽니다. 플러그인은 시작 시 Git 원격을 �
 
 로그인하면 도구 창에 리포지토리의 풀 리퀘스트 목록이 표시됩니다.
 
-![검색 필드, 필터 칩, 그리고 항목이 채워진 목록이 있는 Pull Requests 도구 창](pr-tool-window.png){ width="720" border-effect="line" thumbnail="true" }
+![검색 필드, 필터 칩, 그리고 항목이 채워진 목록이 있는 Pull Requests 도구 창](pr-tool-window-ko.png){ width="720" border-effect="line" thumbnail="true" }
 
 목록을 좁히려면:
 
@@ -57,13 +59,13 @@ IDE에서 해당 폴더를 엽니다. 플러그인은 시작 시 Git 원격을 �
 
 상세 보기는 하위 탭이 없는 **단일 창**입니다. 위에서 아래로: `!`-번호가 붙은 제목과 **View Timeline** 링크, 소스 → 대상 브랜치, 각 리뷰어의 투표가 포함된 상태 체크, 변경된 파일 트리, 그리고 작업 표시줄이 있습니다.
 
-![풀 리퀘스트 리뷰: 도구 창, 타임라인, 리뷰어 사이드바](review-code.png){ width="720" border-effect="line" thumbnail="true" }
+![풀 리퀘스트 리뷰: 도구 창, 타임라인, 리뷰어 사이드바](review-code-ko.png){ width="720" border-effect="line" thumbnail="true" }
 
 - **diff(변경 내용) 읽기** - 변경 트리에서 파일을 클릭하면 diff가 열립니다. 라인의 여백(gutter)을 클릭하면 댓글을 달 수 있습니다.
 - **논의 읽기** - **View Timeline**을 클릭하면 전체 댓글 타임라인이 별도 탭에서 열립니다.
 - **투표** - 작업 표시줄의 **Approve** 버튼은 분할 버튼입니다. 드롭다운에는 **Approve with suggestions**, **Wait for author**, **Request changes**, 그리고 **Reset feedback**가 있습니다.
 
-![diff의 Review 툴바에 있는 Submit 버튼의 투표 옵션](vote-dropdown.png){ width="700" border-effect="line" }
+![diff의 Review 툴바에 있는 Submit 버튼의 투표 옵션](vote-dropdown-ko.png){ width="700" border-effect="line" }
 
 > **에디터를 벗어나지 않고 리뷰하기:** PR의 브랜치를 체크아웃하면 플러그인이 평소 사용하는 에디터에 바로 댓글을 오버레이합니다. [Review in Editor](Review-in-Editor-ko.md)를 참조하세요.
 > {style="tip"}

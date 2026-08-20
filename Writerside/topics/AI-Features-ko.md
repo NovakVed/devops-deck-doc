@@ -82,7 +82,7 @@ Save 버튼은 없습니다 - 컨트롤을 편집하고 팝업을 닫으면 적�
 
 <ui-path>Settings | Tools | DevOps Lens | AI Settings</ui-path>를 열고 **Enable AI assistance**(마스터 스위치)를 켜세요. 그런 다음 **AI Providers** 표에서 공급자를 추가하세요.
 
-![AI Settings 페이지: 공급자 및 기능별 라우팅](configure-providers.png){ width="720" border-effect="line" thumbnail="true" }
+![AI Settings 페이지: 공급자 및 기능별 라우팅](configure-providers-ko.png){ width="720" border-effect="line" thumbnail="true" }
 
 각 행은 **Provider**, **Model**, **Enabled** 열이 있는 하나의 공급자 인스턴스입니다. 활성화된 첫 번째 행이 기본값입니다. **Add AI Provider** 대화 상자는 다섯 가지
 제품군을 제공합니다:

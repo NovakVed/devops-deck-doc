@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfb75845-49ec-496c-85be-7b837a6a18e8" name="Changes" comment="docs: enlarge DevOps Lens header logo">
-      <change afterPath="$PROJECT_DIR$/Writerside/images/pipelines/pipelines-tool-window-ko.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/go-to-pull-request-ko.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-tool-window-shortcuts-ko.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="cfb75845-49ec-496c-85be-7b837a6a18e8" name="Changes" comment="docs: DevOps Lens documentation site" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -469,7 +464,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787267264434</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="docs: DevOps Lens documentation site">
+      <option name="closed" value="true" />
+      <created>1787327162790</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1787327162790</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +499,8 @@
     <MESSAGE value="doc: update" />
     <MESSAGE value="docs: add screenshots" />
     <MESSAGE value="docs: enlarge DevOps Lens header logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: enlarge DevOps Lens header logo" />
+    <MESSAGE value="docs: DevOps Lens documentation site" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: DevOps Lens documentation site" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -117,6 +117,15 @@ pull requests for this file…」）が表示されます。単一行のアク�
 > Git 履歴がないためです。通常のエディターで使用してください。
 > {style="note"}
 
+## 同じ問いを、コミットから {id="from-commit"}
+
+ここまではすべて**行**が起点でした。代わりに**コミット**を見ているとき - Git の **Log** の行、**File History** のエントリ、または blame
+列の右クリックメニュー - でも、同じ検索はメニュー項目 1 つ分の距離にあります。**Open Commit in Azure DevOps** と **Copy Azure DevOps Commit Link** の隣にある
+**Find Related Pull Requests** です。
+
+このページの行アクションとの違いは 3 つ。結果はエディターのヒントではなく通知として届くこと、設定による制御がないこと、そして行単位の検索にはできない、**まだマージされていない**プルリクエストも見つけられることです。[Git
+ビューでのコミットアクション](Git-Integration-ja.md#commit-actions)を参照してください。
+
 ## 次のステップ {id="whats-next"}
 
 > **次はこちら:** 見つけた PR を読むには[](Code-Review-ja.md)

@@ -18,7 +18,7 @@
 ルートページです。上部には **accounts** パネル（追加 **+**、編集 ✏、削除
 ✕、プロジェクトごとの既定）があります。[](Authentication-ja.md)を参照してください。
 
-![DevOps Lens 設定ページの accounts パネル](accounts-panel.png){ width="700" border-effect="line" }
+![DevOps Lens 設定ページの accounts パネル](accounts-panel-ja.png){ width="700" border-effect="line" }
 
 - **Azure CLI executable** - *Azure CLI でサインイン* が使う `az` のパスです。**既定は空**（自動検出）。空のままなら `PATH`
   または既定のインストール場所から探します。隣の **Detect** ボタンはその検索をその場で実行し、結果をフィールドに書き込むので、
@@ -45,6 +45,11 @@ Search Everywhere を開き、Files / Symbols / Actions の隣に **Pull Request
 2 つ目は、エディターの **Open In** メニューに **Find Pull Request** を、 **Copy / Paste Special** に **Copy Pull Request
 URL for Line** を、行番号ガターの右クリックメニューに **Annotate with Pull Requests**
 を追加します。[](Find-Pull-Requests-From-Code-ja.md)を参照してください。
+
+> 対象はこの 3 つの**行**アクションだけです。Git ビューのコミット項目 - **Open Commit in Azure DevOps**、**Copy Azure DevOps Commit
+> Link**、**Find Related Pull Requests** - に設定はなく、コミットが Azure DevOps リポジトリのものであれば常に表示されます。[Git
+> ビューでのコミットアクション](Git-Integration-ja.md#commit-actions)を参照してください。
+> {style="note"}
 
 ## Tools → DevOps Lens → Pull Requests {id="page-pull-requests"}
 
@@ -129,7 +134,7 @@ Pipelines は常に有効です。リポジトリが Azure DevOps のリモー�
 
 オプションの AI ヘルパーを設定するサブページです。[](AI-Features-ja.md)を参照してください。
 
-![AI Settings ページ](ai-settings.png){ width="720" border-effect="line" thumbnail="true" }
+![AI Settings ページ](ai-settings-ja.png){ width="720" border-effect="line" thumbnail="true" }
 
 - **General AI Settings → Enable AI assistance** - マスタースイッチです。 **既定はオン**
   ですが、プロバイダーを追加して有効化するまでは何も起こりません。使用可能なプロバイダーがない場合、プラグインは外部への AI

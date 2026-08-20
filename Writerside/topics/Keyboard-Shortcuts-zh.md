@@ -123,6 +123,8 @@ Review Comment**（<shortcut>⌃⇧M</shortcut>）则在编辑器或差异中光
 
 ## 在拉取请求列表、时间线和详情视图中
 
+![展示键盘快捷键的 Pull Requests 工具窗口](pr-tool-window-shortcuts.png){ width="720" border-effect="line" thumbnail="true" }
+
 | 操作                                     | 快捷键                                                                          | Action ID                                     |
 |------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------|
 | **Refresh List**                         | <shortcut>⌘R</shortcut> / <shortcut>Ctrl+R</shortcut> / <shortcut>F5</shortcut> | `AzureDevOps.PullRequest.List.Reload`         |
@@ -191,6 +193,9 @@ Review Comment**（<shortcut>⌃⇧M</shortcut>）则在编辑器或差异中光
 | **Review Mode**                   | *无默认值*                                                   | `AzureDevOps.Pull.Request.Review.In.Editor.Toggle` |
 | **Go to Pull Requests…**          | <shortcut>⌘⇧P</shortcut> / <shortcut>Ctrl+Shift+P</shortcut> | `AzureDevOps.PullRequest.GoTo`                     |
 | **Go to Pipeline…**               | <shortcut>⌥⇧P</shortcut> / <shortcut>Alt+Shift+P</shortcut>  | `AzureDevOps.Pipelines.GoTo`                       |
+| **Open Commit in Azure DevOps**   | *无默认值*                                                   | `AzureDevOps.Commit.OpenInBrowser`                 |
+| **Copy Azure DevOps Commit Link** | *无默认值*                                                   | `AzureDevOps.Commit.CopyLink`                      |
+| **Find Related Pull Requests**    | *无默认值*                                                   | `AzureDevOps.Commit.FindPullRequests`              |
 
 > 默认情况下，两个 **Go to** 操作都会打开插件自己的快速选择对话框 —— 同一个窗口带有 **Pull Requests** 和 **Pipelines**
 > 两个选项卡，落在与快捷键对应的那个上。在 [Navigation 设置页面](Settings-zh.md#page-navigation)上开启 **Show Go to Pull

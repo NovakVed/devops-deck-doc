@@ -20,6 +20,8 @@ OAuth **仅限云端**，因此在已解析出的本地部署服务器上， **L
 支持。专用的 **Pipelines** 工具窗口让你可以浏览管道和运行、观看交互式阶段图、阅读彩色编码的步骤日志，以及审批或拒绝手动审批门——全部都在
 IDE 内完成。当拉取请求的 CI 检查指向某个 Azure 构建时，点击 **Details…** 会在 IDE 内而不是浏览器中打开该运行。
 
+![带有运行导航栏和定义列表的 Pipelines 工具窗口](pipelines-tool-window.png){ width="720" border-effect="line" thumbnail="true" }
+
 管道始终开启：无需先手动开启，也没有关闭它的开关。只要仓库映射到 Azure DevOps 远程，工具窗口就会出现。如果不想被它打扰，请在 <ui-path>Settings | Tools | DevOps Lens | Pipelines</ui-path> 下取消勾选 **Refresh pipeline runs in the background**
 ：轮询、气泡通知和条纹徽标会一起停止，而窗口仍留在那里供你随时使用。请参阅[](Pipelines-zh.md)。
 

@@ -17,7 +17,7 @@
 - 또는 <ui-path>View | Tool Windows | Pull Requests</ui-path>를 사용합니다.
 - 또는 *Find Action*(<shortcut>⌘⇧A</shortcut> / <shortcut>Ctrl+Shift+A</shortcut>)을 실행하고 **Pull Requests**를 입력합니다.
 
-![에디터 옆에 열린 Pull Requests 도구 창](pr-tool-window-shortcuts.png){ width="720" border-effect="line" thumbnail="true" }
+![에디터 옆에 열린 Pull Requests 도구 창](pr-tool-window-shortcuts-ko.png){ width="720" border-effect="line" thumbnail="true" }
 
 > 이 단축키는 IDE 표준 *Activate tool window* 작업이므로 <ui-path>Settings | Keymap</ui-path>에서 **Pull Requests**를 검색해 다시 지정할 수 있습니다.
 > 플러그인의 모든 단축키는 [](Keyboard-Shortcuts-ko.md)에 정리되어 있습니다.
@@ -29,7 +29,7 @@
 
 활성 필터가 없으면 목록에는 모든 상태의 **모든 풀 리퀘스트** - 활성, 초안, 병합됨, 중단됨 - 가 나란히 표시됩니다. 이것은 여러분이 처음 도착하는 보기이며, *Clear filters*가 여러분을 되돌려 보내는 보기입니다.
 
-![활성, 초안, 병합됨, 중단된 풀 리퀘스트가 한 대기열에 모인 필터 없는 목록](browse-pull-requests.png){ width="720" border-effect="line" thumbnail="true" }
+![활성, 초안, 병합됨, 중단된 풀 리퀘스트가 한 대기열에 모인 필터 없는 목록](browse-pull-requests-ko.png){ width="720" border-effect="line" thumbnail="true" }
 
 나의 것만 보려면 **State** 칩에서 **Mine**을 선택하세요 - 여러분이 **생성**했거나, **여러분에게 할당**되었거나, **여러분의 팀 중 하나에 할당**된 활성 PR로, Azure DevOps 웹의
 **Mine** 탭과 동일한 집합입니다.
@@ -41,7 +41,7 @@
 
 칩 행의 왼쪽에 있는 **필터 아이콘**을 클릭하면 원클릭 프리셋을 사용할 수 있습니다. 아이콘의 배지는 활성 필터가 몇 개인지 보여줍니다.
 
-![필터 세 개가 활성인 상태로 필터 아이콘 아래에 열린 Quick Filters 메뉴](quick-filters.png){ width="520" border-effect="line" }
+![필터 세 개가 활성인 상태로 필터 아이콘 아래에 열린 Quick Filters 메뉴](quick-filters-ko.png){ width="520" border-effect="line" }
 
 | 프리셋                  | 표시 내용                                                       |
 |-------------------------|-----------------------------------------------------------------|
@@ -104,7 +104,7 @@
 > 남깁니다 - 입력 전에는 **No pull requests cached yet**, 입력 후에는 **No pull requests match “X”** 입니다.
 > {style="tip"}
 
-![Go to Pull Requests 결과: Search Everywhere의 Pull Requests 탭](go-to-pull-request.png){ width="640" border-effect="line" }
+![Go to Pull Requests 결과: Search Everywhere의 Pull Requests 탭](go-to-pull-request-ko.png){ width="640" border-effect="line" }
 
 #### 전용 대화 상자가 알려주는 것 {collapsible="true"}
 
@@ -124,7 +124,7 @@
 
 각 행에는 상태가 한눈에 보이도록 담겨 있습니다:
 
-![풀 리퀘스트 행의 구조](pr-row-anatomy.png){ width="640" border-effect="line" }
+![풀 리퀘스트 행의 구조](pr-row-anatomy-ko.png){ width="640" border-effect="line" }
 
 - **제목과 `!`-번호**, 그리고 관련이 있을 때 **상태 알약 (pill)**: *Draft*, *Merged*, *Abandoned* 또는 *Has merge conflicts*.
 - **리뷰어 투표 아이콘** - approved, approved-with-suggestions, waiting 또는 rejected.
@@ -138,7 +138,7 @@
 
 PR을 **클릭**하면 상세 보기가 열립니다 - 제목과 브랜치, 상태 검사, 변경된 파일 트리, 그리고 작업 표시줄. **View Timeline**을 누르면 그 옆에 토론이 열립니다.
 
-![열린 풀 리퀘스트: 상태 검사와 작업 표시줄이 있는 상세 보기, 그 옆의 토론 타임라인](pr-opened.png){ width="720" border-effect="line" thumbnail="true" }
+![열린 풀 리퀘스트: 상태 검사와 작업 표시줄이 있는 상세 보기, 그 옆의 토론 타임라인](pr-opened-ko.png){ width="720" border-effect="line" thumbnail="true" }
 
 하단의 작업 표시줄은 여러분의 역할에 맞게 조정됩니다:
 
@@ -156,7 +156,7 @@ PR을 **클릭**하면 상세 보기가 열립니다 - 제목과 브랜치, 상�
 
 모든 상태에서는 전체 작업 세트를 갖춘 **⋮**(More) 메뉴도 표시됩니다:
 
-![내가 작성한 활성 PR에서 열린 작업 표시줄의 More 메뉴](pr-more-menu.png){ width="380" border-effect="line" }
+![내가 작성한 활성 PR에서 열린 작업 표시줄의 More 메뉴](pr-more-menu-ko.png){ width="380" border-effect="line" }
 
 | 작업                                           | 하는 일                                                                                                                                                                                            |
 |------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -185,7 +185,7 @@ PR을 **클릭**하면 상세 보기가 열립니다 - 제목과 브랜치, 상�
 **Complete**를 클릭하면 **Complete Pull Request** 대화 상자가 열립니다. **Merge type**을 선택하세요 - 실시간 다이어그램이 다시 그려지며 결과적으로 만들어지는 히스토리
 형태를 보여줍니다:
 
-![병합 전략 다이어그램이 있는 Complete Pull Request 대화 상자](complete-pr-dialog.png){ width="560" border-effect="line" }
+![병합 전략 다이어그램이 있는 Complete Pull Request 대화 상자](complete-pr-dialog-ko.png){ width="560" border-effect="line" }
 
 | Merge type                  | 결과 히스토리                                                  |
 |-----------------------------|----------------------------------------------------------------|

@@ -17,7 +17,7 @@
 담당합니다. 이 권한이 없는 토큰은 유용한 작업을 아무것도 할 수 없으므로, 로그인 대화 상자가 그 자리에서 거부하고 어떤 범위를 추가해야 하는지 알려 주는 메시지를 표시합니다. 비어 있고 망가진 도구 창에 로그인된
 상태로 끝나는 일은 절대 없습니다.
 
-![토큰이 부여해야 하는 범위를 나열한 Log In to Azure DevOps 대화 상자](sign-in-with-token.png){ width="560" border-effect="line" }
+![토큰이 부여해야 하는 범위를 나열한 Log In to Azure DevOps 대화 상자](sign-in-with-token-ko.png){ width="560" border-effect="line" }
 
 ## 나머지는 모두 선택 사항
 

@@ -110,7 +110,7 @@ in Browser**를 갖춘 확대/축소 가능한 뷰어가 열립니다. 뷰 내�
   L</shortcut> Copy link, <shortcut>M</shortcut> Copy Markdown, <shortcut>Q</shortcut> Quote reply, <shortcut>
   E</shortcut> Edit, <shortcut>D</shortcut> Delete.
 
-![답글 작성기가 열린 인라인 스레드](reply-to-thread.png){ width="720" border-effect="line" thumbnail="true" }
+![답글 작성기가 열린 인라인 스레드](reply-to-thread-ko.png){ width="720" border-effect="line" thumbnail="true" }
 
 ### 스레드 상태
 

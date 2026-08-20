@@ -210,6 +210,9 @@ with <shortcut>?</shortcut> or the **?** button on the stage-graph toolbar. Buil
 | **Review Mode**                   | *no default*                                                 | `AzureDevOps.Pull.Request.Review.In.Editor.Toggle` |
 | **Go to Pull Requests…**          | <shortcut>⌘⇧P</shortcut> / <shortcut>Ctrl+Shift+P</shortcut> | `AzureDevOps.PullRequest.GoTo`                     |
 | **Go to Pipeline…**               | <shortcut>⌥⇧P</shortcut> / <shortcut>Alt+Shift+P</shortcut>  | `AzureDevOps.Pipelines.GoTo`                       |
+| **Open Commit in Azure DevOps**   | *no default*                                                 | `AzureDevOps.Commit.OpenInBrowser`                 |
+| **Copy Azure DevOps Commit Link** | *no default*                                                 | `AzureDevOps.Commit.CopyLink`                      |
+| **Find Related Pull Requests**    | *no default*                                                 | `AzureDevOps.Commit.FindPullRequests`              |
 
 > By default both **Go to** actions open the plugin's own quick-pick dialog - one window with a **Pull Requests** tab
 > and a **Pipelines** tab, landing on the tab matching the shortcut. Turn on **Show Go to Pull Requests and Go to

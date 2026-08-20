@@ -107,6 +107,15 @@ URL for Line*은 반대 질문에 답합니다 - **어떤 PR**이 이 줄을 가
 > 이 액션들은 설계상 **diff (변경 내용) 뷰어** 안에서는 사용할 수 없습니다 - diff는 blame할 로컬 Git 히스토리가 없는 가상 파일을 보여 주기 때문입니다. 일반 편집기에서 사용하세요.
 > {style="note"}
 
+## 같은 질문을, 커밋에서 {id="from-commit"}
+
+여기까지는 모두 **줄**에서 출발했습니다. 대신 **커밋**을 보고 있을 때 - Git **Log**의 한 행, **File History**의 항목, 또는 blame 열의 오른쪽 클릭 메뉴 - 에도 같은
+조회가 메뉴 항목 하나만큼 가까이 있습니다. **Open Commit in Azure DevOps**, **Copy Azure DevOps Commit Link** 옆의 **Find Related Pull
+Requests**입니다.
+
+이 페이지의 줄 액션과 다른 점은 세 가지입니다. 결과가 편집기 힌트가 아니라 알림으로 오고, 이를 제어하는 설정이 없으며, 줄 단위 조회로는 찾을 수 없는 **아직 병합되지 않은** 풀 리퀘스트까지 찾아냅니다. [Git
+뷰의 커밋 액션](Git-Integration-ko.md#commit-actions)을 참조하세요.
+
 ## 다음 단계 {id="whats-next"}
 
 > **다음 단계:** 찾아낸 PR을 읽으려면 [](Code-Review-ko.md)를, 브랜치가 풀 리퀘스트에 어떻게 매핑되는지는 [](Git-Integration-ko.md)을 참조하세요.

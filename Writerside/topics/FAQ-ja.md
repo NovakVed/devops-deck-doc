@@ -26,6 +26,8 @@ OAuth は **クラウド専用**であるため、オンプレミスのサーバ
 IDE 内で完結します。プルリクエストの CI チェックが Azure ビルドを指している場合、 **Details…** をクリックすると、その実行がブラウザではなく
 IDE 内で開きます。
 
+![実行のナビゲーションバーと定義一覧を備えた Pipelines ツールウィンドウ](pipelines-tool-window-ja.png){ width="720" border-effect="line" thumbnail="true" }
+
 Pipelines は常に有効です。最初にオンにする必要も、オフにするスイッチもありません。リポジトリが Azure DevOps のリモートに対応した時点でツールウィンドウが表示されます。邪魔されたくない場合は、<ui-path>Settings | Tools | DevOps Lens | Pipelines</ui-path> の **Refresh pipeline
 runs in the background**
 のチェックを外してください。ポーリング・バルーン・ストライプのバッジが止まり、ウィンドウは必要なときのために残ります。[](Pipelines-ja.md)

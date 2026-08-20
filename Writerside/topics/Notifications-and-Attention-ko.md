@@ -12,7 +12,7 @@
 
 무언가 여러분의 주목을 필요로 할 때, 원클릭 동작이 포함된 풍선이 우측 하단에 나타납니다.
 
-![여러분을 필요로 하는 PR에 대한 알림 풍선](notification-balloon.png){ width="720" border-effect="line" thumbnail="true" }
+![여러분을 필요로 하는 PR에 대한 알림 풍선](notification-balloon-ko.png){ width="720" border-effect="line" thumbnail="true" }
 
 다음에 대해 알림을 받을 수 있습니다.
 

@@ -120,6 +120,16 @@ Failures appear as **hints at the caret**, never as balloons or dialogs:
 > history to blame. Use them in a normal editor.
 > {style="note"}
 
+## The same question, from a commit {id="from-commit"}
+
+Everything above starts from a **line**. When you are looking at a **commit** instead - a row in the Git **Log**, an
+entry in **File History**, or the blame column's right-click menu - the same lookup is one menu item away: **Find
+Related Pull Requests**, beside **Open Commit in Azure DevOps** and **Copy Azure DevOps Commit Link**.
+
+Three differences from the line actions on this page: the outcome arrives as a notification rather than an editor hint,
+no setting gates it, and it can also find a pull request that **hasn't merged yet** - which the line lookup cannot. See
+[Commit actions in Git views](Git-Integration.md#commit-actions).
+
 ## What's next {id="whats-next"}
 
 > **Next up:** [](Code-Review.md) for reading a PR you've found, or [](Git-Integration.md) for

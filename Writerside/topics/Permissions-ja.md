@@ -17,7 +17,7 @@
 **Code (Read &amp; write)** - スコープコード `vso.code_write` -
 はプラグインの基盤です。プルリクエストの一覧表示、差分の読み取り、コメント、投票、完了処理を担います。この権限がないトークンでは有用な操作が一切できないため、ログインダイアログはその場で拒否し、追加すべきスコープを知らせるメッセージを表示します。空で壊れたツールウィンドウにサインインした状態になることは決してありません。
 
-![トークンに付与すべきスコープを一覧表示する Log In to Azure DevOps ダイアログ](sign-in-with-token.png){ width="560" border-effect="line" }
+![トークンに付与すべきスコープを一覧表示する Log In to Azure DevOps ダイアログ](sign-in-with-token-ja.png){ width="560" border-effect="line" }
 
 ## それ以外はすべて任意
 

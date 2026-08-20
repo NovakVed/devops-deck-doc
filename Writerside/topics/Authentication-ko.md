@@ -20,7 +20,7 @@
 
 두 방식 모두 계정 패널의 **`+`** 버튼을 통해 로그인에 접근하며, 이 버튼은 작은 팝업을 엽니다:
 
-![계정 추가 팝업: Log In with Token 및 Log In via Microsoft](add-account-menu.png){ width="420" border-effect="line" }
+![계정 추가 팝업: Log In with Token 및 Log In via Microsoft](add-account-menu-ko.png){ width="420" border-effect="line" }
 
 > 온프레미스 Azure DevOps Server에서는 Microsoft 로그인을 완료할 수 없습니다 - 대신 무엇이 표시되는지, 그리고 Server 필드가 어떤 URL을
 > 받는지는 [Azure DevOps Server (온프레미스)](#on-prem)를 참조하세요.
@@ -73,7 +73,7 @@
 > 되는가"에서 그치지 않습니다: 플러그인은 풀 리퀘스트도 시험 삼아 읽어 보기 때문에, 인증은 되지만 **Code** 스코프가 없는 토큰은 누락된 스코프를 명시한 메시지와 함께 그 자리에서 거부됩니다.
 > {style="note"}
 
-![Server 및 Token 필드가 있는 Log In to Azure DevOps 대화 상자](sign-in-with-token.png){ width="560" border-effect="line" }
+![Server 및 Token 필드가 있는 Log In to Azure DevOps 대화 상자](sign-in-with-token-ko.png){ width="560" border-effect="line" }
 
 ### 토큰 교체 또는 취소
 
@@ -95,7 +95,7 @@ SSO를 선호하는 클라우드 조직의 경우 Microsoft Entra ID를 통해 �
     <step>브라우저에서 인증합니다(MFA 포함). 페이지가 로컬 루프백을 통해 IDE로 다시 리디렉션되며 <b>"Sign-in complete. You can close this tab."</b>가 표시됩니다.</step>
 </procedure>
 
-![Sign in with Microsoft 권한 선택기](sign-in-with-microsoft.png){ width="560" border-effect="line" }
+![Sign in with Microsoft 권한 선택기](sign-in-with-microsoft-ko.png){ width="560" border-effect="line" }
 
 새로 고침 토큰은 자동으로 갱신되므로 (만료 60초 전 여유 시간 포함) 세션 간에도 로그인 상태가 유지됩니다.
 
@@ -143,7 +143,7 @@ Server 필드는 두 가지 형태를 모두 받으며, 둘 다 같은 계정으
 여러 Azure DevOps 조직에 동시에 로그인할 수 있습니다. <ui-path>Settings | Tools | DevOps Lens</ui-path>의 각 행에는 아바타, 표시 이름, 조직
 URL, 인증 유형이 표시되며, 행마다 **연필**(편집) 및 **✕**(제거) 버튼이 있습니다.
 
-![Settings의 Azure DevOps 계정 패널](multiple-accounts.png){ width="700" border-effect="line" }
+![Settings의 Azure DevOps 계정 패널](multiple-accounts-ko.png){ width="700" border-effect="line" }
 
 각 프로젝트는 자체 **기본 계정**을 기억합니다 (프로젝트의 워크스페이스에 저장됨) - 해당 프로젝트의 API 호출과 Git HTTPS 핸드오프에 사용되는 계정입니다.
 

@@ -19,7 +19,7 @@ DevOps リモートがない場合は、煩雑さを避けるために非表示�
 - または <ui-path>View | Tool Windows | Pull Requests</ui-path> を使用します。
 - または *Find Action*（<shortcut>⌘⇧A</shortcut> / <shortcut>Ctrl+Shift+A</shortcut>）を実行して **Pull Requests** と入力します。
 
-![エディターの横に開いた Pull Requests ツールウィンドウ](pr-tool-window-shortcuts.png){ width="720" border-effect="line" thumbnail="true" }
+![エディターの横に開いた Pull Requests ツールウィンドウ](pr-tool-window-shortcuts-ja.png){ width="720" border-effect="line" thumbnail="true" }
 
 > このショートカットは IDE 標準の *Activate tool window* アクションなので、<ui-path>Settings | Keymap</ui-path> で
 > **Pull Requests** を検索して再割り当てできます。プラグインのショートカットの一覧は[](Keyboard-Shortcuts-ja.md)にあります。
@@ -45,7 +45,7 @@ DevOps リモートがない場合は、煩雑さを避けるために非表示�
 
 チップ行の左にある **フィルターアイコン**をクリックすると、ワンクリックのプリセットが表示されます。アイコン上のバッジは、有効なフィルターの数を示します。
 
-![3 つのフィルターが有効な状態で、フィルターアイコンの下に開いた Quick Filters メニュー](quick-filters.png){ width="520" border-effect="line" }
+![3 つのフィルターが有効な状態で、フィルターアイコンの下に開いた Quick Filters メニュー](quick-filters-ja.png){ width="520" border-effect="line" }
 
 | プリセット              | 表示内容                                                                  |
 |-------------------------|---------------------------------------------------------------------------|
@@ -118,7 +118,7 @@ PR が一覧表示されます（未読を先に、次に新しい順）。
 > requests cached yet**、入力後は **No pull requests match “X”** です。
 > {style="tip"}
 
-![Go to Pull Requests の結果: Search Everywhere 内の Pull Requests タブ](go-to-pull-request.png){ width="640" border-effect="line" }
+![Go to Pull Requests の結果: Search Everywhere 内の Pull Requests タブ](go-to-pull-request-ja.png){ width="640" border-effect="line" }
 
 #### 専用ダイアログが示すメッセージ {collapsible="true"}
 
@@ -139,7 +139,7 @@ PR が一覧表示されます（未読を先に、次に新しい順）。
 
 各行には、ひと目でわかるステータスが詰め込まれています。
 
-![プルリクエスト行の構成](pr-row-anatomy.png){ width="640" border-effect="line" }
+![プルリクエスト行の構成](pr-row-anatomy-ja.png){ width="640" border-effect="line" }
 
 - **タイトルと `!` 番号**。関連する場合は **ステータスピル**が付きます: *Draft*、 *Merged*、 *Abandoned*、または *Has merge
   conflicts*。
@@ -157,7 +157,7 @@ PR が一覧表示されます（未読を先に、次に新しい順）。
 PR を **クリック**すると詳細ビューが開きます。タイトルとブランチ、ステータスチェック、変更ファイルのツリー、そしてアクションバーです。 **View Timeline**
 でその横にディスカッションが開きます。
 
-![開いたプルリクエスト: ステータスチェックとアクションバーを備えた詳細ビューと、その横のディスカッションタイムライン](pr-opened.png){ width="720" border-effect="line" thumbnail="true" }
+![開いたプルリクエスト: ステータスチェックとアクションバーを備えた詳細ビューと、その横のディスカッションタイムライン](pr-opened-ja.png){ width="720" border-effect="line" thumbnail="true" }
 
 下部のアクションバーは、あなたの役割に応じて変化します。
 
@@ -175,7 +175,7 @@ PR を **クリック**すると詳細ビューが開きます。タイトルと
 
 どの状態でも、アクションセット全体を含む **⋮**（More）メニューが表示されます。
 
-![自分が作成したアクティブな PR で開いた、アクションバーの More メニュー](pr-more-menu.png){ width="380" border-effect="line" }
+![自分が作成したアクティブな PR で開いた、アクションバーの More メニュー](pr-more-menu-ja.png){ width="380" border-effect="line" }
 
 | アクション                                     | 動作                                                                                                                                                                                                    |
 |------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -205,7 +205,7 @@ PR に切り替わり、作成者は **Mark as draft** で元に戻せます。�
 **Complete** をクリックすると、 **Complete Pull Request** ダイアログが開きます。 **Merge type**
 を選択すると、結果として得られる履歴の形状を示すライブ図が描き直されます。
 
-![マージ戦略の図が付いた Complete Pull Request ダイアログ](complete-pr-dialog.png){ width="560" border-effect="line" }
+![マージ戦略の図が付いた Complete Pull Request ダイアログ](complete-pr-dialog-ja.png){ width="560" border-effect="line" }
 
 | マージタイプ                | 結果として得られる履歴                                             |
 |-----------------------------|--------------------------------------------------------------------|
