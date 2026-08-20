@@ -5,59 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfb75845-49ec-496c-85be-7b837a6a18e8" name="Changes" comment="docs: enlarge DevOps Lens header logo">
-      <change afterPath="$PROJECT_DIR$/scripts/capture-screenshot.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/mouse.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/winid.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/images/pipelines/pipelines-tool-window-ko.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/go-to-pull-request-ko.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-tool-window-shortcuts-ko.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/ai/ai-settings.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/ai/ai-settings.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/ai/ai-summary-card.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/ai/ai-summary-card.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/ai/ai-summary-settings-popup-ja.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/ai/ai-summary-settings-popup-ja.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/ai/ai-summary-settings-popup.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/ai/ai-summary-settings-popup.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/ai/configure-providers.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/ai/configure-providers.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/code-review/files-viewed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/code-review/files-viewed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/code-review/inline-diff-comment.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/code-review/inline-diff-comment.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/code-review/review-code.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/code-review/review-code.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/code-review/review-since-update-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/code-review/review-since-update-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/code-review/review-since-update-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/code-review/review-since-update-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/code-review/review-since-update-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/code-review/review-since-update-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/code-review/vote-dropdown.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/code-review/vote-dropdown.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/comments/comment-editor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/comments/comment-editor.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/comments/grouped-review.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/comments/grouped-review.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/comments/reply-to-thread.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/comments/reply-to-thread.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/getting-started/add-account-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/getting-started/add-account-menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/getting-started/multiple-accounts.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/getting-started/multiple-accounts.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/getting-started/sign-in-with-microsoft.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/getting-started/sign-in-with-microsoft.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/getting-started/sign-in-with-token.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/getting-started/sign-in-with-token.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/notifications/attention-row-chips-ja.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/notifications/attention-row-chips-ja.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/notifications/attention-row-chips-ko.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/notifications/attention-row-chips-ko.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/notifications/attention-row-chips.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/notifications/attention-row-chips.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/notifications/notification-balloon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/notifications/notification-balloon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-approval.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-approval.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-logs.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-logs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-run-overview.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-run-overview.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-stage-graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-stage-graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-tests.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pipelines/pipeline-tests.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pipelines/pipelines-tool-window.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pipelines/pipelines-tool-window.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pipelines/run-pipeline-dialog.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pipelines/run-pipeline-dialog.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/browse-pull-requests-ja.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/browse-pull-requests-ja.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/browse-pull-requests.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/browse-pull-requests.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/complete-pr-dialog.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/complete-pr-dialog.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/create-pr-button-ja.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/create-pr-button-ja.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/create-pr-button-ko.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/create-pr-button-ko.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/create-pr-button.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/create-pr-button.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/go-to-pull-request.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/go-to-pull-request.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-detail-view.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-detail-view.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-more-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-more-menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-opened.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-opened.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-row-anatomy.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-row-anatomy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-tool-window-ja.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-tool-window-ja.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-tool-window-shortcuts.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-tool-window-shortcuts.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-tool-window.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/pr-tool-window.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/pull-requests/quick-filters.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/pull-requests/quick-filters.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/settings/accounts-panel.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/settings/accounts-panel.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/settings/version-control-ja.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/settings/version-control-ja.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/settings/version-control.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/settings/version-control.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/statistics/statistics.png" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/images/statistics/statistics.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,11 +69,7 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1782678916" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="docs/accuracy-audit-and-screenshots" />
-                    <option name="lastUsedInstant" value="1782678915" />
+                    <option name="lastUsedInstant" value="1787268560" />
                   </RecentBranch>
                 </list>
               </option>
@@ -133,12 +80,12 @@
       </RecentBranches>
     </option>
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/NovakVed/devops-lens-doc.git",
-    "accountId": "8a607cee-5d2b-4d6b-83d6-53308ddb9c07"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NovakVed/devops-lens-doc.git&quot;,
+    &quot;accountId&quot;: &quot;8a607cee-5d2b-4d6b-83d6-53308ddb9c07&quot;
   }
-}]]></component>
+}</component>
   <component name="InstanceColorv3">
     <option name="map">
       <map>
@@ -259,61 +206,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0769483184422703" />
-      <entry key="MS500" value="1.7221299458418007" />
-      <entry key="S2" value="3.6714537261821314" />
-      <entry key="S5" value="8.680096550656554" />
-      <entry key="S10" value="15.291590564580666" />
-      <entry key="S30" value="27.82381084723878" />
-      <entry key="S60" value="34.85015660149372" />
-      <entry key="M2" value="40.764030170264455" />
-      <entry key="M5" value="49.249474750327714" />
-      <entry key="M10" value="56.25339628424947" />
-      <entry key="M15" value="59.795919912736935" />
-      <entry key="M30" value="64.27607199561442" />
-      <entry key="H1" value="66.95964948104108" />
-      <entry key="H2" value="68.4319736635467" />
-      <entry key="H4" value="69.20358994110133" />
-      <entry key="D1" value="69.86550500459236" />
-      <entry key="W1" value="69.9807428201242" />
+      <entry key="MS100" value="1.0104620933416442" />
+      <entry key="MS500" value="1.5576789430110691" />
+      <entry key="S2" value="3.1464149371465404" />
+      <entry key="S5" value="4.080349691694375" />
+      <entry key="S10" value="4.502935229837947" />
+      <entry key="S30" value="4.825170108467802" />
+      <entry key="S60" value="4.9113832276712674" />
+      <entry key="M2" value="4.955386521038696" />
+      <entry key="M5" value="4.982080783915903" />
+      <entry key="M10" value="4.991028037318467" />
+      <entry key="M15" value="4.994015981227809" />
+      <entry key="M30" value="4.998646361312872" />
+      <entry key="H1" value="5.336707474252377" />
+      <entry key="H2" value="9.862675956068337" />
+      <entry key="H4" value="23.448513202876235" />
+      <entry key="D1" value="61.04917773318416" />
+      <entry key="W1" value="72.81223398893204" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.475818388284596E-118" />
-      <entry key="S2" value="3.485444962342727E-30" />
-      <entry key="S5" value="1.6477954211713694E-12" />
-      <entry key="S10" value="1.2836648398906042E-6" />
-      <entry key="S30" value="0.010868022994398345" />
-      <entry key="S60" value="0.10424981052451997" />
-      <entry key="M2" value="0.3228773924023171" />
-      <entry key="M5" value="0.6362313352147058" />
-      <entry key="M10" value="0.7976411067734068" />
-      <entry key="M15" value="0.8600790152813249" />
-      <entry key="M30" value="0.9274044507556152" />
-      <entry key="H1" value="0.9630184062392659" />
-      <entry key="H2" value="0.9813350122355086" />
-      <entry key="H4" value="0.9906235471840498" />
-      <entry key="D1" value="0.9984311172381942" />
-      <entry key="W1" value="0.9997757230471096" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="2.7548562600414196E-278" />
+      <entry key="S60" value="1.6597759668224537E-139" />
+      <entry key="M2" value="4.074034814311792E-70" />
+      <entry key="M5" value="1.7539204602746188E-28" />
+      <entry key="M10" value="1.324356621259779E-14" />
+      <entry key="M15" value="5.59761852424531E-10" />
+      <entry key="M30" value="2.3659286811409405E-5" />
+      <entry key="H1" value="0.004864081291611954" />
+      <entry key="H2" value="0.06974296589342865" />
+      <entry key="H4" value="0.2640889355755532" />
+      <entry key="D1" value="0.8009862010377546" />
+      <entry key="W1" value="0.9687955778493862" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9215892558719598" />
-      <entry key="MS500" value="1.680021658747593" />
-      <entry key="S2" value="3.6333488785849806" />
-      <entry key="S5" value="8.624499812677099" />
-      <entry key="S10" value="15.233112183860014" />
-      <entry key="S30" value="27.787151593172236" />
-      <entry key="S60" value="34.9155696993785" />
-      <entry key="M2" value="41.058112213242" />
-      <entry key="M5" value="49.86950862374797" />
-      <entry key="M10" value="57.04152944955414" />
-      <entry key="M15" value="60.64923921577102" />
-      <entry key="M30" value="65.19984477896826" />
-      <entry key="H1" value="67.92077934550305" />
-      <entry key="H2" value="69.41234478963975" />
-      <entry key="H4" value="70.19372644577538" />
-      <entry key="D1" value="70.86385422242307" />
-      <entry key="W1" value="70.98050682525238" />
+      <entry key="MS100" value="0.9561593998115762" />
+      <entry key="MS500" value="1.5240417256251193" />
+      <entry key="S2" value="3.1015162210238416" />
+      <entry key="S5" value="4.053448452084669" />
+      <entry key="S10" value="4.487496857670288" />
+      <entry key="S30" value="4.819524315794685" />
+      <entry key="S60" value="4.908493901101699" />
+      <entry key="M2" value="4.953924938187505" />
+      <entry key="M5" value="4.98149204952771" />
+      <entry key="M10" value="4.99073298317785" />
+      <entry key="M15" value="4.993819126114795" />
+      <entry key="M30" value="4.998571423599603" />
+      <entry key="H1" value="5.341512745446964" />
+      <entry key="H2" value="9.93232577863262" />
+      <entry key="H4" value="23.712459977055797" />
+      <entry key="D1" value="61.85009617710957" />
+      <entry key="W1" value="73.78101791857178" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -514,7 +461,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787239807730</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="docs: enlarge DevOps Lens header logo">
+      <option name="closed" value="true" />
+      <created>1787267264434</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1787267264434</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,6 +494,7 @@
     <MESSAGE value="chore: fix tests" />
     <MESSAGE value="feat: improve doc" />
     <MESSAGE value="doc: update" />
+    <MESSAGE value="docs: add screenshots" />
     <MESSAGE value="docs: enlarge DevOps Lens header logo" />
     <option name="LAST_COMMIT_MESSAGE" value="docs: enlarge DevOps Lens header logo" />
   </component>
