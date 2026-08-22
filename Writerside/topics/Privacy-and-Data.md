@@ -3,7 +3,7 @@
 <tldr>
     <p><b>Where data goes</b>: your Azure DevOps org, and (only if you enable AI) the provider you configured.</p>
     <p><b>Credentials</b>: the IDE's <code>PasswordSafe</code>, backed by your system keychain.</p>
-    <p><b>Telemetry</b>: none - no usage analytics, no background pings. <a anchor="crash-reports">Crash reports</a> are minimized and redacted on your machine and sent only when you press the button.</p>
+    <p><b>Telemetry</b>: none - no usage analytics, no background pings. <a anchor="crash-reports">Crash reports</a> are sent by your IDE to JetBrains Marketplace - when you press the report button, or on their own if you enabled automatic exception reporting in your IDE.</p>
 </tldr>
 
 What leaves your machine when you use %product%, where it goes, and how to keep everything local.
@@ -116,7 +116,7 @@ The plugin collects **no usage analytics**. Nothing tracks which features you us
 what you click. There are no "phone home" pings, and no call leaves your machine in the background beyond the Azure
 DevOps and AI-provider requests listed above.
 
-The one exception is crash reporting, and it never happens without you pressing a button.
+The one exception is crash reporting, and that is the IDE's own feature rather than the plugin's - see below.
 
 ## Crash reports {id="crash-reports"}
 
@@ -127,13 +127,22 @@ read, and scrub before pasting it into an issue. Almost nobody does that, so mos
 sometimes", which usually cannot be fixed.
 
 Crash reporting shortens that to one click, so a real fix becomes possible. It is a diagnostic channel, not a tracking
-one: it fires **only** when the plugin actually throws an unexpected error, and only when you choose to send it.
+one: it fires **only** when the plugin actually throws an unexpected error.
+
+### Who sends it
+
+**Your IDE does, not the plugin.** Crash reporting for DevOps Lens is the JetBrains IDE's own feature: the IDE builds
+the report and sends it to JetBrains Marketplace, which routes it to the plugin developer. The plugin registers for that
+service and contributes no code to it - it cannot add to the report, filter it, or hold it back.
 
 ### When it fires
 
-The IDE shows its standard error dialog (a red icon in the status bar) when the plugin throws an unhandled exception.
-That dialog carries a **Report to DevOps Lens** button. Nothing is transmitted until you press it - closing the
-dialog sends nothing, and there is no background retry or queue.
+When the plugin throws an unhandled exception, your IDE may show its standard error dialog (a red icon in the status
+bar) - stable builds are quieter about plugin errors than EAP ones. That dialog carries a **Report to the Third-Party Plugin** button, and a notice from JetBrains stating what pressing it
+means. Closing the dialog sends nothing.
+
+One exception: if you have turned on your IDE's **automatic exception reporting** (a JetBrains data-sharing setting that
+is off unless you enabled it), the IDE may send the report on its own, without showing you a dialog first.
 
 Expected failures never reach this path. Being offline, an expired token, a 403, or a missing file are all handled and
 logged locally; they are not bugs, so they never produce a crash report.
@@ -142,74 +151,68 @@ logged locally; they are not bugs, so they never produce a crash report.
 
 | Included               | Detail                                                                                                                                                                                      |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Redacted stack trace   | Class names, method names, file names, line numbers - the code path that failed                                                                                                             |
+| Stack trace            | Class names, method names, file names, line numbers - the code path that failed. Sent as-is                                                                                                  |
+| Error message          | The text the failing code produced, as-is                                                                                                                                                   |
+| Your description       | Only the text you type into the dialog's comment box, if you type any                                                                                                                       |
 | Plugin version         | e.g. `1.4.2`                                                                                                                                                                                |
 | IDE name and build     | e.g. `IntelliJ IDEA 2026.2 (Ultimate Edition), build IU-262.9437.185`                                                                                                                       |
-| Operating system       | Name, version, architecture                                                                                                                                                                 |
+| Operating system       | Name, version, architecture, CPU count                                                                                                                                                     |
 | Java runtime           | The IDE's boot JVM build and vendor, e.g. `21.0.5+8-b631.28 (JetBrains s.r.o.)` - several rendering and icon defects are JetBrains Runtime bugs that the IDE version alone doesn't identify |
-| Azure DevOps flavor    | The word `cloud`, `on-prem`, `cloud + on-prem`, or `no accounts` - never a server address                                                                                                   |
-| Your description       | Only the text you type into the dialog's comment box, if you type any                                                                                                                       |
+| Last IDE action        | The identifier of the last action you invoked before the error                                                                                                                              |
+| Installed plugins      | The identifiers of your non-bundled plugins                                                                                                                                                 |
+| Installation ID        | A stable identifier your IDE generates for error reporting - it does not carry your name or email                                                                                           |
 
-### What the report is designed not to include
+### What it is not filtered for
 
-- **Credentials.** Personal Access Tokens, OAuth tokens, and AI API keys are stripped before sending.
-- **Your code.** No file contents, no diffs, no comment text, no pull request titles or descriptions.
-- **Names that identify you or your work.** Organization, project, repository, server host, and user names are replaced
-  with placeholders on your machine.
-- **Your Azure DevOps URL.** Cloud and on-prem addresses alike are reduced to placeholders; only the coarse `cloud` /
-  `on-prem` flag survives, because that distinction is what most bugs hinge on.
-- **An assigned user identity.** The Plugin does not add an account ID, user profile, persistent report identifier, or
-  email address to the payload. Sentry or its infrastructure may still process connection metadata such as an IP address.
+The report is the IDE's, so the plugin cannot redact it. What that means in practice:
 
-These are data-minimization controls, not a promise that a crash report can never contain personal data. An unexpected
-future exception message or text you type could bypass a pattern-based scrubber. Do not add code, credentials, names,
-or other confidential data to the description. The formal legal treatment is in the
-[Privacy Policy](Privacy-Policy.md#crash-reports).
+- **Your code is not in it.** No file contents, no diffs, no comment text, no pull request titles or descriptions - the
+  plugin does not put those in an exception in the first place.
+- **Credentials are not put into error messages** by the plugin, and Personal Access Tokens, OAuth tokens, and AI API
+  keys live in the IDE's password store rather than anywhere a stack trace can reach.
+- **Names that identify your work can appear.** An error message may name an organization, project, repository, or
+  server host, and a file path may appear in an I/O failure. Nothing strips those on the way out.
+- **Whatever you type in the comment box is sent verbatim.** Do not paste code, credentials, ticket contents, or
+  confidential names into it.
 
-### Redaction happens on your machine {id="anonymization" collapsible="true"}
+If you would rather send something you have read yourself, use the diagnostics snapshot described below instead of the
+dialog. The formal legal treatment is in the [Privacy Policy](Privacy-Policy.md#crash-reports).
 
-Redaction runs locally, *before* anything is transmitted - not on a server afterward. A stack trace that starts out
-like this:
+### The snapshot you can read first {id="anonymization" collapsible="true"}
 
-```text
-AzureApiError$Unauthorized: 401 for https://dev.azure.com/contoso-payments/Checkout/_apis/git
-  Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY
-  at com.vednovak.devops.api.PullRequestsApi.list(PullRequestsApi.kt:88)
-  reading /Users/jane.doe/dev/checkout/build.gradle.kts
-```
+<ui-path>Help | Copy DevOps Lens Diagnostics</ui-path> is the one report the plugin still builds itself, and it is made
+of values that cannot identify you or your work:
 
-is transmitted like this:
+- plugin, IDE, operating-system and Java versions,
+- how many accounts are configured and whether they are `cloud`, `on-prem` or both - never a server address,
+- whether the plugin currently considers itself online,
+- cache counters: entry counts and hit rates, never what is in the caches.
 
-```text
-AzureApiError$Unauthorized: 401 for https://dev.azure.com/[path]
-  Authorization: Bearer [REDACTED]
-  at com.vednovak.devops.api.PullRequestsApi.list(PullRequestsApi.kt:88)
-  reading ~/[path]
-```
-
-The code path survives intact - that is what makes the bug fixable - while the token, the organization and project
-names, and your home directory do not.
-
-> Over-redaction is deliberate: the plugin would rather blank out one word too many than leak one. If a report looks
-> aggressively scrubbed, that is the trade-off working as intended.
-> {style="note"}
+It goes to your clipboard and nowhere else, so you read it before anyone else does and you choose where to paste it.
+There is no scrubber behind it, and none is needed: a value that would name your organization, project, repository,
+server or user account is never collected in the first place.
 
 ### Where it goes
 
-Reports go to a private [Sentry](https://sentry.io) project owned by the plugin developer, configured for Sentry's
-**Germany data region**. They are **not** posted to the public issue tracker and are not publicly visible. Sentry is a
-US-headquartered processor and may use group companies and subprocessors internationally under the safeguards described
-in the [Privacy Policy](Privacy-Policy.md#crash-reports).
+Reports go to **JetBrains Marketplace**, which routes them to this plugin's Exception Analyzer page, visible to the
+plugin developer. They are **not** posted to the public issue tracker and are not publicly visible.
 
-This is the one part of the plugin where data reaches infrastructure the developer controls. Everything else - pull
-requests, code, credentials, AI - flows directly between your IDE and your own Azure DevOps organization or your own AI
-provider. The formal statement is in the [Privacy Policy](Privacy-Policy.md#crash-reports).
+JetBrains s.r.o. runs that service and receives the report first; what it may be used for is set out in the
+[JetBrains Exception Analyzer agreement](https://www.jetbrains.com/legal/agreements/exception_analyzer.html), which the
+IDE links from the notice under the dialog. The developer reads the reports through the Marketplace interface.
+
+No server operated by the plugin developer is involved - here or anywhere else. Pull requests, code, credentials and AI
+all flow directly between your IDE and your own Azure DevOps organization or your own AI provider. The formal statement
+is in the [Privacy Policy](Privacy-Policy.md#crash-reports).
 
 ### If you would rather not send anything
 
-Simply do not press the button - close the error dialog and nothing leaves your machine. If you would like the bug fixed
-anyway, use <b>Copy DevOps Lens Diagnostics</b> from the <ui-path>Help</ui-path> menu, read the text yourself,
-and paste it into a [public issue](%new_bug_url%). See [Reporting a problem](Troubleshooting.md#reporting-a-problem).
+Close the error dialog and nothing leaves your machine. If your IDE has **automatic exception reporting** enabled, turn
+it off as well - that is the setting that can send a report without asking.
+
+If you would like the bug fixed anyway, use <b>Copy DevOps Lens Diagnostics</b> from the <ui-path>Help</ui-path> menu,
+read the text yourself, and paste it into a [public issue](%new_bug_url%). See
+[Reporting a problem](Troubleshooting.md#reporting-a-problem).
 
 Administrators who want the path closed for a whole team can disable the IDE's error-reporting dialog through their IDE
 deployment settings; with no dialog, there is no button to press.

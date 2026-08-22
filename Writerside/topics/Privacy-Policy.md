@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Version 1.0 - effective 16 August 2026**
+**Version 1.1 - effective 22 August 2026**
 
 ## 1. Controller and scope
 
@@ -27,8 +27,9 @@ person or legal entity changes, this Policy will be updated before that entity b
 - Optional AI requests go directly to the provider or local tool you configured. The Plugin ships with no default
   hosted AI endpoint.
 - Credentials are stored in the JetBrains IDE's PasswordSafe, normally backed by your operating-system keychain.
-- A crash report reaches my private Sentry project only when you deliberately press the report button. It is minimized
-  and redacted on your device first, but it may still contain personal data.
+- Crash reports are sent by your JetBrains IDE, not by the Plugin, and reach me through the JetBrains Marketplace
+  Exception Analyzer. They are sent when you press the report button, or automatically if you have enabled your IDE's
+  automatic exception reporting. The Plugin does not redact them and cannot, so a report may contain personal data.
 - I may receive personal data when you contact me, submit a crash report, post a public issue or review, or make a
   data-protection request.
 - I do not sell personal data or use it for advertising.
@@ -42,7 +43,7 @@ Different parties are responsible for different parts of the system:
 | Azure DevOps use | Your Microsoft Azure DevOps organization or on-premises server | I do not receive this traffic or content |
 | User-configured AI feature | The AI provider, server, or CLI tool you selected | I do not receive the request or response |
 | IDE-connected MCP agent | Your agent and its model provider, according to your setup | I do not receive the agent's data |
-| Optional crash report | My private Sentry project, with Sentry acting as processor | I am controller for the submitted report |
+| Crash report | JetBrains s.r.o., which receives and hosts the report and makes it available to me through the Marketplace Exception Analyzer | JetBrains controls its collection and hosting under its own agreement; I am controller for what I do with a report after I access it |
 | JetBrains Marketplace | JetBrains distributes the Plugin and operates accounts, downloads, and reviews | JetBrains controls its processing; I control only personal data I later receive or use |
 | Documentation website | GitHub Pages | GitHub processes hosting and security data under its notice; I do not receive raw visitor logs |
 | Support email or public issue | Me and the email or GitHub service used | I control my support use; the platform also processes data under its own terms |
@@ -54,7 +55,7 @@ that organization may also be a controller of your personal data. Consult its pr
 
 | Activity | Personal data that may be processed | Purpose | GDPR legal basis | Retention |
 |----------|-------------------------------------|---------|------------------|-----------|
-| Crash report you choose to submit | Redacted error text and stack trace; Plugin, IDE, Java, OS, architecture, and coarse Azure DevOps deployment-type information; text you type; possible connection metadata | Receive the report you requested; diagnose, secure, and fix the Plugin | Your consent expressed by pressing the report button after the notice (Article 6(1)(a)) | Up to 90 days in Sentry |
+| Crash report | Error text and stack trace as produced by the failing code; Plugin, IDE, Java, OS and architecture information; the identifier of your last IDE action; identifiers of your non-bundled plugins; an installation identifier your IDE generates for error reporting; text you type; possible connection metadata | Receive the report; diagnose, secure, and fix the Plugin | Your consent expressed by pressing the report button after the IDE's notice, or by enabling automatic exception reporting in your IDE (Article 6(1)(a)) | Governed by JetBrains' retention for the Exception Analyzer service |
 | Support, privacy, or security request | Name, email address, message, attachments, diagnostics, and correspondence | Respond to your request, provide support, protect the Plugin and users, and establish or defend legal claims | Steps you request relating to the EULA (Article 6(1)(b)); legal obligation (Article 6(1)(c)); or legitimate interests (Article 6(1)(f)), depending on the request | Normally up to 24 months after closure; longer only where needed for a legal obligation or claim |
 | Public GitHub issue, discussion, or Marketplace review | Public profile, post, attachments, and my public response | Community support, defect tracking, and product improvement | Steps you request and legitimate interests in support and product improvement (Articles 6(1)(b) and 6(1)(f)) | Public until you or the platform removes it, subject to its retention rules |
 
@@ -150,49 +151,60 @@ organization may retain copies under their own retention rules.
 
 ## 8. Crash reports {id="crash-reports"}
 
-### Never automatic
+### Sent by your IDE, not by the Plugin
 
-When the Plugin throws an unexpected error, the IDE may show its standard error dialog with a **Report to DevOps
-Lens** button and a privacy notice. Nothing is submitted to my Sentry project unless you press that button. Each press
-submits one report; there is no standing opt-in, background retry, or developer-operated analytics stream.
+When the Plugin throws an unexpected error, your JetBrains IDE may show its standard error dialog with a **Report to the
+Third-Party Plugin** button and a notice from JetBrains. Pressing that button submits one report through the JetBrains
+Marketplace Exception Analyzer service, which makes it available to me as the plugin developer.
 
-You can withhold consent by closing the dialog. You may withdraw consent for future reports simply by not submitting
-them. To request deletion of a report already submitted, contact me with any date, time, description, or other detail
-that can help locate it. Because reports contain no intentionally assigned user identifier, I may be unable to identify
-a particular report as yours without that information.
+The Plugin registers for that service and contributes no code to it. It does not build, filter, redact, queue, or
+transmit the report, and it operates no error-reporting endpoint of its own.
 
-### Contents and local redaction
+If you have enabled automatic exception reporting in your IDE - a JetBrains data-sharing setting that is off unless you
+turn it on - your IDE may submit such a report without showing you the dialog first. That setting is yours and
+JetBrains', not the Plugin's; the Plugin cannot enable, disable, or detect your choice.
 
-Before transmission, the Plugin is designed to redact credentials, authorization headers, email addresses, user and
-server names, organization, project and repository identifiers, URLs, routable IP addresses, and local file paths. It
-does not intentionally attach source files, diffs, request bodies, pull-request content, comments, environment
-variables, local variables, screenshots, or IDE logs.
+You can withhold consent by closing the dialog and by leaving automatic exception reporting off. You may withdraw
+consent for future reports by not submitting them and by turning that setting off. To request deletion of a report
+already submitted, contact me with any date, time, description, or other detail that can help locate it; requests
+concerning JetBrains' own copy should also be directed to JetBrains.
 
-The resulting report may contain:
+### Contents
 
-- A redacted Plugin error message and stack trace with class, method, source-file, and line information
+A report is assembled by the IDE from the error itself. It may contain:
+
+- The Plugin error message and stack trace exactly as the failing code produced them, with class, method, source-file,
+  and line information
 - Plugin version, IDE product and build, Java runtime, operating system, and architecture
-- A coarse value such as `cloud`, `on-prem`, `cloud + on-prem`, or `no accounts`
+- The identifier of the last IDE action performed before the error, and the identifiers of your non-bundled plugins
+- An installation identifier that your IDE generates for error reporting
 - The description you voluntarily type
-- Connection metadata that Sentry or its infrastructure necessarily processes, such as an IP address, even if it is not
-  retained in the event shown to me
+- Connection metadata that JetBrains or its infrastructure necessarily processes, such as an IP address
 
-Redaction materially reduces risk but cannot guarantee that every future exception or description is anonymous. Review
-anything you type and do not add source code, credentials, names, internal URLs, or confidential information.
+The Plugin does not intentionally place credentials, source files, diffs, request bodies, pull-request content,
+comments, environment variables, screenshots, or IDE logs into an error. **There is, however, no redaction step on your
+device for this path**: an error message can name an organization, project, repository, server host, or file path, and
+anything you type is transmitted as written. Review anything you type and do not add source code, credentials, names,
+internal URLs, or confidential information.
 
-### Processor, location, and retention
+If you would rather send something you have read yourself, use <b>Copy DevOps Lens Diagnostics</b> in the IDE's Help
+menu instead. That snapshot contains only version, count and status information - no server address, organization,
+project, repository or user name - is placed only on your clipboard, and is sent nowhere unless you paste and send it
+yourself.
 
-Crash reports go to a private project operated for me by **Functional Software, Inc. (Sentry)** as data processor. The
-ingestion endpoint and project are configured for Sentry's Germany data region. Event data is intended to be retained
-for no more than 90 days and used only for Plugin reliability and security work.
+### Recipient, location, and retention
 
-Sentry is headquartered in the United States and may use group companies and subprocessors in other countries. Where
-European personal data is transferred outside the EEA, Sentry states that it uses the EU-U.S. Data Privacy Framework
-where applicable and the European Commission's Standard Contractual Clauses as an alternative. See
-[Sentry's privacy and legal resources](https://sentry.io/legal/).
+Crash reports are received and hosted by **JetBrains s.r.o.** as part of the JetBrains Marketplace Exception Analyzer
+service, and are shown to me through the Marketplace developer interface. JetBrains' collection and hosting are governed
+by the [JetBrains Exception Analyzer agreement](https://www.jetbrains.com/legal/agreements/exception_analyzer.html),
+which your IDE links from the notice under the report dialog, and by the
+[JetBrains Privacy Notice](https://www.jetbrains.com/legal/docs/privacy/privacy/). Retention of the report by that
+service is determined by JetBrains, not by me.
 
-If submission fails, the locally redacted report is copied to your clipboard. Nothing is queued for an automatic retry.
-You control whether to paste or send that clipboard content elsewhere.
+JetBrains is established in the Czech Republic and may use group companies and subprocessors in other countries. Where
+European personal data is transferred outside the EEA, the safeguards described in JetBrains' notices apply.
+
+Reports are not published, are not posted to the public issue tracker, and are not visible to other users.
 
 ## 9. JetBrains Marketplace
 
@@ -229,14 +241,13 @@ guarantee deletion of quotations, notifications, forks, caches, or copies contro
 
 I disclose personal data only as necessary to:
 
-- **Sentry**, for crash-report processing described above
+- **JetBrains**, which receives crash reports as described above and operates Marketplace reviews and support channels
 - **GitHub**, when you use the hosted documentation, issue tracker, or discussions
-- **JetBrains**, when you use Marketplace reviews or support channels
 - Professional advisers, insurers, or authorities where reasonably necessary to comply with law, protect a person,
   investigate abuse, or establish, exercise, or defend legal claims
 - A successor if responsibility for the Plugin is transferred, subject to applicable notice and data-protection law
 
-I am located in Croatia. Sentry, GitHub, JetBrains, and some of their subprocessors may be based in or accessible from
+I am located in Croatia. JetBrains, GitHub, and some of their subprocessors may be based in or accessible from
 countries outside the European Economic Area. Depending on the service and transfer, safeguards may include an adequacy
 decision, the EU-U.S. Data Privacy Framework, or European Commission Standard Contractual Clauses. You may request
 information about the safeguard relevant to data I control by contacting me.
@@ -273,8 +284,9 @@ should be directed to that controller.
 ## 13. Security
 
 I use measures designed to reduce the risks appropriate to the data I control, including local credential storage, data
-minimization, on-device crash-report redaction, restricted access to the private Sentry project, encrypted transmission,
-and retention limits.
+minimization, collecting only non-identifying values in the diagnostics snapshot, keeping credentials and content out of
+Plugin error messages, access to crash reports only through my authenticated JetBrains Marketplace developer account,
+encrypted transmission, and retention limits.
 
 No security control is perfect. If I become aware of a personal-data breach, I will investigate, mitigate, document,
 and notify the competent authority and affected people when required by law.

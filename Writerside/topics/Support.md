@@ -8,7 +8,7 @@ place to report a problem while the plugin's own repository stays private.
 
 | Your situation                                                        | Where to go                                                                                  |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| "The IDE showed a red error icon / an error dialog about this plugin" | Press **Report to DevOps Lens** in that dialog - see [Crash reports](#crash-reports) |
+| "The IDE showed a red error icon / an error dialog about this plugin" | Press **Report to the Third-Party Plugin** in that dialog - see [Crash reports](#crash-reports) |
 | "This is broken and I can reproduce it"                               | [Report a bug](%new_bug_url%)                                                                |
 | "The plugin should be able to…"                                       | [Request a feature](%new_feature_url%)                                                       |
 | "How do I…?" / "Is this supposed to work like this?"                  | [Discussions](%discussions_url%)                                                             |
@@ -22,20 +22,17 @@ defect, it gets converted into an issue.
 
 ## Crash reports {id="crash-reports"}
 
-If the plugin throws an error it didn't expect, your IDE shows its standard error dialog with a **Report to DevOps
-Lens** button. That button is the single most useful thing you can press: it sends the stack trace - the part that
-actually identifies the bug
+If the plugin throws an error it didn't expect, your IDE shows its standard error dialog with a **Report to the
+Third-Party Plugin** button. That button is the single most useful thing you can press: it sends the stack trace - the
+part that actually identifies the bug - without you having to find and read `idea.log` first.
 
-- without you having to find, read, and scrub `idea.log` first.
+The IDE builds and sends that report through JetBrains Marketplace, which routes it to the plugin developer; it does not
+go to the public repository. Add a sentence about what you were doing in the dialog's comment box if you can - a stack
+trace plus "I clicked Approve on a PR with conflicts" is usually enough to fix something. Whatever you type is sent word
+for word, and the plugin cannot filter the report, so leave code, credentials and confidential names out of it.
 
-It sends nothing unless you press it, it strips credentials and identifying names on your machine before sending, it
-never includes your code, and it goes to a private error tracker rather than the public repository. Add a sentence about
-what you were doing in the dialog's comment box if you can; a stack trace plus "I clicked Approve on a PR with
-conflicts" is usually enough to fix something.
-
-Crash reports do not include a reply address or an intentionally assigned account identifier, so they can't be replied
-to. Sentry may still process network metadata and a report must be treated as potentially containing personal data.
-**If you want an answer, file an issue as well** - the two channels complement each other.
+Crash reports carry no reply address, so they can't be answered. **If you want an answer, file an issue as well** - the
+two channels complement each other.
 
 Details of exactly what a report contains, and how to report bugs without ever sending
 one: [Privacy and Data](Privacy-and-Data.md#crash-reports).
@@ -52,7 +49,7 @@ The fastest path starts inside the IDE, because it fills in the fields reporters
         operating system already filled in. Nothing else is sent, and you can edit or
         clear those fields before submitting.</step>
     <step>For the rest of the environment details, run <ui-path>Help | Copy DevOps Lens
-        Diagnostics</ui-path> and paste the redacted snapshot into the issue after reviewing it.</step>
+        Diagnostics</ui-path> and paste the snapshot into the issue after reviewing it.</step>
 </procedure>
 
 The settings links also sit at the bottom of the <b>AI Settings</b> sub-page, and you can always go straight to
@@ -85,7 +82,7 @@ A report without these usually needs a round trip before anything can happen:
 - **A screenshot**, if the problem is something you can see
 
 > **Never paste a Personal Access Token or an OAuth refresh token into a public issue.**
-> The plugin redacts tokens in its own log output, but screenshots, HTTP traces, and the
+> The plugin keeps tokens out of its own log output, but screenshots, HTTP traces, and the
 > output of `git remote -v` can still leak one. Scrub before you post - and if a token
 > does slip out, revoke it in Azure DevOps immediately.
 >

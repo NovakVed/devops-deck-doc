@@ -125,10 +125,12 @@ No usage analytics, ever - nothing records which features you use or what you cl
 background. Outbound calls go only to your Azure DevOps org and, if AI is enabled, your configured AI provider. (An AI
 agent you connect over MCP makes its own calls under its own terms - the plugin adds no telemetry to those either.)
 
-The one exception is a **crash report you send yourself**: when the plugin hits an unexpected error, the IDE's error
-dialog offers a **Report to DevOps Lens** button. Nothing is transmitted unless you press it, credentials and
-identifying names are stripped on your machine first, your code is never included, and it goes to a private error
-tracker rather than the public repository. See [Crash reports](Privacy-and-Data.md#crash-reports).
+The one exception is a **crash report**: when the plugin hits an unexpected error, the IDE's error dialog offers a
+**Report to the Third-Party Plugin** button, and the IDE sends the report through JetBrains Marketplace to the plugin
+developer. Your code is never in it, it doesn't go to the public repository, and closing the dialog sends nothing -
+unless you have turned on the IDE's automatic exception reporting. The plugin doesn't build that report and can't redact
+it, so an error message in it can name an organization or repository. See
+[Crash reports](Privacy-and-Data.md#crash-reports).
 
 ## Using the plugin {id="using-the-plugin"}
 

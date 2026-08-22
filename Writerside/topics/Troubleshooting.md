@@ -228,27 +228,31 @@ The plugin gives you three ways to hand over what's needed. Which one you want d
 
 | What you saw                                                                  | Use this                                                                                                                        |
 |-------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| A red error icon in the status bar, or an IDE error dialog naming this plugin | The dialog's **Report to DevOps Lens** button - see [Crash reports](#crash-reports) below                               |
+| A red error icon in the status bar, or an IDE error dialog naming this plugin | The dialog's **Report to the Third-Party Plugin** button - see [Crash reports](#crash-reports) below                    |
 | Something is broken or wrong, but nothing crashed                             | <ui-path>Help &#124; Report DevOps Lens Issue…</ui-path> - opens the bug form with your versions pre-filled             |
-| You're already writing an issue and want the environment details              | <ui-path>Help &#124; Copy DevOps Lens Diagnostics</ui-path> - puts a redacted snapshot on your clipboard to review and paste |
+| You're already writing an issue and want the environment details              | <ui-path>Help &#124; Copy DevOps Lens Diagnostics</ui-path> - puts a snapshot on your clipboard to review and paste |
 
 ### Crash reports {id="crash-reports"}
 
-When the plugin throws an error it didn't expect, the IDE shows its standard error dialog. Pressing **Report to Azure
-DevOps Plugin** sends the stack trace straight to the developer's private error tracker, so the bug can be found without
-you digging through
-`idea.log` at all.
+When the plugin throws an error it didn't expect, the IDE may show its standard error dialog. Pressing **Report to the
+Third-Party Plugin** hands the stack trace to JetBrains Marketplace, which passes it to the plugin developer - so the
+bug can be found without you digging through `idea.log` at all.
 
 What makes this worth pressing:
 
-- **Nothing is sent unless you press it.** Close the dialog and nothing leaves your machine. There's no queue and no
-  background retry.
-- **It's minimized and redacted before it's sent** - on your machine, not on a server. Tokens are redacted, and organization,
-  project, repository, server, and user names are replaced with placeholders. Your code, diffs, and comments are never
-  included.
-- **It's private.** Reports go to a private Sentry project configured for the Germany data region, not to the public tracker.
-- You can add a sentence about what you were doing in the dialog's comment box - that short note is often what turns a
-  stack trace into a fix.
+- **The IDE sends it, not the plugin.** Crash reporting for third-party plugins is a JetBrains Marketplace service; the
+  plugin registers for it and adds nothing to the report.
+- **It's not public.** The report goes to the plugin's Exception Analyzer page on Marketplace, not to the public
+  tracker, and is not publicly visible.
+- **You can add a sentence** about what you were doing in the dialog's comment box - that short note is often what turns
+  a stack trace into a fix. It is sent word for word, so keep code, credentials and confidential names out of it.
+- **Nothing is sent when you close the dialog** - unless you have turned on your IDE's automatic exception reporting,
+  which lets the IDE send reports on its own.
+
+Because the IDE builds the report, the plugin cannot redact it: the stack trace and the error message travel as they
+are, and an error message can name an organization, project, repository or server host. If that matters to you, skip the
+dialog and use <ui-path>Help | Copy DevOps Lens Diagnostics</ui-path> instead - that snapshot is versions and counters
+only, you read it on your clipboard, and you choose where it goes.
 
 Full detail on exactly what's included: [Privacy and Data](Privacy-and-Data.md#crash-reports).
 
@@ -259,8 +263,8 @@ Full detail on exactly what's included: [Privacy and Data](Privacy-and-Data.md#c
 
 ### Copying diagnostics
 
-<ui-path>Help &#124; Copy DevOps Lens Diagnostics</ui-path> puts a short,
-redacted snapshot on your clipboard: plugin version, IDE build, Java runtime, OS,
+<ui-path>Help &#124; Copy DevOps Lens Diagnostics</ui-path> puts a short
+snapshot on your clipboard: plugin version, IDE build, Java runtime, OS,
 how many accounts are configured and whether they're cloud or on-prem, whether the
 plugin currently considers itself online, and cache statistics. No URLs, no
 organization names, no credentials.
@@ -292,6 +296,6 @@ security-report process.
     </step>
 </procedure>
 
-> **Never paste PATs or OAuth refresh tokens** in a public issue. The log captures redacted tokens by default, but
+> **Never paste PATs or OAuth refresh tokens** in a public issue. The plugin keeps tokens out of its own log, but
 > always double-check before submitting.
 > {style="warning"}
